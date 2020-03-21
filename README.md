@@ -25,3 +25,10 @@ git commit -m "Initial Commit"
 git remote add origin https://github.com/machio77777/gatsby-blog.git
 git push -u origin master
 ```
+
+## :memo: Reference.
+
+■ [Gatsby.js](https://www.gatsbyjs.org/)  
+■ [Takumon Blog](https://takumon.com/)  
+■ [suzukalight.com](https://suzukalight.com/)  
+■ [Crieit](https://crieit.net/tags/Gatsby)  
