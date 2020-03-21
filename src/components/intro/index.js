@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
+import Image from "../atom/image"
 
 class Intro extends Component {
   render() {
@@ -8,11 +8,35 @@ class Intro extends Component {
         textAlign: `center`,
         backgroundColor: `darkgray`,
         marginBottom: `30px`,
-        padding: `100px 0`,
+        position: `relative`,
       }}>
-        <Link to={`/`} style={{ boxShadow: `none`, color: `white`, fontSize: `24px`,}}>
-          TaNA Profile
-        </Link>
+        <Image filename={`intro.png`} />
+          <div style={{
+          position: `absolute`,
+          margin: `auto`,
+          top: `45%`,
+          right: `0`,
+          bottom: `0`,
+          left: `0`,
+        }}
+        >
+          <div style={{ 
+            margin: `0 auto`, 
+            padding: `5px`,
+            width: `200px`, 
+            fontSize: `16px`,
+            borderRadius: `5px`, 
+            backgroundColor: `dimgray` 
+          }}>
+            <a href="https://machio77777.github.io/tana-profile/" style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `white`
+            }}>
+              My Profile
+            </a>
+          </div>
+        </div>
       </div>
     )
   }
