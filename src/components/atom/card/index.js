@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
 import { rhythm } from "../../../utils/typography"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from "@fortawesome/free-solid-svg-icons"
 import Image from "../image"
 
 class Card extends Component {
   render() {
     const node = this.props.node
     const title = node.frontmatter.title || node.fields.slug
+    library.add(fas)
     return (
       <Link to={node.fields.slug} style={{ 
         boxShadow: `none`, 
@@ -32,13 +36,17 @@ class Card extends Component {
                   padding: `3px 0`,
                   width: `110px`,
                   backgroundColor: `gold`, 
-                  fontSize: `14px`,
+                  fontSize: `12px`,
+                  fontWeight: `bold`,
                   textAlign: `center`
                 }}>
                   {node.frontmatter.category}
                 </span>
                 <p style={{ marginTop: `10px`, marginBottom: rhythm(1 / 4), }}>{title}</p>
-                <small>{node.frontmatter.date}</small>
+                <div style={{ marginBottom: `5px` }}>
+                  <FontAwesomeIcon icon='calendar' />
+                  <small style={{ marginLeft: `5px` }}>{node.frontmatter.date}</small>
+                </div>
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
