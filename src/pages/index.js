@@ -5,12 +5,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Posts from "../components/atom/posts"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title="All posts" />
       <Posts posts={posts} />
     </Layout>

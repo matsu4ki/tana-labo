@@ -6,14 +6,15 @@ import Header from "../header"
 const Layout = ({ title, children }) => {
 
   return (
-    <div>
+    <div style={{ backgroundColor: `whitesmoke` }}>
       <Header title={title} />
       <div
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(42),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          backgroundColor: `white`,
         }}
       >
         <main>{children}</main>
