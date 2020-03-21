@@ -2,12 +2,14 @@ import React from "react"
 
 import { rhythm　} from "../../utils/typography"
 import Header from "../header"
+import Intro from "../intro"
 
 const Layout = ({ title, children }) => {
 
   return (
     <div style={{ backgroundColor: `whitesmoke` }}>
       <Header title={title} />
+      <Intro />
       <div
         style={{
           marginLeft: `auto`,
