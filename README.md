@@ -15,6 +15,7 @@
 gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog
 cd gatsby-blog/
 gatsby develop
+gatsby clean
 ```
 
 ■ githubに追加.
