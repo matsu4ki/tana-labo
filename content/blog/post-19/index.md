@@ -5,3 +5,5 @@ description: "Hello World"
 category: "リベラルアーツ"
 thumbnail: post-19.png
 ---
+
+![](./post-19.png)

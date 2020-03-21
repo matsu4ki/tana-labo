@@ -5,3 +5,5 @@ description: "Hello World"
 category: "テクノロジー"
 thumbnail: post-11.png
 ---
+
+![](./post-11.png)
