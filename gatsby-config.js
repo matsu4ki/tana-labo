@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `TaNA LANO`,
+    title: `TaNA LABO`,
     author: {
       name: `TaNA`,
       summary: `who lives and works in San Francisco building useful things.`,
@@ -33,7 +33,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 960,
             },
           },
           {

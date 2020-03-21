@@ -5,3 +5,5 @@ description: "Hello World"
 category: "ビジネス"
 thumbnail: post-26.png
 ---
+
+![](./post-26.png)

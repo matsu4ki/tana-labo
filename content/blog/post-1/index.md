@@ -6,3 +6,4 @@ category: "リベラルアーツ"
 thumbnail: post-1.png
 ---
 
+![](./post-1.png)

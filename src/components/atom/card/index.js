@@ -18,13 +18,25 @@ class Card extends Component {
           boxShadow: `0 0 8px gray`, 
           margin: `20px`, 
           width: `335px`,
-          height: `370px`
+          height: `370px`,
+          position: `relative`
         }}>
           <article key={node.fields.slug}>
             <section>
               <Image filename={node.frontmatter.thumbnail.base} />
-              <div style={{ padding: `15px 10px 0 10px` }}>
-                <span style={{ padding: `5px 10px`, backgroundColor: `gold`, fontSize: `14px` }}>{node.frontmatter.category}</span>
+              <div style={{ padding: `10px 10px 0 10px` }}>
+                <span style={{
+                  position: `absolute`,
+                  top: `0`,
+                  left: `0`,
+                  padding: `3px 0`,
+                  width: `110px`,
+                  backgroundColor: `gold`, 
+                  fontSize: `14px`,
+                  textAlign: `center`
+                }}>
+                  {node.frontmatter.category}
+                </span>
                 <p style={{ marginTop: `10px`, marginBottom: rhythm(1 / 4), }}>{title}</p>
                 <small>{node.frontmatter.date}</small>
                 <p

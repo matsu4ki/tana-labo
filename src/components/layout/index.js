@@ -16,7 +16,8 @@ const Layout = ({ location, title, children }) => {
   }
 
   return (
-    <div style={{ backgroundColor: `whitesmoke` }}>
+    <div style={{ backgroundColor: `whitesmoke`, fontFamily: `Kosugi Maru`, }}>
+      <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" />
       <Header title={title} />
       {intro}
       <div
