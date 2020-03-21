@@ -5,7 +5,7 @@ class Posts extends Component {
   render() {
     const posts = this.props.posts
     return (
-      <div>
+      <div style={{ display: `flex`, flexWrap: `wrap` }}>
         {posts.map(({ node }) => {
           return (
             <Card node={node} />
