@@ -5,10 +5,11 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
+        postsRemark: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -23,7 +24,6 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
         }
-      }
     `
   )
 
@@ -32,8 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges
-
+  const posts = result.data.postsRemark.edges
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
@@ -48,6 +47,22 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  const tagTemplate = path.resolve(`./src/components/templates/tag.js`);
+  const tags = posts.reduce((tags, edge) => {
+    const edgeTags = get(edge, 'node.frontmatter.tags');
+    return edgeTags ? tags.concat(edge.node.frontmatter.tags) : tags;
+  }, []);
+
+  [...new Set(tags)].forEach(tag => {
+    createPage({
+      path: `/tags/${kebabCase(tag)}/`,
+      component: tagTemplate,
+      context: {
+        tag,
+      },
+    });
+  });
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
