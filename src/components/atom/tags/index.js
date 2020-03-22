@@ -13,7 +13,6 @@ const Tag = ({ tag }) => (
       fontSize: `14px`,
       color: `white`,
       backgroundColor: `lightpink`,
-      borderRadius: `5px`,
     }}>{tag}</div>
   </Link>
 );
