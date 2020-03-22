@@ -2,6 +2,7 @@ import React from "react"
 import { rhythm　} from "../../utils/typography"
 import Header from "../header"
 import Intro from "../intro"
+import Footer from "../footer"
 
 const Layout = ({ location, title, children }) => {
 
@@ -30,6 +31,7 @@ const Layout = ({ location, title, children }) => {
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </div>
   )
 }

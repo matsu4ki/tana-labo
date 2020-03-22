@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -19,25 +19,42 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
+          <div style={{ marginBottom: `10px` }}>
+            <div style={{
+              display: `inline-block`,
+              marginRight: `10px`,
+              padding: `3px 0`,
+              width: `110px`,
+              backgroundColor: `gold`, 
+              fontSize: `12px`,
+              fontWeight: `bold`,
+              textAlign: `center`,
+            }}>{post.frontmatter.categoryname}</div>
+            <p style={{ display: `inline-block`, marginBottom: `0` }}>{post.frontmatter.date}</p>
+          </div>
+          <div style={{ marginBottom: `10px` }}>
+            {(post.frontmatter.tags || []).map(tag => (
+              <div style={{
+                display: `inline`,
+                flexWrap: `wrap`, 
+                marginRight: `10px`, 
+                padding: `5px 10px`, 
+                textDecoration: `none`, 
+                fontSize: `14px`,
+                color: `white`,
+                backgroundColor: `lightpink`,
+              }}>{tag}</div>
+            ))}
+          </div>
           <h1
             style={{
-              marginTop: rhythm(1),
-              marginBottom: `0`,
+              margin: `0 0 15px 0`,
               fontSize: `22px`,
               fontFamily: `Kosugi Maru`
             }}
           >
             {post.frontmatter.title}
           </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -94,6 +111,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        categoryname
+        tags
       }
     }
     allMarkdownRemark(limit: 2000) {
