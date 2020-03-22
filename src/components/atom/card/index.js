@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import Image from "../image"
+import Tags from "../tags"
+
+import "./card.css"
 
 class Card extends Component {
   render() {
@@ -22,13 +25,13 @@ class Card extends Component {
           boxShadow: `0 0 8px gray`, 
           margin: `20px`, 
           width: `335px`,
-          height: `370px`,
+          height: `410px`,
           position: `relative`
         }}>
           <article key={node.fields.slug}>
             <section>
               <Image filename={node.frontmatter.thumbnail.base} />
-              <div style={{ padding: `10px 10px 0 10px` }}>
+              <div style={{ padding: `0 10px 0 10px` }}>
                 <span style={{
                   position: `absolute`,
                   top: `0`,
@@ -40,9 +43,12 @@ class Card extends Component {
                   fontWeight: `bold`,
                   textAlign: `center`
                 }}>
-                  {node.frontmatter.category}
+                  {node.frontmatter.categoryname}
                 </span>
                 <p style={{ marginTop: `10px`, marginBottom: rhythm(1 / 4), }}>{title}</p>
+                <div>
+                  <Tags tags={node.frontmatter.tags} />
+                </div>
                 <div style={{ marginBottom: `5px` }}>
                   <FontAwesomeIcon icon='calendar' />
                   <small style={{ marginLeft: `5px` }}>{node.frontmatter.date}</small>
@@ -50,13 +56,8 @@ class Card extends Component {
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
-                  }} 
-                  style={{ 
-                    overflow: `hidden`,
-                    textOverflow: `ellipsis`,
-                    whiteSpace: `nowrap`,
-                    margin: `0`
                   }}
+                  className={"description"} 
                 />
               </div>
             </section>

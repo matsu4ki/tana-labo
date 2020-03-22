@@ -33,3 +33,4 @@ git push -u origin master
 ■ [Takumon Blog](https://takumon.com/)  
 ■ [suzukalight.com](https://suzukalight.com/)  
 ■ [Crieit](https://crieit.net/tags/Gatsby)  
+■ [Corylog](https://www.corylog.com/)  
