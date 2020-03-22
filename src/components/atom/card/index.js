@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import Image from "../image"
-import Tags from "../../tags"
+import Tags from "../tags"
+
+import "./card.css"
 
 class Card extends Component {
   render() {
@@ -23,7 +25,7 @@ class Card extends Component {
           boxShadow: `0 0 8px gray`, 
           margin: `20px`, 
           width: `335px`,
-          height: `370px`,
+          height: `410px`,
           position: `relative`
         }}>
           <article key={node.fields.slug}>
@@ -54,13 +56,8 @@ class Card extends Component {
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,
-                  }} 
-                  style={{ 
-                    overflow: `hidden`,
-                    textOverflow: `ellipsis`,
-                    whiteSpace: `nowrap`,
-                    margin: `0`
                   }}
+                  className={"description"} 
                 />
               </div>
             </section>

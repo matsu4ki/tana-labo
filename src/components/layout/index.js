@@ -1,5 +1,4 @@
 import React from "react"
-
 import { rhythm　} from "../../utils/typography"
 import Header from "../header"
 import Intro from "../intro"
@@ -8,7 +7,7 @@ const Layout = ({ location, title, children }) => {
 
   const rootPath = `${__PATH_PREFIX__}/`
   let intro
-  let width = 32
+  let width = 28
 
   if (location.pathname === rootPath) {
     intro = <Intro />

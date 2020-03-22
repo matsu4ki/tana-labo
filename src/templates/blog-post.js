@@ -4,6 +4,8 @@ import { rhythm, scale } from "../utils/typography"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import "./blog-post.css"
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -20,7 +22,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <h1
             style={{
               marginTop: rhythm(1),
-              marginBottom: 0,
+              marginBottom: `0`,
+              fontSize: `22px`,
               fontFamily: `Kosugi Maru`
             }}
           >
@@ -91,6 +94,12 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+    }
+    allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

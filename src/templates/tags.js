@@ -36,11 +36,26 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000 sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { tags: { in: [$tag] } } }) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
+    allMarkdownRemark(
+      limit: 2000
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+            description
+            tags
+          }
+        }
       }
     }
   }
-`
+  `
