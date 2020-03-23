@@ -28,6 +28,38 @@ h2 {
 }
 
 /*--------------------------------------
+  黒板枠
+--------------------------------------*/
+.blackboard-box{
+  background: #104300;
+  margin: 1em 0;
+  padding: 1em 1em 0 1em;
+  border: 8px solid #a60;
+  box-shadow: 2px 2px 4px #999, 2px 2px 2px #020 inset;
+}
+.blackboard-box p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.chalk1{
+  display: block;
+  margin-top: 10px;
+  margin-left: 90%;
+  border: solid 3px #fff;
+  width: 15px;
+  border-radius: 3px 2px 0 2px;
+}
+.chalk2{
+  display: block;
+  margin-top: -6px;
+  margin-left: calc(90% - 30px);
+  border: solid 3px #ffee58;
+  width: 20px;
+  border-radius: 3px 2px 0 2px;
+}
+
+/*--------------------------------------
   ヨメレバ・カエレバ（PC）
 --------------------------------------*/
 .booklink-box, .kaerebalink-box{
