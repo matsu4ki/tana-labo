@@ -74,7 +74,7 @@ def myfunc_handler (event, context):
 
 ~~<span style="color: gray;">リアルタイム性の考慮がいらなければ、一旦はLambda関数でDynamoDBにデータを格納し、そこから別のLambda関数でRDSに徐々に転送するよう構成すれば、直接RDSに書き込むよりもパフォーマンスが向上する事例を紹介 (Lambda関数の処理の多くがDynamoDBらしい)</span>~~
 
-<span style="color: deeppink;">VPCアクセスのレイテンシコストは、2019年9月以降に順次適用予定で、今後悩まされることも無くなり、RDSに対する最大同時接続数の問題も、今後はRDS Proxyで改善してくれると思われる。</span>
+<span style="color: crimson; font-weight: bold;">VPCアクセスのレイテンシコストは、2019年9月以降に順次適用予定で、今後悩まされることも無くなり、RDSに対する最大同時接続数の問題も、今後はRDS Proxyで改善してくれると思われる。</span>
 
 ■ [[発表] Lambda 関数が VPC 環境で改善されます](https://aws.amazon.com/jp/blogs/news/announcing-improved-vpc-networking-for-aws-lambda-functions/)  
 ■ [Amazon RDS プロキシのご紹介 (プレビュー)](https://aws.amazon.com/jp/about-aws/whats-new/2019/12/amazon-rds-proxy-available-in-preview/)  
