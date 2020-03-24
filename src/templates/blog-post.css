@@ -11,6 +11,10 @@ a {
 p.img {
   margin: 0 auto;
 }
+p.a.img {
+  margin: 0 auto;
+  border: solid;
+}
 
 h2 {
   font-family: Kosugi Maru;
