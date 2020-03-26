@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Image from "../atom/image"
 
+import "./intro.css"
+
 class Intro extends Component {
   render() {
     return (
@@ -11,30 +13,25 @@ class Intro extends Component {
         position: `relative`,
       }}>
         <Image filename={`intro.png`} />
-          <div style={{
-          position: `absolute`,
-          margin: `auto`,
-          top: `45%`,
-          right: `0`,
-          bottom: `0`,
-          left: `0`,
-        }}
-        >
-          <div style={{ 
-            margin: `0 auto`, 
-            padding: `5px`,
-            width: `200px`, 
-            fontSize: `16px`,
-            borderRadius: `5px`, 
-            backgroundColor: `dimgray` 
-          }}>
+        <div id="intro">
+          <div id="job">
+            <p>MY JOB</p>
+            <p>I'm a Software Engineer</p>
+          </div>
+          <div id="prof">
             <a href="https://machio77777.github.io/tana-profile/" style={{
               boxShadow: `none`,
               textDecoration: `none`,
               color: `white`
-            }}>
-              My Profile
+            }} target="_blank" rel="noopener noreferrer">
+            My Profile
             </a>
+          </div>
+          <div id="social">
+            <a href="https://github.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`github.jpg`} /></a>
+            <a href="https://twitter.com/tanashin77777" target="_blank" rel="noopener noreferrer"><Image filename={`twitter.png`} /></a>
+            <a href="https://qiita.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`qiita.png`} /></a>
+            <a href="https://booklog.jp/users/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`booklog.jpeg`} /></a>
           </div>
         </div>
       </div>
