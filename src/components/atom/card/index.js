@@ -23,8 +23,8 @@ class Card extends Component {
           border: `solid 1px`, 
           borderColor: `darkgray`, 
           boxShadow: `0 0 8px gray`, 
-          margin: `20px`, 
-          width: `335px`,
+          margin: `15px 10px`, 
+          width: `300px`,
           height: `410px`,
           position: `relative`
         }}>
@@ -45,7 +45,7 @@ class Card extends Component {
                 }}>
                   {node.frontmatter.categoryname}
                 </span>
-                <p style={{ marginTop: `10px`, marginBottom: rhythm(1 / 4), }}>{title}</p>
+                <p style={{ marginTop: `10px`, marginBottom: rhythm(1 / 4), fontSize: `15px` }}>{title}</p>
                 <div>
                   <Tags tags={node.frontmatter.tags} />
                 </div>
