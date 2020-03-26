@@ -1,30 +1,22 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Posts from "../components/atom/posts"
 
 const Tags = ({ location, pageContext, data }) => {
-  const { tag } = pageContext;
-  const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`;
-  const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={tagHeader} />
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node: { fields: { slug }, frontmatter: { title } } }) => (
-          <li key={slug}>
-            <Link to={slug}>{title}</Link>
-          </li>
-        ))}
-      </ul>
-      <p>
-        <Link to="/tags">All tags</Link>
-      </p>
+      <div style={{ fontSize: `24px`, fontWeight: `bold`, textAlign: `center` }}>
+        {pageContext.tag} ({data.allMarkdownRemark.totalCount}件)
+      </div>
+      <SEO title="Tags posts" />
+      <Posts posts={posts} />
     </Layout>
-  );
+  )
 };
 
 export default Tags
@@ -44,15 +36,19 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
-          excerpt
+          excerpt(truncate: true)
           fields {
             slug
           }
           frontmatter {
-            date
+            date(formatString: "MMMM DD, YYYY")
             title
             description
+            categoryname
             tags
+            thumbnail {
+              base
+            }
           }
         }
       }

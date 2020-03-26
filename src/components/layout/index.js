@@ -10,7 +10,7 @@ const Layout = ({ location, title, children }) => {
   let intro
   let width = 28
 
-  if (location.pathname === rootPath || location.pathname.match(/category/)) {
+  if (location.pathname === rootPath || location.pathname.match(/tags/)) {
     intro = <Intro />
     width = 41.8
   }
