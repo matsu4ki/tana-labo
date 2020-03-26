@@ -1,0 +1,53 @@
+
+#intro {
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#job p {
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+#prof {
+  margin: 40px auto; 
+  padding: 5px;
+  width: 180px; 
+  font-size: 16px;
+  border-radius: 5px; 
+  background-color: dimgray;
+}
+#social {
+  display: flex;
+  justify-content: center;
+}
+#social > a > .gatsby-image-wrapper {
+  width: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 696px){
+  #intro {
+    top: 5%;
+  }
+  #job {
+    font-size: 10px;
+  }
+  #prof {
+    margin: 10px auto; 
+    padding: 2px 5px;
+    width: 140px; 
+    font-size: 10px;
+    border-radius: 5px; 
+    background-color: dimgray;
+  }
+  #social > a > .gatsby-image-wrapper {
+    width: 30px;
+    margin: 0 8px;
+  }
+}
+

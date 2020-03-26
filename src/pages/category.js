@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Posts from "../components/atom/posts"
 
-const BlogIndex = ({ data, location }) => {
+const CategoryIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.posts.edges
 
@@ -17,7 +17,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default CategoryIndex
 
 export const pageQuery = graphql`
   query {
@@ -28,6 +28,7 @@ export const pageQuery = graphql`
     }
     posts:allMarkdownRemark( 
       sort: { fields: [frontmatter___date], order: DESC } 
+      filter: {frontmatter: {categoryslug: {eq: "liberalarts"}}}
     ) {
       edges {
         node {
