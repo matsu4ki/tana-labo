@@ -34,3 +34,4 @@ git push -u origin master
 ■ [suzukalight.com](https://suzukalight.com/)  
 ■ [Crieit](https://crieit.net/tags/Gatsby)  
 ■ [Corylog](https://www.corylog.com/)  
+■ [キクナントカドットコム](https://kikunantoka.com/)  
