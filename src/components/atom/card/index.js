@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import Image from "../image"
 import Tags from "../tags"
+import kebabCase from 'lodash/kebabCase';
 
 import "./card.css"
 
@@ -23,9 +24,9 @@ class Card extends Component {
             <section>
               <Image filename={node.frontmatter.thumbnail.base} />
               <div style={{ padding: `0 10px 0 10px` }}>
-                <span className="card_category">
+                <Link to={`/category/${kebabCase(node.frontmatter.categoryname)}/`} style={{ boxShadow: `none`, color: `black` }} className="card_category">
                   {node.frontmatter.categoryname}
-                </span>
+                </Link>
                 <p className="title">{title}</p>
                 <div className="tag">
                   <Tags tags={node.frontmatter.tags} />
