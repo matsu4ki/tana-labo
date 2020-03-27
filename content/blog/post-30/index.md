@@ -102,10 +102,6 @@ plugins: [
 ]
 ```
 
-## Netlifyへのデプロイ
-
-（ 記載予定 ）
-
 ## 参考にさせて頂いたブログ
 
 ■ [Gatsby.jsの公式HP](https://www.gatsbyjs.org/)  
