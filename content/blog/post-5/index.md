@@ -35,7 +35,7 @@ thumbnail: post-5.png
 
 何だか秘密結社と言われると随分胡散臭い気もするが、どうも竹内神道は別に人を救う気は泣く、ただただ祈り、ただただ歴史を伝えていく(口伝)団体。
 
-https://www.youtube.com/watch?v=9uycqoY3WbE
+`youtube:https://www.youtube.com/embed/9uycqoY3WbE`
 
 由緒正しい家柄ですが、金が無いらしい。
 
@@ -104,7 +104,7 @@ https://www.youtube.com/watch?v=9uycqoY3WbE
 
 シュメール・メソポタミアや中国4000年の歴史も凄いけど、日本はもっと歴史ある国。
 
-https://www.youtube.com/watch?v=VSYEaJ5hnjs&t=1148s
+`youtube:https://www.youtube.com/embed/VSYEaJ5hnjs`
 
 +αの内容で日本が出来る迄（[参考リンク](https://www.kubota.co.jp/siryou/pr/urban/pdf/11/pdf/11_2_1.pdf)）
 
