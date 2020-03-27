@@ -10,7 +10,7 @@ const Tag = ({ tag }) => (
       marginRight: `10px`, 
       padding: `5px 10px`, 
       textDecoration: `none`, 
-      fontSize: `14px`,
+      fontSize: `12px`,
       color: `white`,
       backgroundColor: `lightpink`,
     }}>{tag}</div>

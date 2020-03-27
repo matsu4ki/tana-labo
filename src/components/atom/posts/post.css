@@ -1,0 +1,12 @@
+
+#post {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 696px){
+  #post {
+    display: flex;
+    justify-content: center;
+  }
+}
