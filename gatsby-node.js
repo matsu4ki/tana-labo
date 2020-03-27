@@ -5,6 +5,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const categoryTemplate = path.resolve(`./src/templates/category.js`)
   const tagTemplate = path.resolve(`./src/templates/tags.js`)
   const result = await graphql(
     `
@@ -20,9 +21,15 @@ exports.createPages = async ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                categoryname
                 tags
               }
             }
+          }
+        }
+        categorys: allMarkdownRemark(limit: 1000) {
+          group(field: frontmatter___categoryname) {
+            fieldValue
           }
         }
         tags: allMarkdownRemark(limit: 1000) {
@@ -50,6 +57,17 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
+      },
+    })
+  })
+
+  const categorys = result.data.categorys.group
+  categorys.forEach(category => {
+    createPage({
+      path: `/category/${_.kebabCase(category.fieldValue)}/`,
+      component: categoryTemplate,
+      context: {
+        category: category.fieldValue,
       },
     })
   })
