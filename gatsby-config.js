@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `TaNA LABO`,
+    siteUrl: `https://tana-labo.tokyo`,
     author: {
       name: `TaNA`,
       summary: `who lives and works in San Francisco building useful things.`,
@@ -27,6 +28,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#444`,
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -35,6 +43,13 @@ module.exports = {
             options: {
               maxWidth: 960,
             },
+          },
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -48,6 +63,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

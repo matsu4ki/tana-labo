@@ -11,47 +11,25 @@ thumbnail: post-30.png
 
 ![](./post-30.png)
 
-ブログ運営で最もポピュラーなやり方に**WordPress**の利用がある。
+ブログ運営で最もポピュラーな手段としてWordPressがある。
 
-WordPressは素晴らしいオープンソースだが、CMSが孕むセキュリティーの問題、コストに難がある点、表示速度の遅さ(インフラ知ってれば改善出来るけど)等、無料で使ってるのに不満を持っていた。
+WordPressは素晴らしいオープンソースだが、CMSが孕むセキュリティーの問題、コストに難がある点、表示速度の遅さ(インフラ知ってれば改善出来るけど)等、無料で使ってるくせに不満を持っていた。
 
-そんな背景もあって、今回は以前より話題になっていた静的サイトジェネレーターを使ってみた。<span style="color: crimson; font-weight: bold;">少し調べるだけで簡単に作れるし、簡単・便利・カッコいいの三拍子が揃っている事を実感。</span>
+そんな背景もあり、以前より話題になっていた静的サイトジェネレーターを使ってみたが <span style="color: crimson; font-weight: bold;">少し調べるだけで簡単に作れるし、簡単・便利・カッコいいの三拍子が揃っている事を実感。</span>
 
-Markdownで記事をサクサク書けるのは◎で、正直もうWordPressには戻れない（間違いない）
+Markdownで記事をサクサク書けるのも◎で、正直もうWordPressには戻れない。
 
+冒頭で簡単だと紹介したが、Gatsby.js自体がReactJSとGraphQLをベースに構築され、JavaScriptやReactJSの知識が求められるので、非エンジニアには非常にハードルが高い。
 
-## 求められる事前知識
-
-構築だけであれば、以下の数行を実行するだけで可能。
-
-```bash
-npm install -g gatsby-cli
-
-gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog
-cd gatsby-blog/
-gatsby develop
-gatsby clean
-```
-
-ただGatsby.js自体はReactJSとGraphQLをベースに構築されている。
-
-冒頭で簡単と書いたが、JavaScriptやReactJSの知識が必須なので、非エンジニアにはハードル高し。
-
-しかしGatsby.jsには色々便利なプラグインが用意されているので、そこさえクリア出来れば有用!!
-
-とは言え、CMSのように機能がデフォルト実装されている訳ではないので、自作する必要がある。
-
-今回は以下にブログを構築する上で参考になった記事をいくつか紹介。
-
+またCMSのような機能は実装されていない。なのでGatsby.jsで用意されている各種プラグインを活用し、自作する必要があるので、今回はブログ構築でやった対応、参考になった記事をいくつか紹介。
 
 ## gatsby-imageでの画像表示
 
-Gatsby.jsの初心者殺しと言われる最初の関門らしく、以下の記事参考になった。
+Gatsby.jsの初心者殺しと言われる最初の関門は以下の記事が参考になった。
 
 ■ [GatsbyJSのimageを使ってみよう@Crieit](https://crieit.net/posts/GatsbyJS-image)
 
 マークダウン上では楽に画像表示が可能だが、Gatsby.js上ではかなり癖がある模様。
-
 
 ## カテゴリとタグの実装
 
@@ -64,10 +42,69 @@ Markdown記述 → gatsby-node.jsの追記 → templates作成の順に作れば
 タグ検索さえ実装出来れば、カテゴリ検索もほぼ同様なので、簡単に実装出来ると思われる。
 
 
+## サイトマップ作成
+
+gatsby-config.jsにsiteUrlを設定することで、最低限のサイトマップが作成される。
+
+```js
+siteMetadata: {
+  siteUrl: `https://hogehoge.com`,
+},
+plugins: [`gatsby-plugin-sitemap`]
+```
+
+## Youtubeの埋め込み
+
+gatsby-config.jsにgatsby-remark-embed-youtubeを追加。
+
+```js
+{
+  resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: "gatsby-remark-embed-youtube",
+          options: {
+            width: 800,
+            height: 400
+          }
+        },
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
+          },
+        },
+      ],
+    },
+},
+```
+
+マークダウンファイルには以下のフォーマットで追記。
+
+```bash
+`youtube:https://www.youtube.com/embed/XXXXXXXXX`
+```
+
+## ローディングバー
+
+gatsby-config.jsにgatsby-plugin-nprogressを追加。
+
+```js
+plugins: [
+  {
+    resolve: `gatsby-plugin-nprogress`,
+    options: {
+      color: `#444`,
+      showSpinner: false,
+    },
+  },
+]
+```
+
 ## Netlifyへのデプロイ
 
 （ 記載予定 ）
-
 
 ## 参考にさせて頂いたブログ
 
