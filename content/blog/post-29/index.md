@@ -137,6 +137,7 @@ thumbnail: post-29.png
 ■ [REST APIの設計で消耗している感じたときのgRPC入門](https://qiita.com/disc99/items/cfca50a32240284578bb)  
 ■ [マイクロサービスバックエンドAPIのためのRESTとgRPC](https://www.slideshare.net/disc99_/apirestgrpc)  
 ■ [マイクロサービスにおけるWeb APIスキーマの管理 ─ GraphQL、gRPC、OpenAPIの特徴](https://employment.en-japan.com/engineerhub/entry/2019/08/22/103000#gRPC--%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E8%A8%80%E8%AA%9E%E3%81%AA%E3%82%89%E9%96%8B%E7%99%BA%E3%82%84%E9%80%9A%E4%BF%A1%E5%8A%B9%E7%8E%87%E3%81%8C%E8%89%AF%E3%81%84)  
+■ [マイクロサービス移行を阻むレガシーとの戦い方](https://www.atmarkit.co.jp/ait/articles/2003/03/news003.html)  
 ■ [おっさんがACIDとかBASEとかまとめておく](https://qiita.com/suziq99999/items/2e7037042b31a77b19c8)  
 ■ [「メタデータ」「NoSQL」「CAP定理」を理解する](https://www.atmarkit.co.jp/ait/articles/1703/01/news204_2.html)  
 ■ [「マイクロサービスに出遅れた」ところは、先人から何を学べるか](https://www.atmarkit.co.jp/ait/articles/1909/13/news012.html)  
