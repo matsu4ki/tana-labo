@@ -5,7 +5,7 @@ description: "昨今ではサーバレス技術の進化が目覚しく、従来
 pagetype: "category"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["AWS", "GAFA"]
+tags: ["AWS", "GAFA", "DX"]
 thumbnail: post-24.png
 ---
 

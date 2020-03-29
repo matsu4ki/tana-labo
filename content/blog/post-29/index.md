@@ -5,7 +5,7 @@ description: "テクノロジーの力で新しい価値創造のため、デジ
 pagetype: "category"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["AWS", "GAFA", "アーキテクチャ"]
+tags: ["AWS", "GAFA", "DX"]
 thumbnail: post-29.png
 ---
 

@@ -5,7 +5,7 @@ description: "クラウド技術の登場で、アプリケーションとイン
 pagetype: "category"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["AWS", "GAFA"]
+tags: ["AWS", "GAFA", "DX"]
 thumbnail: post-23.png
 ---
 
