@@ -5,7 +5,7 @@ description: "WordPressは素晴らしいオープンソースだが、CMSが孕
 pagetype: "category"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["JavaScript", "Gatsby.js", "Markdown"]
+tags: ["JavaScript", "Gatsby.js", "Firebase"]
 thumbnail: post-30.png
 ---
 
