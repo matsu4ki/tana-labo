@@ -27,6 +27,11 @@ git remote add origin https://github.com/machio77777/gatsby-blog.git
 git push -u origin master
 ```
 
+■ firebseの設定.
+```shell
+yarn add firebase-tools
+```
+
 ## :memo: Reference.
 
 ■ [Gatsby.js](https://www.gatsbyjs.org/)  
