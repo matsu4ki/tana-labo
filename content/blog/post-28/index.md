@@ -5,7 +5,7 @@ description: "Cookie自体は個人情報に当たらないが、SNS上にはユ
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["マーケティング", "個人情報", "Cookie"]
+tags: ["個人情報", "Cookie"]
 thumbnail: post-28.png
 ---
 
