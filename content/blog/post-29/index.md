@@ -129,6 +129,7 @@ thumbnail: post-29.png
 ❸ [OSSを活用した、マイクロサービスアーキテクチャの課題を解決する取り組みとは](https://codezine.jp/article/detail/10817)  
 ❹ [Kubernetes×AWSで複雑化したマイクロサービス基盤を改善](https://codezine.jp/article/detail/11863)  
 ❺ [Kubernetes on AWS/EKSベストプラクティス](https://speakerdeck.com/mumoshu/eksbesutopurakuteisu2019-dot-2-number-jawsdays)  
+❻ [gRPCでインターフェースを再整理してからサービスを分割─freeeの段階的なマイクロサービス戦略](https://employment.en-japan.com/engineerhub/entry/2020/03/30/103000)  
 
 **■ ドリーム・アーツ**  
 ❶ [マイクロサービス・コンテナに全面移行するにはどうすればいいか?](https://codezine.jp/article/detail/11415)  

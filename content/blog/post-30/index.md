@@ -5,7 +5,7 @@ description: "WordPressは素晴らしいオープンソースだが、CMSが孕
 pagetype: "category"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["Gatsby.js", "Markdown"]
+tags: ["JavaScript", "Gatsby.js", "Markdown"]
 thumbnail: post-30.png
 ---
 
@@ -94,6 +94,16 @@ plugins: [
     },
   },
 ]
+```
+
+## Firebaseへのデプロイ
+
+ローカル環境からFirebaseへのデプロイ手順。
+```shell
+yarn global add firebase-tools
+firebase login
+firebase init
+firebase deploy
 ```
 
 ## 参考にさせて頂いたブログ

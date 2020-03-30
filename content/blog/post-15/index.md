@@ -5,7 +5,7 @@ description: "正直本を数冊読んだくらいで解決するとは思えな
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["マーケティング", "ユダヤ人"]
+tags: ["BtoCマーケティング", "ユダヤ人"]
 thumbnail: post-15.png
 ---
 
