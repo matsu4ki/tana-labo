@@ -11,15 +11,15 @@ thumbnail: post-23.png
 
 ![](./post-23.png)
 
-日本で普通に生活していれば、GAFAMのサービスに全く触れない日はないが、昨今のシステム開発では、何かしらのクラウド環境(AWS / GCP / Azure)で開発するのが当たり前なので、特にエンジニアはクラウド知識の習熟からは逃れられず、むしろ普段から使い慣れている必要がある。
+日本で普通に生活していれば、GAFAMのサービスに全く触れない日はないが、昨今のシステム開発では、何かしらのクラウド環境(AWS / GCP / Azure)で開発するのが当たり前となっている。特にエンジニアはクラウド知識の習熟から逃れられず、普段から使い慣れていないとマズい。
 
-**クラウドベンダーが用意するサービスを活用し、クライアントにいかに利益をもたらすか？** を考えるために **AWS認定資格のアーキテクト-アソシエイト** を取得したが、実践経験が乏しいため、彼らが提唱するWell-Architectedやベストプラクティスを完全には理解出来ず (サービス多過ぎ問題)
+**クラウドベンダーが用意するサービスを活用し、クライアントにいかに利益をもたらすか？** を考えるために **AWS認定資格のアーキテクト-アソシエイト** を取得してみた。ただ実践経験が乏しいため、彼らが提唱するWell-Architectedやベストプラクティスを完全には理解出来ず (サービス多過ぎ問題)
 
 今回はそれを克服すべく、AWSの実践的な知識が網羅されたこちらを一読してみた。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202001281649171838?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15610238%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" rel="noopener noreferrer"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2676/9784822292676.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202001281649171838?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15610238%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" rel="noopener noreferrer">Amazon Web Services エンタープライズ基盤設計の基本</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow noopener noreferrer" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">堀内 康弘/三浦 美緒 日経BP 2018年10月05日    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202001281649171838?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15610238%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" rel="noopener noreferrer">楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4822292673/kanon123-22/" target="_blank" rel="noopener noreferrer">Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=Amazon%20Web%20Services%20%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%97%E3%83%A9%E3%82%A4%E3%82%BA%E5%9F%BA%E7%9B%A4%E8%A8%AD%E8%A8%88%E3%81%AE%E5%9F%BA%E6%9C%AC&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" rel="noopener noreferrer">Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
-メジャーなサービス(EC2 / RDS / S3)でのサービス構築から、疎結合化で使われるSQSやSNS、Lambdaなどが解説されており、実務レベルでも通用する内容が網羅。
+メジャーなサービス(EC2 / RDS / S3)でのサービス構築から、疎結合化で使われるSQSやSNS、サーバレス技術のLambdaなどが解説されており、実務レベルでも通用する内容が網羅されている。
 
 ## 本書のあらすじ
 
@@ -46,7 +46,7 @@ thumbnail: post-23.png
 
 **リージョン** はデータセンターが置かれている物理的な場所を表し、各リージョンでは **2つ以上** のAZを配置、また東京では **4つ** のAZを運用 **(ただし新規アカウントではこのうちの1つは利用不可)**
 
-<span class="mark">POINT</span>AZは独立した冗長性のある電源やネットワークを備え、障害が発生しても他のAZに影響を与えないよう考慮されており、また同一リージョンに属するAZは、高速なプライベートリンクで互いに接続されているので、AZ間の遅延が <span style="color: crimson; font-weight: bold;">2ミリ秒以下</span> となるよう設計されている。
+<span class="mark">POINT</span>AZは独立した冗長性のある電源やネットワークを備え、障害が発生しても他のAZに影響を与えないよう考慮されており、また同一リージョンに属するAZは、高速なプライベートリンクで互いに接続されているので、AZ間の遅延が <span style="color: crimson; font-weight: bold;">2ミリ秒以下</span> となるよう設計。
 
 この仕組みを利用することで、RDSの **マスタ / スレーブ構成** が構築可能！
 
@@ -79,7 +79,7 @@ thumbnail: post-23.png
 
 <span class="mark">POINT</span>**ブロックストレージ** は、データ更新時に1ブロックを変更するので **更新頻度が高く、低遅延が求められる用途** に適しているが、事前に容量を決める必要があるので、後から拡張しにくい。
 
-<span class="mark">POINT</span>**オブジェクトストレージ(S3等)** は、テキストファイルの1文字を変更するだけでも、ファイル全体の更新が必要なので、用途としては画像、動画のファイルやアプリケーションのログファイル等、更新頻度が低く、かつ運用で増え続けるファイルの保存が考えられる。
+<span class="mark">POINT</span>**オブジェクトストレージ(S3等)** は、テキストファイルの1文字を変更するだけでも、ファイル全体の更新が必要。なのでユースケースとしては画像、動画のファイルやアプリケーションのログファイル等、更新頻度が低く、かつ運用で増え続けるファイルの保存が挙げられる。
 
 ## 負荷分散とスケーリング
 

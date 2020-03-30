@@ -13,7 +13,7 @@ thumbnail: post-29.png
 
 テクノロジーの力で新しい価値創造するため、デジタルトランスフォーメーション(DX)の推進が叫ばれているが、その取り組みの一つに **マイクロサービスアーキテクチャ** が挙げられている。
 
-個人的な結論では、求められる技術領域も広く、多くの組織ではオーバーエンジニアリングであり、何となく流行っているからやってみよう♪的な軽い勢いで手を出すと痛い目にあってしまう。
+個人的な結論では、求められる技術領域も広く、多くの組織ではオーバーエンジニアリングであり、何となく流行っているからやってみよう♪的な軽い勢いで手を出すと痛い目にあうと思う。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202003271340390723?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13770161%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" rel="noopener noreferrer"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7607/9784873117607.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202003271340390723?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13770161%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" rel="noopener noreferrer">マイクロサービスアーキテクチャ</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow noopener noreferrer" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">SamNewman/佐藤直生 オライリー・ジャパン 2016年02月26日    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202003271340390723?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13770161%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" rel="noopener noreferrer">楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4873117607/kanon123-22/" target="_blank" rel="noopener noreferrer">Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" rel="noopener noreferrer">Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
@@ -26,12 +26,12 @@ thumbnail: post-29.png
 > 
 > そのためサービスを適切にモデル化(ドメイン領域の分割)、API定義を行い、デプロイの対処(クラウドやコンテナ技術)、テスト、監視などの知見も必要となる。
 
-文字だけでは全体像が理解しづらいので、以下記事のアーキテクチャ図を見ると良いと思う。
+文字だけでは全体像が理解しづらいので、以下記事のアーキテクチャ図を見ると良い。
 
 ■ [AWSにおけるマイクロサービス](https://d1.awsstatic.com/International/ja_JP/Whitepapers/MicroservicesOnAWS-V2_NT0829_SMO_MJ_EditSM_ProofSM_ProofNT.pdf)  
 ■ [コレ１枚でわかるマイクロサービス･アーキテクチャ](https://blogs.itmedia.co.jp/itsolutionjuku/2019/08/post_728.html)  
 
-一般的なWebシステムでは、全ての機能(ユーザーインタフェース / ビジネスロジック等)が一まとまりになったモノリス構成となっている。リリース時は問題ないけど、長い間改修を続けていると、保守管理の工数も膨らみ、インフラの面でもスケーリングが難しかったりする。
+一般的なWebシステムでは、全ての機能(ユーザーインタフェース / ビジネスロジック等)が一まとまりになったモノリス構成となっている。リリース時は問題ないけど、長い間改修を続けていると、保守管理の工数も膨らみ、インフラの面でもスケーリングが難しかったり。
 
 またビジネス環境が頻繁に変化している現代、従来のやり方では通用しなくなってきた。これらの課題を解決し、ビジネスをスケールさせるため、システム全体を互いに独立した機能部品に分割し、連結させて機能させるアーキテクチャの重要性が言われている。
 
@@ -55,19 +55,19 @@ thumbnail: post-29.png
 
 ## どんな知識・スキルが求められるのか!?
 
-マイクロサービスに限った話ではないが、当然ながらシステムに対するドメイン知識は必須となる。
+マイクロサービスに限った話ではないが、当然ながらシステムに対するドメイン知識が必須。
 
 また既存ドメインの適切な分割が求められ、その上で役立つのが <span style="color: crimson; font-weight: bold;">DDDの考え方</span> であると話す。
 
-ただ自分もエリック・エヴァンスのDDD本に目を通してみたが、自分の理解力も乏しく、一二度読んだくらいでは理解出来なかった。他の方に聞いても、いまいち分からんと ... 一部のシリコンバレーエンジニアも「DDDなんて知らん♪」と言う人までおり、この点は探り探りやるしかない模様。
+ただ自分もエリック・エヴァンスのDDD本に目を通してみたが、自分の理解力も乏しく、一度や二度読んだくらいでは理解出来なかった。他の方に聞いても、いまいち分からんと ... 一部のシリコンバレーエンジニアも「DDDなんて知らん♪」と言う人までおり、この点は探り探りやるしかないらしい。
 
 あとマイクロサービスの話が盛り上がる要因には <span style="color: crimson; font-weight: bold;">昨今のクラウド技術の発展</span> が大きいかなと思う。
 
 例えば過去は困難だったインフラのスケーリング対応、分割された機能群同士を連携させるSQSやSNS等の登場、コンテナ技術(Docker/ECS/EKS/k8s)の発達、バックエンドとフロントエンドを分割する手法(S3/CloudFront)、各種サーバレス技術(Lambda)などあり、これらに精通することが求められる。
 
-何かしらのクラウド技術(AWS/GCP/Azure)に精通したDevOps/SRE的なポジション、フロントエンドではReactやVueでのSPA開発経験、色々癖があると言われるサーバレス技術を使いこなせる人などは、採用のハードルが高い気がして、結構ムズイのでは!?と個人的に感じる（GAFAや有名テック企業ではやれるんだろうけど、一般的なWeb企業ではちょっと現実的ではない気が・・・）
+何かしらのクラウド技術(AWS/GCP/Azure)に精通したDevOps/SRE的なポジション、フロントエンドではReactやVueでのSPA開発経験、色々癖があると言われるサーバレス技術を使いこなせる人などは、採用のハードルが高い気がして厳しいのでは!?と個人的に感じる（GAFAや有名テック企業ではやれるんだろうけど、一般的なWeb企業ではちょっと現実的ではない気がする）
 
-またマイクロサービスでは<span style="color: crimson; font-weight: bold;">分散システムの落とし穴にも気を配る必要</span>があり、この記事が参考になる。
+またマイクロサービスでは<span style="color: crimson; font-weight: bold;">分散システムの落とし穴にも気を配る必要</span>もあり、この記事が参考になる。
 
 ■ [マイクロサービスを蝕む負の力学](https://ota42y.com/blog/2019/06/25/microservices_vector/)
 
