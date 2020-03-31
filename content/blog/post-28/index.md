@@ -81,9 +81,11 @@ Cookie自体は個人情報に当たらないが、SNS上にはユーザーア�
 
 トラッキングへの影響度は限定的と述べられているが、携わっているシステムでサードパーティCookieを活用したトラッキング処理が行われており、Chrome80対応ではもろに影響を受けてしまった（涙）
 
+内容は発行されたトラッキングコードで、複数サイトを管理するケースがあり、今までは同一ユーザーとしてCookie情報が維持されていたが、Chrome80対応でSameSite=NoneとSecure属性を指定し、Cookieをクロスサイトアクセスの対象であることを明示する必要に迫られた。
+
 ■ [新しいCookie設定 SameSite=None; Secure の準備を始めましょう](https://developers-jp.googleblog.com/2019/11/cookie-samesitenone-secure.html)  
 
-今回はGoogle Developerで示されている様に、Cookie設定ではSameSite=Noneを指定することで、Cookieをクロスサイトアクセスの対象とし、更にクロスサイトCookieにHTTPS接続のみでアクセス出来るようSecure属性も追加することになった（Chrome80以降では、SameSite=None; Secureの設定があるCookieのみが、外部アクセス可能となっている）
+Chrome80以降では、SameSite=None; Secureの設定があるCookieのみが、外部アクセス可能。
 
 ## MAツールにおけるCookie取得の仕組み
 
