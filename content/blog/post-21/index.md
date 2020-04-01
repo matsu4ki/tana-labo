@@ -3,6 +3,7 @@ title: 2030年の世界地図帳から見えてくる未来と各々が考える
 date: "2020-01-03T00:00:00.284Z"
 description: "世の中の流れが早いので、10年先を予知することも難しいけど、今後確実に来るであろう破壊的テクノロジーやSDGsの取り組みを知ることで、停滞や試行錯誤を突破し、個人がこの先、何を目的に生きれば良いのか？ それを考えるためキッカケにはなるかもしれない。"
 pagetype: "category"
+perma: "world-atlas-of-2030"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
 tags: ["AI", "格差・貧困", "落合陽一", "SDGs"]

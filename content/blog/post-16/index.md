@@ -3,6 +3,7 @@ title: NETFLIXの最強人事戦略 – 人事が思い悩む人事考課と報�
 date: "2019-10-10T00:00:00.284Z"
 description: "人事考課を元に報酬を連動させるのが一般的で、従来の制度では会社で働く期間に身につけたスキル価値が考慮されにくい。また市場水準を目安に給与レンジを決める方法では、トップパフォーマーの人材密度を高く保てないため、NETFLIXでは人事考課と報酬制度を分離する方式を採用されている。"
 pagetype: "category"
+perma: "netflix-strongest-hr-strategy"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["人事", "哲学", "組織"]

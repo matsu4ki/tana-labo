@@ -3,6 +3,7 @@ title: AIは人間の雇用の半分を奪う？ そんなAI時代に求めら�
 date: "2020-02-15T00:00:00.284Z"
 description: "人類にとってAIは敵なのか、味方なのか。AI x バイオテクノロジーの掛け合わせが、人類に及ぼす影響は計り知れないが、AI時代に求められるスキルの一つは基礎的読解力だと話す数学者がいる。"
 pagetype: "category"
+perma: "ai-takes-half-of-human-employment"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["AI", "シンギュラリティ", "新井紀子"]

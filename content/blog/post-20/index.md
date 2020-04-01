@@ -3,6 +3,7 @@ title: アマゾンが今日中にモノを届けられる秘密と日本企業�
 date: "2019-12-22T00:00:00.284Z"
 description: "アマゾンジャパンでSCM部門(サプライチェーン・マネジメント)のマネージャーとして、物流や倉庫オペレーションの管理、さらには多くの採用面接に携わった著者が語るアマゾンの真の強さの秘密。"
 pagetype: "category"
+perma: "amazon-secrets"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["GAFA", "物流"]

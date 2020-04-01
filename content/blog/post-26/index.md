@@ -3,6 +3,7 @@ title: みずほ銀行システム統合の苦闘19年史 レガシーシステ�
 date: "2020-03-09T00:00:00.284Z"
 description: "日本企業が抱える旧式の基幹業務（レガシーシステム）をそのまま使い続けた場合、今後日本は年間12兆円の経済損失を被るといわれているが、IT業界のサクラダファミリアと呼ばれたみずほ銀行システム統合はその代表例。みずほ銀行システムは何故障害を起こしたのか、そして何故統合までに19年もの長い月日を要したのか"
 pagetype: "category"
+perma: "mizuho-bank-system-integration"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["金融", "DX"]

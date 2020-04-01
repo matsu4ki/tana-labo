@@ -3,6 +3,7 @@ title: 感情の劣化が激しい多様化した社会で個人がコミット�
 date: "2019-10-22T00:00:00.284Z"
 description: "これからは必ずAI時代になるので、巷ではAIに仕事を奪われる不安に苛まれたり、人知を超えたAIが人類を滅亡させるなど、何かと話題に事欠かない訳だが、進化したテクノロジーが人類を滅亡させる話と言えば、幼少期に何度も観たターミネーターが思い浮かんだ。"
 pagetype: "category"
+perma: "creating-home-for-individuals-to-commit"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
 tags: ["哲学", "宮台真司", "日本", "社会"]

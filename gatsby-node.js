@@ -23,6 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 title
                 categoryname
                 tags
+                perma
               }
             }
           }
