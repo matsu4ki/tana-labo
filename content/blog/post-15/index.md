@@ -3,6 +3,7 @@ title: ユダヤ人の徹底したマーケティング術と歴史に裏打ち�
 date: "2019-09-27T00:00:00.284Z"
 description: "正直本を数冊読んだくらいで解決するとは思えないけど、代替可能な凡人が限られた資産（主に時間）を何に配分して、どうリターンを得るのか…それを考える上で、ユダヤ人の商売哲学に触れる事は良いキッカケになるかもとの淡い期待でコチラを手に取ってみた。"
 pagetype: "category"
+perma: "jewish-marketing-techniques"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["BtoCマーケティング", "ユダヤ人"]

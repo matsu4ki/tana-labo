@@ -3,6 +3,7 @@ title: 人は生きるだけで社会貢献!? 自分の人生をかけて社会�
 date: "2018-06-22T00:00:00.284Z"
 description: "投資とは何か!? お金を考えることは人生を考えることに繋がる。また投資と聞けば株式投資やFXなど金銭的なイメージばかりが膨らむだが、本当は時間というエネルギーを使って明るい未来を創ることである。"
 pagetype: "category"
+perma: "the-meaning-of-investing"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
 tags: ["投資", "社会"]

@@ -3,6 +3,7 @@ title: 日本人が今こそ振り返るべき東洋的な思想と世界を変�
 date: "2019-02-07T00:00:00.284Z"
 description: "今までタカアンドトシの「欧米か!!」のツッコミにも、何も違和感を感じなかったが、まず本書ではこれから日本再興のために、自分達は何が得意なのか、そして何が向いているのかを知るため、自国の歴史(日本のルーツや東洋的な考え方)を振り返る必要がある。"
 pagetype: "category"
+perma: "technology-that-changes-the-world"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
 tags: ["哲学", "日本", "苫米地英人", "落合陽一"]

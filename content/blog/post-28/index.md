@@ -3,6 +3,7 @@ title: 個人情報保護法改正で見直されるCookie規制とWebトラッ�
 date: "2020-03-24T00:00:00.284Z"
 description: "Cookie自体は個人情報に当たらないが、SNS上にはユーザーアカウントが存在しているので、閲覧履歴がサードパーティCookieでSNS経由されると、得られた閲覧情報から個人に紐付け出来る事がある。"
 pagetype: "category"
+perma: "revision-of-personal-information-protection-law"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["個人情報", "Cookie"]

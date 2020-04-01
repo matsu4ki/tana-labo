@@ -3,6 +3,7 @@ title: 古事記に暗号化された宇宙創造と日本の歴史を紐解く�
 date: "2019-01-13T00:00:00.284Z"
 description: "古事記にはどのような暗号が隠されていたのか!? 第73世武内宿禰として有名な竹内睦泰氏が書かれた「古事記と宇宙」。第74世が決まっていない今、門外不出と言われる帝王日嗣の一部を話せる範囲で語られている。"
 pagetype: "category"
+perma: "orthodox-takeuchi-document"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
 tags: ["日本", "歴史", "神話", "竹内文書"]

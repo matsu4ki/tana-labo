@@ -3,6 +3,7 @@ title: AWSエンタープライズ基盤設計の基本 より実践的なノウ
 date: "2020-01-28T00:00:00.284Z"
 description: "クラウド技術の登場で、アプリケーションとインフラの境界が無くなり出し、どんなポジションでも最低限のクラウド技術が重要な昨今。クラウド業界をリードしているアマゾンのAWSを学ぶことは、どのレイヤーの技術者にも求められている。"
 pagetype: "category"
+perma: "aws-basics"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["AWS", "GAFA", "DX"]

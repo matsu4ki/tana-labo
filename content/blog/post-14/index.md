@@ -3,6 +3,7 @@ title: 次世代テクノロジー5Gの未来と米中覇権争いで見え隠�
 date: "2019-09-21T00:00:00.284Z"
 description: "AI・IoT・ブロックチェーン・仮想現実など、様々な次世代テクノロジーがあるが、中でも2018年ファーウェイ事件をキッカケによく耳にする 5G って、そんなに凄いテクノロジーなの?"
 pagetype: "category"
+perma: "future-of-next-generation-technology-5G"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["5G", "深田萌絵"]

@@ -3,6 +3,7 @@ title: グローバル資本主義とコモディティ化 個人レベルで考
 date: "2019-09-16T00:00:00.284Z"
 description: "資本主義の限界を述べる本には、納得する点も多々あるが、価値主義や評価経済が資本主義にとって替わるとは到底思えず、グローバル資本主義は強くなると思わざるをえない現代。"
 pagetype: "category"
+perma: "global-capitalism-and-commodification"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["瀧本哲史", "資本主義"]

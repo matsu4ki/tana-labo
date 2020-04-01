@@ -3,6 +3,7 @@ title: ハンナ・アーレントから考える悪の本質と全体主義が�
 date: "2019-11-10T00:00:00.284Z"
 description: "どうやら今の時代は全体主義傾向が拡大した時代と重なるらしく、ハンナ・アーレントの本が読み返されたり、映画がブームになったり、そんな中でアーレントの 全体主義の起源 と エルサレムのアイヒマン は、全体主義や悪の本質を考える上で重要な著書。"
 pagetype: "category"
+perma: "the-nature-of-evil-and-totalitarianism"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
 tags: ["哲学", "歴史", "悪"]

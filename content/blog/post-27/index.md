@@ -3,6 +3,7 @@ title: BtoBマーケティングの歴史とナーチャリング活動を自動
 date: "2020-03-23T00:00:00.284Z"
 description: "マーケティングと言っても色んな領域があるんだろうけど、最近縁あって、BtoBマーケティング業界に携わる機会に恵まれた。業界では有名な方から、マーケティング業界の歴史的背景、日本と海外のマーケティング事情の違い、MAツールの話など多岐に渡る内容を聞いてみると、インターネットの登場によって、BtoBマーケティングも大きく変化していることがよく分かった。"
 pagetype: "category"
+perma: "history-of-btob-marketing"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["BtoBマーケティング", "MA"]

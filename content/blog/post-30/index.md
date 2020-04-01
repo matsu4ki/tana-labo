@@ -3,6 +3,7 @@ title: Reactベース静的サイトジェネレーターGatsby.jsで役立つ�
 date: "2020-03-28T00:00:00.284Z"
 description: "WordPressは素晴らしいオープンソースだが、CMSが孕むセキュリティーの問題、コストに難がある点、表示速度の遅さ(インフラ知ってれば改善出来るけど)等、無料で使ってるのに不満を持っていた。そんな背景もあって、今回は以前より話題になっていた静的サイトジェネレーターを使ってみた。少し調べるだけで簡単に作れるし、簡単・便利・カッコいいの三拍子が揃っている事を実感。"
 pagetype: "category"
+perma: gatsby-blog
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["JavaScript", "Gatsby.js", "Firebase"]
