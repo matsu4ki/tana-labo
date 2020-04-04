@@ -140,3 +140,4 @@ Chrome80以降では、SameSite=None; Secureの設定があるCookieのみが、
 ■ [個人情報保護委、“リクナビの内定辞退率”利用企業に行政指導　トヨタ、京セラなど35社](https://www.itmedia.co.jp/news/articles/1912/04/news155.html)  
 ■ [サードパーティクッキーって何だっけ？ 今さら聞けないHTTP Cookieのキホン](https://webtan.impress.co.jp/e/2017/10/03/27016)  
 ■ [Googleの「 プライバシーサンドボックス 」とは？：Cookieの代わりとされる5つのAPI](https://digiday.jp/platforms/wtf-googles-privacy-sandbox/)  
+■ [3rd-party cookieのない2年後のアドテックに向けた動きまとめ　各陣営紹介編](https://note.com/martech/n/n0943251e38f4)  
