@@ -3,7 +3,7 @@ title: MAツールにおけるトラッキングの仕組みと個人とCookie�
 date: "2020-04-05T00:00:00.284Z"
 description: "BtoBマーケティングの目的である商談の創出では、まず展示会等で集めた名刺情報をMAツールでデジタル化。その後にお礼メールやフォーム登録で個人とCookieを紐づけてトラッキング、ナーチャリング活動後に営業に引き渡し、SFAやCRMで案件管理するのが一般的な流れとなる。"
 pagetype: "category"
-perma: "marketing-kpi"
+perma: "ma"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["BtoBマーケティング", "MA"]

@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "microservices-architecture"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["AWS", "GAFA", "DX"]
+tags: ["AWS", "GAFA", "DX", "マイクロサービス"]
 thumbnail: post-29.png
 ---
 
@@ -41,13 +41,13 @@ thumbnail: post-29.png
 ちなみにオライリーの書籍では、マイクロサービスのメリットを以下のように言っている。
 
 <div class="blackboard-box">
-<p>1. 技術特異性 (サービス毎に適した技術が利用可能)</p>
-<p>2. 回復性 (障害部分のみ切り離し可能)</p>
-<p>3. スケーリング (高負荷部分のみサーバー増強可能)</p>
-<p>4. デプロイの容易性 (デプロイ時間短縮)</p>
-<p>5. 組織面の一致 (小規模チームによる生産性向上)</p>
-<p>6. 合成可能性 (機能の再利用)</p>
-<p>7. 交換可能にする最適化 (小規模なので必要に応じて書き換え可能)</p>
+<p>①. 技術特異性 (サービス毎に適した技術が利用可能)</p>
+<p>②. 回復性 (障害部分のみ切り離し可能)</p>
+<p>③. スケーリング (高負荷部分のみサーバー増強可能)</p>
+<p>④. デプロイの容易性 (デプロイ時間短縮)</p>
+<p>⑤. 組織面の一致 (小規模チームによる生産性向上)</p>
+<p>⑥. 合成可能性 (機能の再利用)</p>
+<p>⑦. 交換可能にする最適化 (小規模なので必要に応じて書き換え可能)</p>
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
@@ -68,7 +68,34 @@ thumbnail: post-29.png
 
 何かしらのクラウド技術(AWS/GCP/Azure)に精通したDevOps/SRE的なポジション、フロントエンドではReactやVueでのSPA開発経験、色々癖があると言われるサーバレス技術を使いこなせる人などは、採用のハードルが高い気がして厳しいのでは!?と個人的に感じる（GAFAや有名テック企業ではやれるんだろうけど、一般的なWeb企業ではちょっと現実的ではない気がする）
 
-またマイクロサービスでは<span style="color: crimson; font-weight: bold;">分散システムの落とし穴にも気を配る必要</span>もあり、この記事が参考になる。
+## サービス分割の方法
+
+ちなみに書籍(マイクロサービスパターン)では、モノリスなドメインの分割方法を2つ紹介している。
+
+<span style="color: crimson; font-weight: bold;">Decompose by buisiness capability</span> では、業務に対応させてサービスを定義する方法。
+
+ただ主要なサービスの一つ一つを他サービスと連携させ過ぎると、プロセス間通信が過度になり、非効率になるケースもあるため、場合によってはサービスを結合する判断も必要。
+
+<span style="color: crimson; font-weight: bold;">Decompose by sub-domain</span> では、ドメイン駆動設計に基づく分割方法。
+
+正直この本を読んだくらいでは、理解力の乏しい私には、やっぱ理解が出来なかったけど...
+
+<div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004051411239735?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16239274%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8583/9784295008583.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004051411239735?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16239274%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >マイクロサービスパターン</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">クリス・リチャードソン/長尾高弘 インプレス 2020年03月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004051411239735?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16239274%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295008583/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
+
+## マイクロサービスの欠点
+
+マイクロサービスでは主に以下のような欠点が挙げられる。
+
+<div class="blackboard-box">
+<p>①. サービスの適切な分割方法を見つけるのが難しい.</p>
+<p>②. 分散システムは複雑であり、開発 / テスト / デプロイが難しくなる.</p>
+<p>③. 複数のサービスにまたがって使われる機能のデプロイには綿密な調整が必要.</p>
+<p>④. いつマイクロサービスアーキテクチャを採用すべきかの判断が難しい.</p>
+<div class="chalk1"></div>
+<div class="chalk2"></div>
+</div>
+
+マイクロサービスでは<span style="color: crimson; font-weight: bold;">分散システムの落とし穴にも気を配る必要</span>もあり、こちらの記事が参考になる。
 
 ■ [マイクロサービスを蝕む負の力学](https://ota42y.com/blog/2019/06/25/microservices_vector/)
 
@@ -79,7 +106,6 @@ thumbnail: post-29.png
 やらない理由ばかり並べても仕方ないので、仮にやる場合はどうすれば良いか調べてみた。
 
 色んなテック企業が取り組まれているが、最初の取っ掛かりとして、以下事例が参考になると思う。
-
 
 ■ [ドメイン駆動設計パターンを使用してモノリスからマイクロサービスへ@Microsoft](https://docs.microsoft.com/ja-jp/azure/architecture/microservices/migrate-monolith)  
 ■ [マイクロサービス化デザインパターン@Graat](https://www.slideshare.net/yusuke/awsdevday-tokyo-2018)  

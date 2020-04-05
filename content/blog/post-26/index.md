@@ -44,10 +44,16 @@ thumbnail: post-26.png
 
 **鍵は疎結合（マイクロサービス）** — ちなみにこの話は基幹業務に限ったことではなく、昨今のシステム開発では、より一層のスピード感が求められているので、モダンな最新技術（クラウド/コンテナ）の活用により、疎結合を実現することが急務だと言われている。
 
-■ [マイクロサービス、SOA、API：味方か敵か](https://www.ibm.com/developerworks/jp/websphere/library/techarticles/soa_microservices_architecture/index.html)  
-■ [マイクロサービスのメリットをざっくり言うと「変化に対応しやすい」こと](https://knowledge.sakura.ad.jp/3377/)  
+||  SOA  |  マイクロサービス   |
+| ---- | ---- | ---- |
+|  サービス間通信  |  スマードパイプ<br/>(SOAPなど重量級のESB利用)  |  ダムパイプ<br/>(REST/gRPCなど軽量プロトコル)  |
+|  データ  |  グローバルデータモデル<br/>共有データベース  |  サービスごとのデータモデル  |
+|  典型的なサービス  |  比較的大きなモノリスアプリケーション  |  比較的小さなサービス  |
 
 SOAは銀行システムなど大金を使える大規模開発でない限りは採用されないので、実務経験を積む機会も少なく、また情報系と勘定系では作りも全然違うだろうし、勘定系のSOAがどう実現されているのかは未知数（一応本書ではSOA採用で、従来コストの30%を削減出来ると言っている）
+
+■ [マイクロサービス、SOA、API：味方か敵か](https://www.ibm.com/developerworks/jp/websphere/library/techarticles/soa_microservices_architecture/index.html)  
+■ [マイクロサービスのメリットをざっくり言うと「変化に対応しやすい」こと](https://knowledge.sakura.ad.jp/3377/)  
 
 ## 主要ベンダーIBMと富士通の争い
 

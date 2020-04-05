@@ -8,7 +8,7 @@ const Tag = ({ tag }) => (
       display: `inline`,
       flexWrap: `wrap`, 
       marginRight: `10px`, 
-      padding: `5px 10px`, 
+      padding: `5px 7px`, 
       textDecoration: `none`, 
       fontSize: `12px`,
       color: `white`,
