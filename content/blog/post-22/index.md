@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "basic-knowledge-of-suicide-prevention"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
-tags: ["格差・貧困", "死", "社会"]
+tags: ["格差・貧困", "自殺", "社会"]
 thumbnail: post-22.png
 ---
 
