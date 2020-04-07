@@ -184,3 +184,4 @@ thumbnail: post-29.png
 ■ [AWSはなぜ、ECSがあるのにKubernetesのサービスを始めたのか、コックロフト氏に聞いた](https://www.atmarkit.co.jp/ait/articles/1806/11/news029.html)  
 ■ [コンテナーとは?Kubernetesとは?導入や運用、ユースケースを解説](https://codezine.jp/article/detail/11336)  
 ■ [今さら人に聞けないKubernetesとは?](https://qiita.com/MahoTakara/items/85096f8b2632c802ab22)  
+■ [Microservices Patterns を読んで(1)](https://kencharos.hatenablog.com/entry/2019/02/24/233148)  
