@@ -11,7 +11,7 @@ class Intro extends Component {
         backgroundColor: `darkgray`,
         margin: `0 auto 30px`,
         position: `relative`,
-        maxWidth: `1325px`
+        maxWidth: `1500px`
       }}>
         <Image filename={`intro.png`} />
         <div id="intro">
