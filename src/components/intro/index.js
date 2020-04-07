@@ -9,8 +9,9 @@ class Intro extends Component {
       <div style={{
         textAlign: `center`,
         backgroundColor: `darkgray`,
-        marginBottom: `30px`,
+        margin: `0 auto 30px`,
         position: `relative`,
+        maxWidth: `1325px`
       }}>
         <Image filename={`intro.png`} />
         <div id="intro">

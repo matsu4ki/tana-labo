@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     const title = this.props.title
     return (
-      <div style={{ textAlign: `center`, backgroundColor: `steelblue` }}>
+      <div style={{ textAlign: `center`, backgroundColor: `steelblue`, margin: `0 auto` }}>
         <Link to={`/`} style={{ boxShadow: `none`, color: `white`, fontSize: `35px`, marginRight: `auto` }}>
           {title}
         </Link>
