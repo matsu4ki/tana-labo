@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "serverless-architecture"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["AWS", "GAFA", "DX"]
+tags: ["AWS", "GAFA"]
 thumbnail: post-24.png
 ---
 

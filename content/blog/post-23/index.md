@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "aws-basics"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["AWS", "GAFA", "DX"]
+tags: ["AWS", "GAFA"]
 thumbnail: post-23.png
 ---
 
