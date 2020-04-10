@@ -88,23 +88,15 @@ Cookie自体は個人情報に当たらないが、SNS上にはユーザーア�
 
 Chrome80以降では、SameSite=None; Secureの設定があるCookieのみが、外部アクセス可能。
 
-## MAツールにおけるCookie取得の仕組み
+## _gac Cookieの仕組み
 
-多くのMAで、Webサイトにアクセスしたユーザーの行動を把握するためにCookieを利用している。
+サードパーティCookieにどう対処すれば良いのか？
 
-見込み顧客(メールアドレス)とCookieを紐付ける方法には以下が挙げられる。
+SafariへのITP導入など、サードパーティCookieの問題は以前から話題となっているが、一例としてGoogleは独自に_gac Cookieを使うことで一早く対処していたことを知った。
 
-<div class="blackboard-box">
-<p>■ 展示会で獲得した見込み客</p>
-<p>展示会後にお礼メールを送ることでメールアドレスと紐付ける(リンクを踏んでもらう)</p>
-<br/>
-<p>■ WEBから獲得した見込み客</p>
-<p>メルマガ登録や資料DLのフォーム登録をしてもらい紐付ける.</p>
-<div class="chalk1"></div>
-<div class="chalk2"></div>
-</div>
+AdWordsとGoogleアナリティクスをリンクさせ、自動タグ設定を有効にしておけば、広告のURLにURLにGLINKが付与される。このGLINKを含む値情報を_gac Cookieに書き込むことで、広告のクリックをファーストパーティCookieとして保存するすることでITPを回避(イタチごっこだなw)
 
-展示会で獲得した見込み客がメールをクリックしなくても、フォーム登録してくれれば紐付け可能。
+<div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3205/9784295003205.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >ネット広告運用“打ち手”大全</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">寳洋平/辻井良太 インプレス 2018年04月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295003204/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%8D%E3%83%83%E3%83%88%E5%BA%83%E5%91%8A%E9%81%8B%E7%94%A8%E2%80%9C%E6%89%93%E3%81%A1%E6%89%8B%E2%80%9D%E5%A4%A7%E5%85%A8&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
 ## GDPRとCCPAの存在
 
