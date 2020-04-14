@@ -16,6 +16,8 @@ WordPress自体は大変有用なオープンソースだと思うけど、CMS�
 
 そんな背景もあって、以前より話題となっていた静的サイトジェネレーターのGatsby.jsを使ってみたが <span style="color: crimson; font-weight: bold;">プラグインも豊富で「簡単・便利・カッコいい」の三拍子が揃っているし、何よりMarkdownでサクサク書けて、CMSより爆速で表示されることを実感できた。</span>
 
+![](./post-30-1.png)
+
 Gatsby.js自体がReactとGraphQLをベースに構築されているので、当然JavaScriptやReactの知識や、yarnでのモジュール管理が求められる。ただプラグインは豊富で、機能拡張は簡単に出来るので、構築する上で役立ったプラグインや参考記事を紹介。
 
 ## gatsby-imageでの画像表示
