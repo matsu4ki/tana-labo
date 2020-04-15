@@ -16,9 +16,9 @@ thumbnail: post-35.png
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004121959571623?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11146351%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1963/9784798121963.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004121959571623?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11146351%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >エリック・エヴァンスのドメイン駆動設計</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">エリック・エヴァンス/今関剛 翔泳社 2011年04月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004121959571623?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11146351%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4798121967/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%82%A8%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B9%E3%81%AE%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
-あれから数年コードを書き続けたけど、自身の中で指針となるコードの書き方も定まっておらず、現場毎に異なる開発ルールに翻弄されている気がして、再度DDDへ入門することになった。しかし数年コードを書き続けたとて、エリック・エヴァンス本は相変わらず敷居が高い。
+あれから数年コードを書き続けたけど、自身の中で指針となるコードの書き方も定まっておらず、現場毎に異なる開発ルールに翻弄されている気がして、再度DDDへ入門することになった。しかし数年コードを書き続けたとしても、エリック・エヴァンス本は相変わらず敷居が高い。
 
-なのでこちらの本読んでみた。一読した感想はとにかく理解しやすく**「ちゃんとオブジェクト指向で開発しよう♪」**との印象。本記事のタイトルどおり、DDD挫折した私にも分かりやすい良書だと思う。
+なのでこちらの本読んでみた。一読した感想はとにかく理解しやすく**「ちゃんとオブジェクト指向で開発しよう♪」**との印象を受けた。記事タイトルどおり、DDD挫折した私にも分かりやすい良書。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004111104577927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16167672%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0727/9784798150727.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004111104577927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16167672%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >ドメイン駆動設計入門 ボトムアップでわかる！ドメイン駆動設計の基本</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">成瀬 允宣 翔泳社 2020年02月13日    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004111104577927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16167672%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/479815072X/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E5%85%A5%E9%96%80%20%E3%83%9C%E3%83%88%E3%83%A0%E3%82%A2%E3%83%83%E3%83%97%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E3%81%AE%E5%9F%BA%E6%9C%AC&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
@@ -85,17 +85,15 @@ class LastName
 }
 ```
 
-今まで関わった案件で、姓名を分けて、値オブジェクトで定義した現場は無かったが、確かにプリミティブ型よりもオブジェクトのルールが明確化され、不正な値の混入も防げる。
+今まで関わった案件で、姓名を分けて、値オブジェクトで定義した現場は無かったかも。プリミティブ型よりもオブジェクトのルールが明確になったし、不正な値の混入も防げる。
 
-また値オブジェクトは <span style="color: crimson; font-weight: bold;">ただのデータ構造体ではなく、ふるまいも定義でき、自身のルールを語るドメインオブジェクト</span> となるので、ロジックの散在が改善され、可読性の向上が見込める。
+また値オブジェクトは <span style="color: crimson; font-weight: bold;">ただのデータ構造体ではなく、ふるまいも定義可能で、自身のルールを語るドメインオブジェクト</span> になり、ロジックの散在が改善されて可読性の向上が見込める。
 
-もう一つのドメインオブジェクトとして <span style="color: crimson; font-weight: bold;">エンティティ</span> が紹介されているが、値オブジェクトとの違いは、以下リンクが具体例を挙げて説明されていたので一読して理解が深まった。
+もう一つのドメインオブジェクトで <span style="color: crimson; font-weight: bold;">エンティティ</span> が紹介されているが、値オブジェクトとの違いが紛らわしく、以下のブログが具体例を挙げて説明されていたので理解が深まった。本書でも同一性で識別されるか否か、またはライフサイクルが存在するか否かを判断基準にしている。
 
 ■ [DDD基礎解説：Entity、ValueObjectってなんなんだ](https://little-hands.hatenablog.com/entry/2018/12/09/entity-value-object)  
 
-本書でも同一性で識別されるか否か、またはライフサイクルが存在するか否かを判断基準としている。
-
-最後に値オブジェクトやエンティティに記述すると不自然に見えるので、これらのふるまいを定義するものとして <span style="color: crimson; font-weight: bold;">ドメインサービス</span> がある。**不自然なふるまい** とは、例えば以下のようなコード。
+最後に値オブジェクトやエンティティに記述すると不自然に見えるので、これらのふるまいを定義するものに <span style="color: crimson; font-weight: bold;">ドメインサービス</span> がある。**不自然なふるまい** とは、例えば以下のようなコード。
 
 ```Csharp
 # エンティティ
@@ -136,7 +134,83 @@ class UserService
 
 ## アプリケーションを実現するためのパターン
 
-（追記予定）
+アプリケーションを表現するパターンの一つが <span style="color: crimson; font-weight: bold;">リポジトリ</span> で、データを永続化（インスタンスを保存して復元出来るようにすること）して再構築する処理を抽象的に扱うオブジェクト。
+
+```Csharp
+# リポジトリを利用したユーザ作成処理
+class Program
+{
+  private IUserRepository userRepository;
+  public Program(IUserRepository userRepository)
+  {
+    this.userRepository = userRepository;
+  }
+  public void CreateUser(string userName)
+  {
+    var user = new User(new UserName(userName));
+    var userService = new UserService(userRepository);
+    if (userService.Exists(user)) {
+      throw new Exception("既に存在します");
+    }
+    userRepository.Save(user);
+  }
+}
+```
+
+リポジトリの役割はあくまでもオブジェクトの永続化なので、ユーザの重複確認のようなドメインルールに近い内容の実装は好ましくないので、そういった処理はドメインサービスでの実装を推奨。
+
+```Csharp
+public interface IUserRepository
+{
+  User Find(UserId id);
+
+  # ドメインサービスに定義すべき内容
+  bool Exists(User user);
+
+  # 特定項目のCRUDはNG（多くのCRUD定義が乱立する結果となる）
+  void updateName(UserId id, UserName name);
+  # オブジェクトが保持する項目の変更はオブジェクト自身に依頼
+  void Save(User user);
+}
+```
+
+Userの識別子であるUserIdでの検索メソッドはリポジトリでの定義が望まいとのことで、リポジトリへの定義は単純なCRUD操作に限られるイメージだろうか。
+
+不自然さを解決するサービスに <span style="color: crimson; font-weight: bold;">アプリケーションサービス</span> があり、ドメインオブジェクトのふるまいを呼び出す役目を担っている。ドメインオブジェクトの公開は大きな危険性があるので、本書では公開しないことを推奨している（代用としてDTOの活用だったり、コマンドオブジェクトがある）
+
+```Csharp
+public class UserApplicationService
+{
+  private readonly IUserRepository userRepository;
+  private readonly UserService userService;
+
+  public UserApplicationService(IUserRepository userRepository, UserService userService)
+  {
+    this.userRepository = userRepository;
+    this.userService = userService;
+  }
+
+  public void Register(string name)
+  {
+    var user = new User(new UserName(name));
+
+    # NGパターン
+    var duplicatedUser = userRepository.Find(mailAddress);
+    if (duplicatedUser != null) {
+      throw new Exception(mailAddress);
+    }
+    # OKパターン（ドメインサービスを利用してユーザの重複チェックを実施）
+    if (userService.Exists(user)) {
+      throw new Exception("既に存在しています");
+    }
+    userRepository.Save(user)
+  }
+}
+```
+
+アプリケーションサービスは、あくまでもドメインオブジェクトのタスク調整に徹し、ドメインルールを記述させないことが重要（ルールはドメイン側に寄せることが大切）
+
+
 
 ## 知識を表現する、より発展的なパターン
 
