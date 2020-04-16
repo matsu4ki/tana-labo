@@ -16,7 +16,7 @@ thumbnail: post-35.png
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004121959571623?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11146351%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1963/9784798121963.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004121959571623?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11146351%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >エリック・エヴァンスのドメイン駆動設計</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">エリック・エヴァンス/今関剛 翔泳社 2011年04月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004121959571623?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11146351%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4798121967/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%82%A8%E3%83%AA%E3%83%83%E3%82%AF%E3%83%BB%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B9%E3%81%AE%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
-あれから数年コードを書き続けたけど、自身の中で指針となるコードの書き方も定まっておらず、現場毎に異なる開発ルールに翻弄されている気がして、再度DDDへ入門することになった。しかし数年コードを書き続けたとしても、エリック・エヴァンス本は相変わらず敷居が高い。
+あれから数年コードを書き続けたけど、自身の中で指針となるコードの書き方も定まっておらず、現場毎に異なる開発ルールに翻弄されている気がしたので、再度DDDへ入門することに決めた。しかし数年コードを書き続けたとしても、エリック・エヴァンス本は相変わらず敷居が高い。
 
 なのでこちらの本読んでみた。一読した感想はとにかく理解しやすく**「ちゃんとオブジェクト指向で開発しよう♪」**との印象を受けた。記事タイトルどおり、DDD挫折した私にも分かりやすい良書。
 
@@ -46,13 +46,11 @@ thumbnail: post-35.png
 <div class="chalk2"></div>
 </div>
 
-ドメイン駆動設計のパターンだけ取り入れる手法は **軽量DDD** と呼ばれるが、重要なことはドメインの本質と向き合うことで、パターンはあくまでサポート役であることを念押しされている。
+ドメイン駆動設計のパターンだけを取り入れる手法は **軽量DDD** と呼ばれるが <span style="color: crimson; font-weight: bold;">重要なことはドメインの本質と向き合うことで、パターンはあくまでサポート役であること</span> を念押しされている。
 
 ## 知識を表現するパターン
 
-ドメイン知識をコードへ落とし込む基本パターンとして挙げられる <span style="color: crimson; font-weight: bold;">値オブジェクト</span> は、ドメインオブジェクトの一つ。システム固有の値を定義する役割を担う。
-
-プリミティブ型だけでも実装可能だが、汎用的で表現力に乏しいプログラムになる。値オブジェクトで定義すれば、クラスにルールが付与されるので、コードをドキュメントとして機能させることが可能。
+ドメイン知識をコードへ落とし込む基本パターンとして挙げられる <span style="color: crimson; font-weight: bold;">値オブジェクト</span> は、ドメインオブジェクトの一つで、システム固有の値を定義する役割を担っている（FirstNameとLastNameが該当）
 
 ```Csharp
 class FullName : IEquatable<FullName>
@@ -85,15 +83,15 @@ class LastName
 }
 ```
 
-今まで関わった案件で、姓名を分けて、値オブジェクトで定義した現場は無かったかも。プリミティブ型よりもオブジェクトのルールが明確になったし、不正な値の混入も防げる。
+わざわざ値オブジェクトを定義せずに、プリミティブ型だけでも実装は可能だが、それでは汎用的で表現力に乏しいプログラムになりがち。値オブジェクトで定義をすれば、クラスにルールが付与されるので、ドキュメントとして機能させることが可能になる（パッと見で何やってるか理解しやすい）
 
 また値オブジェクトは <span style="color: crimson; font-weight: bold;">ただのデータ構造体ではなく、ふるまいも定義可能で、自身のルールを語るドメインオブジェクト</span> になり、ロジックの散在が改善されて可読性の向上が見込める。
 
-もう一つのドメインオブジェクトで <span style="color: crimson; font-weight: bold;">エンティティ</span> が紹介されているが、値オブジェクトとの違いが紛らわしく、以下のブログが具体例を挙げて説明されていたので理解が深まった。本書でも同一性で識別されるか否か、またはライフサイクルが存在するか否かを判断基準にしている。
+もう一つのドメインオブジェクトに <span style="color: crimson; font-weight: bold;">エンティティ</span> が紹介されており、値オブジェクトとの違いが紛らわしく、本書では同一性で識別されるか否か、またはライフサイクルが存在するか否かを判断基準にしている。ちなみに以下ブログでは、具体例を挙げて説明されている。
 
 ■ [DDD基礎解説：Entity、ValueObjectってなんなんだ](https://little-hands.hatenablog.com/entry/2018/12/09/entity-value-object)  
 
-最後に値オブジェクトやエンティティに記述すると不自然に見えるので、これらのふるまいを定義するものに <span style="color: crimson; font-weight: bold;">ドメインサービス</span> がある。**不自然なふるまい** とは、例えば以下のようなコード。
+最後に値オブジェクトやエンティティに記述すると不自然に見えるので、これらのふるまいを定義する <span style="color: crimson; font-weight: bold;">ドメインサービス</span> があり、具体的に不自然なふるまいとは以下のようなコードがある。
 
 ```Csharp
 # エンティティ
@@ -117,7 +115,7 @@ var user = new User(userId, userName);
 var duplicateCheckResult = user.Exists(user);
 ```
 
-上記のコードでは重複の有無を自身に対して問い合わせすることになり、多くの開発者を混乱させる不自然な記述に見えるので、DDDではこのような不自然なふるまいの解決にドメインサービスを利用。
+上記では重複有無を、自身に対して問い合わせすることになり、多くの開発者を混乱させる不自然な記述に見える。このような不自然なふるまいの解決には、ドメインサービスの利用を推奨している。
 
 ```Csharp
 # ドメインサービス
@@ -134,7 +132,7 @@ class UserService
 
 ## アプリケーションを実現するためのパターン
 
-アプリケーションを表現するパターンの一つが <span style="color: crimson; font-weight: bold;">リポジトリ</span> で、データを永続化（インスタンスを保存して復元出来るようにすること）して再構築する処理を抽象的に扱うオブジェクト。
+アプリケーションを表現するパターンの一つが <span style="color: crimson; font-weight: bold;">リポジトリ</span> で、データを永続化（インスタンスを保存して復元出来るようにすること）し、再構築する処理を抽象的に扱うオブジェクトになる。
 
 ```Csharp
 # リポジトリを利用したユーザ作成処理
@@ -157,7 +155,7 @@ class Program
 }
 ```
 
-リポジトリの役割はあくまでもオブジェクトの永続化なので、ユーザの重複確認のようなドメインルールに近い内容の実装は好ましくないので、そういった処理はドメインサービスでの実装を推奨。
+リポジトリの役割は、あくまでもオブジェクトの永続化なので、ユーザ重複確認のようなドメインルールに近い内容の実装は好ましくなく、そういった処理はドメインサービスでの実装が推奨される（本書でも、Userの識別子であるUserIdでの検索メソッドはリポジトリ定義が望まいとしており、リポジトリへの定義は単純なCRUD操作に限られる印象を受けた）
 
 ```Csharp
 public interface IUserRepository
@@ -174,9 +172,7 @@ public interface IUserRepository
 }
 ```
 
-Userの識別子であるUserIdでの検索メソッドはリポジトリでの定義が望まいとのことで、リポジトリへの定義は単純なCRUD操作に限られるイメージだろうか。
-
-不自然さを解決するサービスに <span style="color: crimson; font-weight: bold;">アプリケーションサービス</span> があり、ドメインオブジェクトのふるまいを呼び出す役目を担っている。ドメインオブジェクトの公開は大きな危険性があるので、本書では公開しないことを推奨している（代用としてDTOの活用だったり、コマンドオブジェクトがある）
+不自然さを解決するサービスに <span style="color: crimson; font-weight: bold;">アプリケーションサービス</span> があり、ドメインオブジェクトのふるまいを呼び出す役目を担っている。ドメインオブジェクトの公開には大きな危険性が潜んでいるので、本書では公開しないことを推奨している（代用としてDTOの活用だったり、コマンドオブジェクトがある）
 
 ```Csharp
 public class UserApplicationService
@@ -208,9 +204,27 @@ public class UserApplicationService
 }
 ```
 
-アプリケーションサービスは、あくまでもドメインオブジェクトのタスク調整に徹し、ドメインルールを記述させないことが重要（ルールはドメイン側に寄せることが大切）
+アプリケーションサービスは、<span style="color: crimson; font-weight: bold;">あくまでもドメインオブジェクトのタスク調整に徹し、ドメインルールを記述させないことが重要</span>（ルールはドメイン側に寄せることが大切）
 
+アプリケーションを実現させる最後のパターンに、複雑なオブジェクトの生成処理をオブジェクトとして定義する <span style="color: crimson; font-weight: bold;">ファクトリ</span> があり、これは生成のみを責務とするオブジェクトになる。
 
+```Csharp
+public class UserFactory : IUserFactory
+{
+  public User Create(UserName name)
+  {
+    # データベースのコネクション処理
+    # 省略
+
+    # インスタンスの返却
+    return new User(id, name);
+  }
+}
+```
+
+ファクトリ利用の目安について、生成処理が複雑でない場合は素直にコンストラクタでの呼び出しが望ましく、データベース接続など複雑な処理はファクトリ実装でカプセル化して柔軟性を確保。
+
+Chapter11では解説された全知識を活用して、SNSを実装するサンプルが説明されている。
 
 ## 知識を表現する、より発展的なパターン
 
