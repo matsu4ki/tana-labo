@@ -1,9 +1,9 @@
 ---
 title: マイクロサービスでのビジネスロジック Aggregateでドメインモデル設計
-date: "2020-04-26T00:00:00.284Z"
+date: "2020-04-24T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "microservice-transaction"
+perma: "microservice-aggregate"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["AWS", "GAFA", "DX", "マイクロサービス"]

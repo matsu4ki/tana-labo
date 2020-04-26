@@ -3,7 +3,7 @@ title: ドメイン駆動設計入門は新人時代にDDD挫折した私にも�
 date: "2020-04-17T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "microservice-transaction"
+perma: "ddd"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["DDD", "アーキテクチャ"]
