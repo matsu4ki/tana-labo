@@ -1,9 +1,9 @@
 ---
 title: マイクロサービスでのビジネスロジック Aggregateでドメインモデル設計
-date: "2020-04-26T00:00:00.284Z"
+date: "2020-04-24T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "microservice-transaction"
+perma: "microservice-aggregate"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["AWS", "GAFA", "DX", "マイクロサービス"]
@@ -71,5 +71,3 @@ class User
 集約すればアトミックに更新できるメリットがある反面、スケーラビリティが下がる欠点（アプリケーションで同時処理出来るリクエスト数が増える等）もあり、これは明確な答えは無さげだ（システム毎にエンジニアが考えるしかない）
 
 ビジネスロジックの基本はアグリゲート中心となり、それ以外のビジネスロジックは、ドメインサービスとサーガに集約（本書の場合では、アグリゲートのOrder、サービスクラスのOrderService、最後にOrderRepositoryと1つ以上のサーガから構成される）
-
-本書ではドメインイベントも後述されているけど、それはまたの機会に!!
