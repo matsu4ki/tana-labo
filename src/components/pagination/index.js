@@ -10,8 +10,8 @@ const Pagination = ({ props }) => {
 
 	return (
 		<div id="page">
-			{previousPagePath ? <Link to={previousPagePath}>&lt;&lt;前のページ</Link> : null }
-			{nextPagePath ? <Link to={nextPagePath}>次のページ&gt;&gt;</Link> : null }
+			{previousPagePath ? <Link to={previousPagePath}>＜＜ 前のページ</Link> : null }
+			{nextPagePath ? <Link to={nextPagePath}>次のページ ＞＞</Link> : null }
 		</div>
 	)
 }
