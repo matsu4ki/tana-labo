@@ -4,23 +4,24 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Posts from "../components/atom/posts"
+import Pagination from "../components/pagination"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.posts.edges
-
+const Index = props => {
+  const siteTitle = props.data.site.siteMetadata.title
+  const posts = props.data.posts.edges
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={props.location} title={siteTitle}>
       <SEO title="All posts" />
       <Posts posts={posts} />
+      <Pagination props={props} />
     </Layout>
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
-  query {
+  query ($skip: Int!) {
     site {
       siteMetadata {
         title
@@ -28,6 +29,8 @@ export const pageQuery = graphql`
     }
     posts:allMarkdownRemark( 
       sort: { fields: [frontmatter___date], order: DESC } 
+      skip: $skip ,
+      limit: 16 
     ) {
       edges {
         node {
