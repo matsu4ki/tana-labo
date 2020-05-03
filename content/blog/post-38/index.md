@@ -3,7 +3,7 @@ title: docker-composeの基本操作とDocker + Railsの開発環境構築ハン
 date: "2020-04-27T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "microservice-transaction"
+perma: "docker-compose"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["コンテナ", "Docker"]

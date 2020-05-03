@@ -3,7 +3,7 @@ title: 今更だけどDockerコンテナ技術の理解が曖昧だったので�
 date: "2020-04-26T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "microservice-transaction"
+perma: "docker"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["コンテナ", "Docker"]
