@@ -76,6 +76,7 @@ gatsby-config.jsにgatsby-remark-embed-youtubeを追加。
     },
 },
 ```
+<br/>
 
 マークダウンファイルには以下のフォーマットで追記。
 
@@ -98,6 +99,20 @@ plugins: [
   },
 ]
 ```
+
+## ページネーション
+
+ページネーション用のプラグインを追加。
+
+```
+yarn add gatsby-awesome-pagination
+```
+<br/>
+
+後は以下リンク先を参考に実装。
+
+■ [Gatsbyにページネーションを実装する](https://tech.glatchdesign.com/gatsby-pagination)  
+■ [ことばを学ぶ　LEARN GATSBY 週間 #5日目](https://qiita.com/nibu0215/items/499e138e638e2acc0b97)  
 
 ## Firebaseへのデプロイ
 

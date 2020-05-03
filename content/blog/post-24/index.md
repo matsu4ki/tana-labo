@@ -60,6 +60,7 @@ PythonではLambda関数を以下記述 **(eventにリクエスト、contextに�
 def myfunc_handler (event, context):
   return 戻り値
 ```
+<br/>
 
 本書ではPython3系 (Python 3.6)で解説されており、他言語の場合、微妙に書き方が異なるので、それぞれの言語に併せた書式を覚える必要有り。
 
