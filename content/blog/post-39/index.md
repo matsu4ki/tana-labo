@@ -3,7 +3,7 @@ title: Ruby on Rails開発経験0の自分が最低限の基礎理解のため�
 date: "2020-05-03T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "microservice-transaction"
+perma: "ruby-on-rails"
 categoryname: "テクノロジー"
 categoryslug: "technology"
 tags: ["Ruby", "Rails"]
