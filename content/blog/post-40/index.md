@@ -1,6 +1,6 @@
 ---
 title: 基礎からわかるGo言語について 〜文法基礎と並列処理に触れてみる〜
-date: "2020-05-23T00:00:00.284Z"
+date: "2020-05-22T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "golang-basic"
