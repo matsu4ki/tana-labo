@@ -26,9 +26,9 @@ thumbnail: post-38.png
 ```bash
 version: "3"
 services: 
-  echo: # コンテナ名
+  echo:                        # コンテナ名
     image: example/echo:latest # Dockerイメージ
-    ports: # ポートフォワーディング
+    ports:                     # ポートフォワーディング（ホスト/コンテナ）
       - 9000:8080
 ```
 <br/>
