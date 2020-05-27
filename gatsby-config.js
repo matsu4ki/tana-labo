@@ -98,9 +98,9 @@ module.exports = {
         host: 'https://tana-labo.tokyo/',
         sitemap: 'https://tana-labo.tokyo/sitemap.xml',
         policy: [
-          { userAgent: '*', disallow: '/category' },
-          { userAgent: '*', disallow: '/tags' },
-          { userAgent: '*', disallow: '/page' },
+          { userAgent: '*', disallow: '/category/' },
+          { userAgent: '*', disallow: '/tags/' },
+          { userAgent: '*', disallow: '/page/' },
         ]
       }
     },
