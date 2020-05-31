@@ -6,17 +6,17 @@ pagetype: "category"
 perma: "golang-gin"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["go", "gin", "Docker"]
+tags: ["Go", "Gin", "Docker"]
 thumbnail: post-41.png
 ---
 
 ![](./post-41.png)
 
-Golangの利用用途で、最も多いと言われるのがAPI開発。
+Golangが利用される用途で多いAPIの開発。
 
-フレームワークも多くあり、2020年時点で **PHPにおけるLaravel的なもの** が無いみたいなので、まずは学習コスト低め + 情報量の多い **go-gin** に触れてみた。
+フレームワークも多数あり、2020年時点では **PHPにおけるLaravel的なもの** が無いようなので、まずは **学習コスト低め + 情報量の多いgo-gin** に触れてみた。
 
-公式ドキュメントだけで、環境構築 〜 単体試験のサンプル実装くらいはサクサク進むかな。
+公式ドキュメントだけで、環境構築 〜 単体試験のサンプル実装くらいはサクサク進む印象。
 
 ## Docker環境構築
 
