@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "golang-ddd"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["go", "gin", "gorm"]
+tags: ["Go", "Gin", "Gorm"]
 thumbnail: post-42.png
 ---
 
@@ -68,7 +68,9 @@ templatesフォルダを作成後、index.htmlを作成。
 
 r.LoadHTMLGlobでHTMLを読み込むディレクトリを指定し、GETメソッドでレンダリング。
 
-## データベース接続
+## 管理CRUDアプリの構築
+
+データベースは sqlite3 を利用。
 
 ```shell
 go get github.com/jinzhu/gorm

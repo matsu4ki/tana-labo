@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "golang-basic"
 categoryname: "テクノロジー"
 categoryslug: "technology"
-tags: ["go", "並列処理"]
+tags: ["Go", "並列処理"]
 thumbnail: post-40.png
 ---
 
@@ -42,6 +42,58 @@ go build -o 実行ファイル名 ソースファイル名
 
 ```shell
 go run ソースファイル名
+```
+
+## 変数・定数
+
+**変数の定義** では **var** を利用する。
+
+```go
+// var 変数 型
+var x int = 10
+
+// [省略系] 変数名 := 初期値
+y := 123
+```
+<br/>
+
+**定数の定義** では **const** を利用する。
+
+```go
+// const 変数 型
+const x int = 10
+```
+<br/>
+
+文字列は **ダブルクォーテーション** または **バッククォート** で囲む。
+
+```go
+var val1 = "test1"
+fmt.Println(val1) // test1
+	
+var val2 = `test2`
+fmt.Println(val2) // test2
+```
+<br/>
+
+**シングルクォーテーション** を利用すると **ルーンリテラル（Unicodeコードポイント）** で定義される。
+
+```go
+var val = 'a'
+fmt.Println(val) // 97
+```
+
+## インポート
+
+インポート宣言を行った場合、必ず何かしらインポートしたパッケージの識別子にアクセスする必要があり、一度も使用しないとコンパイルエラーになってしまう。
+
+インポートによる副次的処理（自動的に処理される初期化処理）のためにパッケージをインポートする必要がある場合、ブランク識別子でインポートする必要がある。
+
+```go
+import (
+	"net/http"
+	_ "github.com/mattn/go-sqlite3"
+)
 ```
 
 ## Go言語のポインタ
