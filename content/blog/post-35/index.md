@@ -4,8 +4,8 @@ date: "2020-04-17T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "ddd"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["DDD", "アーキテクチャ"]
 thumbnail: post-35.png
 ---

@@ -4,8 +4,8 @@ date: "2020-05-03T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "ruby-on-rails"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["Ruby", "Rails"]
 thumbnail: post-39.png
 ---
