@@ -4,8 +4,8 @@ date: "2020-05-24T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "golang-gin"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["Go", "Gin", "Docker"]
 thumbnail: post-41.png
 ---

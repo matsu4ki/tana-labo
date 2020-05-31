@@ -4,8 +4,8 @@ date: "2020-05-27T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "golang-ddd"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["Go", "Gin", "Gorm"]
 thumbnail: post-42.png
 ---
@@ -13,8 +13,6 @@ thumbnail: post-42.png
 ![](./post-42.png)
 
 GolangでのDB接続では、GORM（ゴルム）の利用が多いので簡易的なCRUDを試してみた。
-
-今回データベースは **sqlite3** を利用。
 
 ## Docker環境の構築
 

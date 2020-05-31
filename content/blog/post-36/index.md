@@ -4,8 +4,8 @@ date: "2020-04-24T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "microservice-aggregate"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["AWS", "GAFA", "DX", "マイクロサービス"]
 thumbnail: post-36.png
 ---

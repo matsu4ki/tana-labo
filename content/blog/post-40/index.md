@@ -4,8 +4,8 @@ date: "2020-05-22T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "golang-basic"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["Go", "並列処理"]
 thumbnail: post-40.png
 ---

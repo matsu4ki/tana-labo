@@ -4,8 +4,8 @@ date: "2020-04-27T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "docker-compose"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "エンジニアリング"
+categoryslug: "engineering"
 tags: ["コンテナ", "Docker"]
 thumbnail: post-38.png
 ---
