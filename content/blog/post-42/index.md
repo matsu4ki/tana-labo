@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "golang-ddd"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
-tags: ["Go", "Gin", "Gorm"]
+tags: ["Go", "Gin", "Gorm", "Docker"]
 thumbnail: post-42.png
 ---
 
@@ -382,4 +382,3 @@ go run main.go
 ■ [GORM@公式HP](https://jinzhu.me/gorm/)  
 ■ [Go言語でORM触ってみた](https://qiita.com/chan-p/items/cf3e007b82cc7fce2d81)  
 ■ [Go / Gin で超簡単なWebアプリを作る](https://qiita.com/hyo_07/items/59c093dda143325b1859)  
-■ [Go言語入門 - MySQL接続編](https://rightcode.co.jp/blog/information-technology/golang-introduction-mysql-connection)  

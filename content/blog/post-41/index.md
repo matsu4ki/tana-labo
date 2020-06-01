@@ -176,16 +176,16 @@ go test
 
 ## 参考文献
 ■ Golang  
-❶ [Golang フレームワーク比較](https://qiita.com/yumin/items/5de33b068ead564ebcbf)  
-❷ [Go言語の初心者が見ると幸せになれる場所](https://qiita.com/tenntenn/items/0e33a4959250d1a55045)  
+① [Golang フレームワーク比較](https://qiita.com/yumin/items/5de33b068ead564ebcbf)  
+② [Go言語の初心者が見ると幸せになれる場所](https://qiita.com/tenntenn/items/0e33a4959250d1a55045)  
 
 ■ go-gin  
-❶ [gin-gonic@github](https://github.com/gin-gonic/gin)  
-❷ [Gin Web Framework](https://gin-gonic.com/)  
-❸ [XML / JSON / YAML / ProtoBuf rendering](https://gin-gonic.com/docs/examples/rendering/)  
-❹ [Go言語でテスト作成　testifyの基本的な使い方](https://re-engines.com/2018/10/16/go-testify%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%86%E3%82%B9%E3%83%88%E4%BD%9C%E6%88%90/)  
+① [gin-gonic@github](https://github.com/gin-gonic/gin)  
+② [Gin Web Framework](https://gin-gonic.com/)  
+③ [XML / JSON / YAML / ProtoBuf rendering](https://gin-gonic.com/docs/examples/rendering/)  
+④ [Go言語でテスト作成　testifyの基本的な使い方](https://re-engines.com/2018/10/16/go-testify%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%86%E3%82%B9%E3%83%88%E4%BD%9C%E6%88%90/)  
 
 ■ API開発ハンズオン  
-❶ [[Golang + Docker]GinをDocker上で試してみる](https://www.aizulab.com/blog/gin-docker/)  
-❷ [Go / Gin で超簡単なWebアプリを作る](https://qiita.com/hyo_07/items/59c093dda143325b1859)  
-❸ [go-ginでサクッとRESTAPIを構築する](https://qiita.com/shiei_kawa/items/eddf48287455380f618f)  
+① [[Golang + Docker]GinをDocker上で試してみる](https://www.aizulab.com/blog/gin-docker/)  
+② [Go / Gin で超簡単なWebアプリを作る](https://qiita.com/hyo_07/items/59c093dda143325b1859)  
+③ [go-ginでサクッとRESTAPIを構築する](https://qiita.com/shiei_kawa/items/eddf48287455380f618f)  
