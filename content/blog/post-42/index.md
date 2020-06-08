@@ -3,7 +3,7 @@ title: Golang+Gin+Dockerでの開発 Gorm（ゴルム）でのデータベース
 date: "2020-05-27T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "golang-ddd"
+perma: "golang-gin-gorm"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
 tags: ["Go", "Gin", "Gorm", "Docker"]

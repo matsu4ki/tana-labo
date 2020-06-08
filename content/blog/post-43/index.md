@@ -3,7 +3,7 @@ title: Docker環境でGolang+Gin+MySQL 環境構築〜DB接続してJSONを返�
 date: "2020-06-01T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "golang-ddd"
+perma: "golang-gin-mysql"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
 tags: ["Go", "Gin", "Gorm", "Docker", "MySQL"]

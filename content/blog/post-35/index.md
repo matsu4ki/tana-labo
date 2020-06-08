@@ -18,7 +18,7 @@ thumbnail: post-35.png
 
 あれから数年コードを書き続けたけど、自身の中で指針となるコードの書き方も定まっておらず、現場毎に異なる開発ルールに翻弄されている気がしたので、再度DDDへ入門することに決めた。しかし数年コードを書き続けたとしても、エリック・エヴァンス本は相変わらず敷居が高い。
 
-なのでこちらの本読んでみた。一読した感想はとにかく理解しやすく**「ちゃんとオブジェクト指向で開発しよう♪」**との印象を受けた。記事タイトルどおり、DDD挫折した私にも分かりやすい良書。
+なのでこちらの本読んでみたが、一読した感想はとにかく理解しやすく**「ちゃんとオブジェクト指向で開発しよう♪」**との印象を受けた。記事タイトルどおり、DDD挫折した私にも分かりやすい良書。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004111104577927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16167672%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0727/9784798150727.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004111104577927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16167672%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >ドメイン駆動設計入門 ボトムアップでわかる！ドメイン駆動設計の基本</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">成瀬 允宣 翔泳社 2020年02月13日    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202004111104577927?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F16167672%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/479815072X/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E5%85%A5%E9%96%80%20%E3%83%9C%E3%83%88%E3%83%A0%E3%82%A2%E3%83%83%E3%83%97%E3%81%A7%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E3%81%AE%E5%9F%BA%E6%9C%AC&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 
@@ -29,17 +29,17 @@ thumbnail: post-35.png
 本書ではそんな挫折をしないで済むように、ドメイン駆動設計で重要な <span style="color: crimson; font-weight: bold;">概念を抽出するモデリング</span> には触れず <span style="color: crimson; font-weight: bold;">概念を実装に落とし込むパターン</span> を中心に解説されている。
 
 <div class="blackboard-box">
-<p>■ 知識を表現するパターン</p>
+<p>■ 知識を表現</p>
 <p>・値オブジェクト ★</p>
 <p>・エンティティ ★</p>
 <p>・ドメインサービス ★</p>
 <br/>
-<p>■ アプリケーションを表現するためのパターン</p>
+<p>■ アプリケーションを表現</p>
 <p>・リポジトリ ★</p>
 <p>・アプリケーションサービス ★</p>
 <p>・ファクトリ ★</p>
 <br/>
-<p>■ 知識を表現するより発展的なパターン</p>
+<p>■ 知識を表現（発展形）</p>
 <p>・集約</p>
 <p>・仕様</p>
 <div class="chalk1"></div>
@@ -48,9 +48,17 @@ thumbnail: post-35.png
 
 ドメイン駆動設計のパターンだけを取り入れる手法は **軽量DDD** と呼ばれるが <span style="color: crimson; font-weight: bold;">重要なことはドメインの本質と向き合うことで、パターンはあくまでサポート役であること</span> を念押しされている。
 
-## 知識を表現するパターン
+## ドメイン駆動設計のコンセプト
 
-ドメイン知識をコードへ落とし込む基本パターンとして挙げられる <span style="color: crimson; font-weight: bold;">値オブジェクト</span> は、ドメインオブジェクトの一つで、システム固有の値を定義する役割を担っている（FirstNameとLastNameが該当）
+ドメイン駆動設計の **コンセプト** とは!?
+
+**ビジネスの問題を解決するため、ビジネスの理解進め、ビジネスを表現し、ビジネスとコードを結び付け、継続的かつ反復的な改良を施せるように枠組みを作ることで、ソフトウェアをより役立つものにしようとするもの**（ソフトウェアにおいては、至極当たり前の話なんだけど・・・）
+
+またソフトウェア開発の **ドメイン** とは、<span style="color: crimson; font-weight: bold;">プログラムを適用する対象となる領域</span> で、ドメインに含まれるものを考えるのが重要（会計システムなら金銭や帳票、物流システムなら貨物や倉庫、輸送手段）
+
+## 知識を表現 ① ー 値オブジェクト
+
+ドメイン知識をコードへ落とし込む基本パターンとして挙げられる <span style="color: crimson; font-weight: bold;">値オブジェクト</span> は、ドメインオブジェクトの一つで、システム固有の値を定義する役割を担う（FirstNameとLastNameが該当）
 
 ```Csharp
 class FullName : IEquatable<FullName>
@@ -88,11 +96,38 @@ class LastName
 
 また値オブジェクトは <span style="color: crimson; font-weight: bold;">ただのデータ構造体ではなく、ふるまいも定義可能で、自身のルールを語るドメインオブジェクト</span> になり、ロジックの散在が改善されて可読性の向上が見込める。
 
+また本書では、値オブジェクトとして定義するかの判断基準として、<span style="color: crimson; font-weight: bold;">そこにルールが存在しているか</span> と <span style="color: crimson; font-weight: bold;">それ単体で取り扱いたいか</span> という点を挙げられていた（判断難しい）
+
+## 知識を表現 ② ー エンティティ
+
 もう一つのドメインオブジェクトに <span style="color: crimson; font-weight: bold;">エンティティ</span> が紹介されており、値オブジェクトとの違いが紛らわしく、本書では同一性で識別されるか否か、またはライフサイクルが存在するか否かを判断基準にしている。ちなみに以下ブログでは、具体例を挙げて説明されている。
+
+|    |  エンティティ  |  値オブジェクト  |
+| ---- | ---- | ---- |
+|  同一性判定  |  識別子が同一であれば同一  |  保持する属性が全て同一であれば同一  |
+|  可変性  |  可変（ライフサイクルを持つ）  |  不変（生成されたら破棄されるだけ）  |
+
+```bash
+例） エンティティを社員で考えてみる
+
+# 山田さんという社員は、ある会社において社員番号という識別子（123）で同一判定される
+# 部署や所持金や体重が変わろうと、別人にはならない。
+# 部署や所持金などの属性は変わるので、本質的には ”可変” である。
+
+例）値オブジェクトを10円玉で考えてみる
+
+# 造幣局でもない限り、2つの10円玉が並んでいて、区別することない（同じ機能を持つ硬貨）
+# 2つの10円玉を区別する必要がない（=不変）場合、10円玉は値オブジェクトとして定義
+```
+<br/>
+
+基本的にはエンティティが自身の属性として、値オブジェクトを保持する関係となる。
 
 ■ [DDD基礎解説：Entity、ValueObjectってなんなんだ](https://little-hands.hatenablog.com/entry/2018/12/09/entity-value-object)  
 
-最後に値オブジェクトやエンティティに記述すると不自然に見えるので、これらのふるまいを定義する <span style="color: crimson; font-weight: bold;">ドメインサービス</span> があり、具体的に不自然なふるまいとは以下のようなコードがある。
+## 知識を表現 ③ ー ドメインサービス
+
+最後に値オブジェクトやエンティティに記述すると不自然に見えるので、これらのふるまいを定義する <span style="color: crimson; font-weight: bold;">ドメインサービス</span> がある。具体的に **不自然なふるまい** とはこんなコードのこと（これはドメインのものを表現する時よりも、ドメインの活動を表現する際によく見られる）
 
 ```Csharp
 # エンティティ
@@ -133,19 +168,62 @@ class UserService
 
 ドメインサービスでは、自身のふるまいを変更するようなインスタンス特有の状態は持たせない。役割は理解しやすいが濫用は危険で、エンティティや値オブジェクトで定義出来ないか検討するのが吉。
 
-## アプリケーションを実現するためのパターン
+**■ 物流システムにおけるドメインサービスの実装例**
+
+![](./post-35-1.png)
+
+物流拠点をエンティティとして定義。
+
+```Csharp
+class PhysicalDistributionBase 
+{
+  # （...略...）
+
+  public Baggage Ship(Baggage baggage)
+  {
+    # （...略...）
+  }
+
+  public void Receive(Baggage baggage)
+  {
+    # （...略...）
+  }
+}
+```
+<br/>
+
+物流拠点の出庫（Ship）と入庫（Receive）はセットで実施されるので、輸送をサービスに定義。
+
+```Csharp
+class TransportService
+{
+  public void Transport(PhysicalDistributionBase from, PhysicalDistributionBase to, Baggage baggage)
+  {
+    var shippedBaggage = from.Ship(baggage);
+    to.Receive(shippedBaggage);
+
+    # 配送の記録処理など
+  }
+}
+```
+
+## アプリケーションを実現 ① ー リポジトリ
 
 アプリケーションを表現するパターンの一つが <span style="color: crimson; font-weight: bold;">リポジトリ</span> で、データを永続化（インスタンスを保存して復元出来るようにすること）し、再構築する処理を抽象的に扱うオブジェクトになる。
+
+**永続化** とはインスタンスを保存し、復元できるようにすること!!
 
 ```Csharp
 # リポジトリを利用したユーザ作成処理
 class Program
 {
   private IUserRepository userRepository;
+
   public Program(IUserRepository userRepository)
   {
     this.userRepository = userRepository;
   }
+
   public void CreateUser(string userName)
   {
     var user = new User(new UserName(userName));
@@ -159,7 +237,7 @@ class Program
 ```
 <br/>
 
-リポジトリの役割は、あくまでもオブジェクトの永続化なので、ユーザ重複確認のようなドメインルールに近い内容の実装は好ましくなく、そういった処理はドメインサービスでの実装が推奨される（本書でも、Userの識別子であるUserIdでの検索メソッドはリポジトリ定義が望まいとしており、リポジトリへの定義は単純なCRUD操作に限られる印象を受けた）
+リポジトリの役割は、あくまでもオブジェクトの永続化なので、<span style="color: crimson; font-weight: bold;">ユーザ重複確認のようなドメインルールに近い内容の実装は好ましくなく、そういった処理はドメインサービスが主体で実装するのを推奨</span>（本書でも、Userの識別子であるUserIdでの検索メソッドはリポジトリ定義が望まいとしており、リポジトリへの定義は単純なCRUD操作に限られる印象を受ける）
 
 ```Csharp
 public interface IUserRepository
@@ -175,7 +253,8 @@ public interface IUserRepository
   void Save(User user);
 }
 ```
-<br/>
+
+## アプリケーションを実現 ② ー アプリケーションサービス
 
 不自然さを解決するサービスに <span style="color: crimson; font-weight: bold;">アプリケーションサービス</span> があり、ドメインオブジェクトのふるまいを呼び出す役目を担っている。ドメインオブジェクトの公開には大きな危険性が潜んでいるので、本書では公開しないことを推奨している（代用としてDTOの活用だったり、コマンドオブジェクトがある）
 
@@ -211,6 +290,10 @@ public class UserApplicationService
 <br/>
 
 アプリケーションサービスは、<span style="color: crimson; font-weight: bold;">あくまでもドメインオブジェクトのタスク調整に徹し、ドメインルールを記述させないことが重要</span>（ルールはドメイン側に寄せることが大切）
+
+値オブジェクトやエンティティは、自身のふるまいを持っているが、サービスは自身のためのふるまいを持たず、活動や行動を表すことが多い。またドメインにおける活動をドメインサービスとし、アプリケーションとして成立させるためのサービスが、アプリケーションサービスとなる。
+
+## アプリケーションを実現 ③ ー ファクトリ
 
 アプリケーションを実現させる最後のパターンに、複雑なオブジェクトの生成処理をオブジェクトとして定義する <span style="color: crimson; font-weight: bold;">ファクトリ</span> があり、これは生成のみを責務とするオブジェクトになる。
 
