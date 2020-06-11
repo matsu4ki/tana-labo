@@ -199,7 +199,7 @@ go run main.go
 ```
 <br/>
 
-**http://localhost:8080/hello** でアクセスすると以下が表示される。
+**http://localhost:8080/hello** でアクセスすると、画面上に以下が表示される。
 
 ```shell
 [{"ID":1,"name":"TOM","email":"xxxx@mail.co.jp"}]

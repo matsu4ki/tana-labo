@@ -187,62 +187,115 @@ type 構造体名 struct {
 
 ## インタフェース
 
-Goにはクラスが存在しないが、インタフェースは用意されている（重要な機能の一つ）
+Goにはクラスが存在しないが、インタフェースは用意されている。
 
 ```go
 package main
 
 import "fmt"
 
-// 演算インタフェース型
 type Calculator interface {
-	// 関数の定義
 	Calculate(a int, b int) int
 }
 
-// 足し算型
+// 構造体（足し算・引き算）
 type Add struct {
-	// フィールドは持たない
+}
+type Sub struct {
 }
 
-// Add型にCalcuratorインタフェースのCalculate関数を実装
+// Add型にCalculate関数を実装
 func (x Add) Calculate(a int, b int) int {
-	// 足し算
 	return a + b
 }
-
-// 引き算型
-type Sub struct {
-	// フィールドは持たない
-}
-
-// Syb型にCalcuratorインタフェースのCalculate関数を実装
+// Sub型にCalculate関数を実装
 func (x Sub) Calculate(a int, b int) int {
-	// 引き算
 	return b - a
 }
 
 func main() {
-	// Calculatorインタフェースを実装した型の変数を宣言
 	var add Add
 	var sub Sub
-	
-	// Calculatorインタフェース型の変数を宣言
 	var cal Calculator
 	
-	// Add型の値を代入
 	cal = add
-	
-	// インタフェース経由でメソッドを呼び出す
 	fmt.Println("和：", cal.Calculate(1, 2))
-	
-	// Sub型の値を代入
 	cal = sub
-	
-	// インタフェース経由でメソッドを呼び出す
 	fmt.Println("差：", cal.Calculate(1, 2))
 }
+```
+<br/>
 
+Javaのようにimplementsで明示的に宣言する必要もなく、インターフェースに定義されている関数を、メソッドとして定義している型（構造体）は、自動的にインターフェースが実装される。
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+type Eater interface {
+	PutIn()   // 口に入れる
+	Chew()    // 噛む
+	Swallow() // 飲み込む
+}
+
+// 人間の構造体
+type Human struct {
+	Height int // 身長
+}
+
+// カメの構造体
+type Turtle struct {
+	Kind string // 種類
+}
+
+// 人間用のインターフェースの実装
+// Golangではレシーバを通して構造体に関数が実装されている
+func (h Human) PutIn() {
+	fmt.Println("道具を使って丁寧に口に運ぶ")
+}
+func (h Human) Chew() {
+	fmt.Println("歯でしっかり噛む")
+}
+func (h Human) Swallow() {
+	fmt.Println("よく噛んだら飲み込む")
+}
+
+// カメ用のインターフェースの実装
+func (t Turtle) PutIn() {
+	fmt.Println("獲物を見つけたら首をすばやく伸ばして噛む")
+}
+func (t Turtle) Chew() {
+	fmt.Println("クチバシで噛み砕く")
+}
+func (t Turtle) Swallow() {
+	fmt.Println("小さく噛み砕いたら飲み込む")
+}
+
+// インターフェースが引数になる食べるメソッド
+func EatAll(e Eater) {
+	e.PutIn()
+	e.Chew()
+	e.Swallow()
+}
+
+func main() {
+	var man Human = Human{Height: 300}
+	var cheloniaMydas Turtle = Turtle{Kind: "アオウミガメ"}
+	var eat Eater
+
+	// Human型がインターフェースであるEater型に変換される
+	fmt.Println("＜人間が食べる＞")
+	eat = man
+	EatAll(eat)
+
+	// Turtle型がインターフェースであるEater型に変換される
+	fmt.Println("＜カメが食べる＞")
+	eat = cheloniaMydas
+	EatAll(eat)
+}
 ```
 
 ## エラーハンドリング
