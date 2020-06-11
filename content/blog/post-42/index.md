@@ -12,7 +12,7 @@ thumbnail: post-42.png
 
 ![](./post-42.png)
 
-GolangでのDB接続では、GORM（ゴルム）の利用が多いので簡易的なCRUDを試してみた。
+GolangでのDB接続では、GORM利用が多いらしい？ので簡易的なCRUDを試してみた。
 
 ## Docker環境の構築
 
