@@ -1,96 +1,214 @@
 ---
-title: Golang+GinでのDDDアーキテクチャ設計 − API設計でのパッケージ構成
-date: "2020-06-08T00:00:00.284Z"
+title: Docker環境でGolang+Gin+MySQL 環境構築〜DB接続してJSONを返却
+date: "2020-06-01T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "golang-ddd"
+perma: "golang-gin-mysql"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
-tags: ["Go", "Gin", "DDD", "アーキテクチャ"]
+tags: ["Go", "Gin", "Gorm", "Docker", "MySQL"]
 thumbnail: post-44.png
 ---
 
 ![](./post-44.png)
 
-ドメイン駆動設計入門にて **[概念を実装に落とし込むパターン](/post-35/)** を確認し、Goのアーキテクチャ構成を調査すると <span style="color: crimson; font-weight: bold;">レイヤードアーキテクチャ + DDD</span> を解説される方が多かったので、簡単にまとめてみた。
+Docker環境で **Golang+Gin+MySQL** を構築し、データベースへ接続出来るか確認。
 
-まず **「Go DDD」** で検索すると、検索一覧のトップに **[コチラの記事](https://qiita.com/tono-maron/items/345c433b86f74d314c8d)** が表示される。図解で丁寧に説明され **[githubにサンプルコード](https://github.com/jojoarianto/go-ddd-api)** も用意されているので、最初に読む記事としては良いかも。
+**[前回](/post-43)** 同様、データベースへの接続にはGORMを利用。
 
+## ディレクトリ構成
+
+MySQLに関連するファイルは **mysql配下** に格納。
+
+```bash
+workspace/
+         ├ mysql/
+         |      ├ conf.d/
+         |      |       └ my.cnf         # MySQLの各種設定
+         |      └ initdb.d/              # 初期テーブル / 初期データ
+         |      |         ├ schema.sql
+         |      |         └ testdata.sql
+         |      └ Dockerfile
+         |
+         ├ main.go
+         ├ Dockerfile
+         └ docker-compose.yml 
+```
+
+## MySQLの各種設定
+
+MySQLの **Dockerfile** は以下のように定義。
 
 ```yml
-.
-├── cmd
-│   └── api
-│       └── main.go
-├── domain                      # エンティティや値オブジェクトなど（構造体定義）
-│   └── repository              # インターフェースのみ（実装はinfrastructure層）
-|   |   └── user_repository.go
-|   └── user.go
-├── config
-│   └── database.go
-├── interfaces                  # FWのコントローラクラス（リクエスト/レスポンス処理）
-│   └── handler
-│   |   └── user.go
-|   └── response
-│       └── response.go
-├── infrastructure              # DBアクセスなど技術的関心 / DIP（-> domain層）
-│   └── persistence
-│       └── user.go
-└── usecase                     # interface層から銃砲を受け、domain層の関数利用
-    └── user.go                 # DDDでのアプリケーションサービス
+FROM mysql:5.7
+RUN touch /var/log/mysql/mysqld.log # 指定の場所にログを記録するファイルを作る
 ```
 <br/>
 
-Web上では色んな方が解説されており、レイヤードアーキテクチャなので **インターフェース / ドメイン / インフラストラクチャ / アプリケーション（ユースケース）** の4つの階層（ディレクトリ）は必ず用意。その他フォルダはお好みで自作しているイメージかな。
+**my.cnf** は以下のように定義。
 
-しかし何となくレイヤードアーキテクチャのディレクトリを用意し、レイヤを切り分ければ良いのではなく **[DIP（依存関係逆転の原則）](https://medium.com/eureka-engineering/go-dependency-inversion-principle-8ffaf7854a55)** 適用するために、interfaceで抽象の公開に注力することが大切だと <span style="color: crimson; font-weight: bold;">リクルートライフスタイル</span> さんの記事でも紹介されていた。
- 
-■ [Goのpackage構成と開発のベタープラクティス](https://engineer.recruit-lifestyle.co.jp/techblog/2018-03-16-go-ddd/)  
+```bash
+[mysqld]
+character-set-server=utf8mb4       # mysqlサーバー側が使用する文字コード
+explicit-defaults-for-timestamp=1  # テーブルにTimeStamp型のカラムをもつ場合、推奨
+general-log=1                      # 実行したクエリの全ての履歴が記録される
+general-log-file=/var/log/mysql/mysqld.log # ログの出力先
 
-上記リンク先の記事では、フレームワーク等を利用しない単純な構成で、package構成の意図やインターフェースの実装例があり、個人的にはこの構成が一番しっくりくる。
-
-ちなみにリクルート記事内でGunosyのパッケージ構成もあった（変遷が面白い）
-
-■ [Goのパッケージ構成の失敗遍歴と現状確認](https://medium.com/@timakin/go%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E6%A7%8B%E6%88%90%E3%81%AE%E5%A4%B1%E6%95%97%E9%81%8D%E6%AD%B4%E3%81%A8%E7%8F%BE%E7%8A%B6%E7%A2%BA%E8%AA%8D-fc6a4369337)
-
-```yml
-.
-├── application                    # レイヤードアーキテクチャでのapplication層
-│   └── usecase                    # DDDでのアプリケーションサービスを配置
-│       ├── xxx_usecase.go
-│       └── yyy_usecase.go
-├── domain                         # レイヤードアーキテクチャでのdomain層
-│   ├── model                      # DDDでのエンティティ／値オブジェクト
-│   ├── repository                 # DDDでのリポジトリ
-│   │   └── xxx_repository.go      # interfaceのみ定義（実装はinfrastructure層）
-│   └── service                    # DDDでのドメインサービス
-├── infrastructure                 # レイヤードアーキテクチャでのinfrastructure層
-│   └── persistence                # 永続化の実装方式に応じてサブパッケージを切る
-│       └── datastore              # データベース接続を想定
-│           └── xxx_repository.go
-├── interfaces                     # レイヤードアーキテクチャでのUI層
-│   └── api                        # httpを想定(標準出力等は別パッケージを切る)
-│       └── server
-│           ├── auth
-│           ├── handler
-│           │   ├── app_handler.go
-│           │   ├── xxx_handler.go
-│           │   └── yyy_handler.go
-│           ├── httputils
-│           ├── middleware
-│           └── router
-└── registry                       # DI解決のためのオブジェクト生成ルール
-    └── registry.go
+[client]
+default-character-set=utf8mb4 # mysqlのクライアント側が使用する文字コード
 ```
 <br/>
 
-また <span style="color: crimson; font-weight: bold;">IIJ</span> さんの記事では **DDD + クリーンアーキテクチャ** のアーキテクチャを紹介されているが、構成がほぼほぼ同じなので、多くの有識者の方に支持されるアーキテクチャかもしれない（業務でここまで綺麗な構成のシステムに出会った事がないので、使用感は何とも言えないけど・・・）
+DockerのMySQLイメージは **docker-entrypoint-initdb.d** にマウントした **.sql/.sh/.sql.gz** を、コンテナ生成・起動時に自動実行する仕組みがあるので、この仕組みで初期テーブル・データを登録。
 
-■ [go言語でクリーンアーキテクチャっぽいもの](https://eng-blog.iij.ad.jp/archives/2442)
+**schema.sql** を以下のように定義。
 
-リクルートさんの記事以上に、図解で丁寧に説明されており、各レイヤ間の依存関係や役割が可視化されて理解しやすい。昨今クラウド環境の発達で、技術の選択肢も増えているので、handler（httpsとpubsub等）やpersistence（RDBSとNoSQL等）のサブディレクトリを切るのが良さげ。
+```sql
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(32) NOT NULL,
+    email VARCHAR(32) NOT NULL,
+    PRIMARY KEY (id)
+);
+```
+<br/>
 
-ちなみにタイトルではGolang+Ginにしてますが、本記事ではGin全く関係ないっすmm
+**testdata.sql** を以下のように定義。
 
-## その他参考記事
-■ [Golang + レイヤードアーキテクチャ - DDDを意識してWebAPIを実装してみる](https://yyh-gl.github.io/tech-blog/blog/go_web_api/)  
+```sql
+INSERT INTO users (id,name,email) VALUES (1, 'TOM','xxxx@mail.co.jp');
+```
+
+## 環境構築
+
+appの **Dockerfile** を以下のように定義。
+
+```yml
+FROM golang:latest
+RUN go get github.com/gin-gonic/gin
+RUN go get github.com/jinzhu/gorm
+RUN go get github.com/go-sql-driver/mysql
+```
+<br/>
+
+docker-compose.ymlを定義。
+
+```yml
+version: '3'
+services:
+  app:
+    build: .
+    container_name: go_container
+    tty: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/go
+  db:
+    build: ./mysql
+    container_name: mysql_host
+    environment:
+      MYSQL_DATABASE: sample_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+      TZ: 'Asia/Tokyo'
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./log/mysql:/var/log/mysql
+    ports:
+      - 3306:3306
+```
+<br/>
+
+dockerを起動し、初期テーブル作成とデータ登録が正常に行われたか確認する。
+
+```bash
+# docker起動
+docker-compose up -d
+
+# MySQL確認
+docker exec -it mysql_host bash
+mysql -u user -p
+use sample_db
+show tables;
+select * from users;
+```
+
+## GolangでMySQLに接続
+
+**main.go** を以下のように定義。
+
+```go
+package main
+
+import (
+	"net/http"
+	"encoding/json"
+	"github.com/gin-gonic/gin"
+	
+    _ "github.com/go-sql-driver/mysql"
+    "github.com/jinzhu/gorm"
+)
+
+type Users struct {
+    ID    int
+    Name  string `json:"name"`
+    Email string `json:"email"`
+}
+
+func main() {
+
+    db, err := sqlConnect()
+    if err != nil {
+        panic(err.Error())
+    }
+	
+    defer db.Close()
+    result := []*Users{}
+    db.Find(&result)
+    bytes, err := json.Marshal(result)
+
+    r := gin.Default()
+    r.GET("/hello", func(c *gin.Context) {
+        c.String(http.StatusOK, string(bytes))
+    })
+    r.Run(":8080")
+}
+
+func sqlConnect() (database *gorm.DB, err error) {
+    DBMS := "mysql"
+    USER := "user"
+    PASS := "password"
+    PROTOCOL := "tcp(mysql_host:3306)"
+    DBNAME := "sample_db"
+	
+    CONNECT := USER + ":" + PASS + "@" + PROTOCOL + "/" + DBNAME + "?charset=utf8&parseTime=true&loc=Asia%2FTokyo"
+    return gorm.Open(DBMS, CONNECT)
+}
+```
+<br/>
+
+**main.go** を実行してデータベースに接続出来るか確認。
+
+```bash
+docker-compose exec app bash
+go run main.go
+```
+<br/>
+
+**http://localhost:8080/hello** でアクセスすると、画面上に以下が表示される。
+
+```shell
+[{"ID":1,"name":"TOM","email":"xxxx@mail.co.jp"}]
+```
+
+## 参考文献
+■ [docker-composeでMySQL5.7を起動して接続してみた](https://qiita.com/LazyHippos/items/58d0f98a15656ed65136)  
+■ [Docker MySQLコンテナ起動時に初期データを投入する](https://qiita.com/NagaokaKenichi/items/ae037963b33a85df33f5)  
+■ [Go言語入門 - MySQL接続編](https://rightcode.co.jp/blog/information-technology/golang-introduction-mysql-connection)  
+■ [Go+MySQL+Docker環境構築](https://qiita.com/__init__/items/f795ff5ba847898a05ae)  
+■ [Golangで構造体を使ったJSON操作で出来ることを調べてみた](https://dev.classmethod.jp/articles/struct-json/)  
+■ [Goでmapをjson文字列に変換する](https://qiita.com/konchanxxx/items/dce130f79c49e04e9931)  
