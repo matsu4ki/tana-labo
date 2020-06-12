@@ -1,214 +1,384 @@
 ---
-title: Docker環境でGolang+Gin+MySQL 環境構築〜DB接続してJSONを返却
-date: "2020-06-01T00:00:00.284Z"
+title: Golang+Gin+Dockerでの開発 Gorm（ゴルム）でのデータベース接続
+date: "2020-05-27T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "golang-gin-mysql"
+perma: "golang-gin-gorm"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
-tags: ["Go", "Gin", "Gorm", "Docker", "MySQL"]
+tags: ["Go", "Gin", "Gorm", "Docker"]
 thumbnail: post-43.png
 ---
 
 ![](./post-43.png)
 
-Docker環境で **Golang+Gin+MySQL** を構築し、データベースへ接続出来るか確認。
+GolangでのDB接続では、GORM利用が多いらしい？ので簡易的なCRUDを試してみた。
 
-**[前回](/post-42)** 同様、データベースへの接続にはGORMを利用。
+## Docker環境の構築
 
-## ディレクトリ構成
+→ [Golang+Gin+Dockerでの環境構築とJSONレスポンスのRESTfulAPI開発](/post-42/)
 
-MySQLに関連するファイルは **mysql配下** に格納。
+## Hello World
 
-```bash
-workspace/
-         ├ mysql/
-         |      ├ conf.d/
-         |      |       └ my.cnf         # MySQLの各種設定
-         |      └ initdb.d/              # 初期テーブル / 初期データ
-         |      |         ├ schema.sql
-         |      |         └ testdata.sql
-         |      └ Dockerfile
-         |
-         ├ main.go
-         ├ Dockerfile
-         └ docker-compose.yml 
-```
-
-## MySQLの各種設定
-
-MySQLの **Dockerfile** は以下のように定義。
-
-```yml
-FROM mysql:5.7
-RUN touch /var/log/mysql/mysqld.log # 指定の場所にログを記録するファイルを作る
-```
-<br/>
-
-**my.cnf** は以下のように定義。
-
-```bash
-[mysqld]
-character-set-server=utf8mb4       # mysqlサーバー側が使用する文字コード
-explicit-defaults-for-timestamp=1  # テーブルにTimeStamp型のカラムをもつ場合、推奨
-general-log=1                      # 実行したクエリの全ての履歴が記録される
-general-log-file=/var/log/mysql/mysqld.log # ログの出力先
-
-[client]
-default-character-set=utf8mb4 # mysqlのクライアント側が使用する文字コード
-```
-<br/>
-
-DockerのMySQLイメージは **docker-entrypoint-initdb.d** にマウントした **.sql/.sh/.sql.gz** を、コンテナ生成・起動時に自動実行する仕組みがあるので、この仕組みで初期テーブル・データを登録。
-
-**schema.sql** を以下のように定義。
-
-```sql
-CREATE TABLE users (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(32) NOT NULL,
-    email VARCHAR(32) NOT NULL,
-    PRIMARY KEY (id)
-);
-```
-<br/>
-
-**testdata.sql** を以下のように定義。
-
-```sql
-INSERT INTO users (id,name,email) VALUES (1, 'TOM','xxxx@mail.co.jp');
-```
-
-## 環境構築
-
-appの **Dockerfile** を以下のように定義。
-
-```yml
-FROM golang:latest
-RUN go get github.com/gin-gonic/gin
-RUN go get github.com/jinzhu/gorm
-RUN go get github.com/go-sql-driver/mysql
-```
-<br/>
-
-docker-compose.ymlを定義。
-
-```yml
-version: '3'
-services:
-  app:
-    build: .
-    container_name: go_container
-    tty: true
-    ports:
-      - "8080:8080"
-    volumes:
-      - .:/go
-  db:
-    build: ./mysql
-    container_name: mysql_host
-    environment:
-      MYSQL_DATABASE: sample_db
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: rootpassword
-      TZ: 'Asia/Tokyo'
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    volumes:
-      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
-      - ./mysql/conf.d:/etc/mysql/conf.d
-      - ./log/mysql:/var/log/mysql
-    ports:
-      - 3306:3306
-```
-<br/>
-
-dockerを起動し、初期テーブル作成とデータ登録が正常に行われたか確認する。
-
-```bash
-# docker起動
-docker-compose up -d
-
-# MySQL確認
-docker exec -it mysql_host bash
-mysql -u user -p
-use sample_db
-show tables;
-select * from users;
-```
-
-## GolangでMySQLに接続
-
-**main.go** を以下のように定義。
+プロジェクト配下にmain.goを作成。
 
 ```go
 package main
 
 import (
 	"net/http"
-	"encoding/json"
 	"github.com/gin-gonic/gin"
-	
-    _ "github.com/go-sql-driver/mysql"
-    "github.com/jinzhu/gorm"
 )
 
-type Users struct {
-    ID    int
-    Name  string `json:"name"`
-    Email string `json:"email"`
+func setupRouter() *gin.Engine {
+	r := gin.Default()
+	r.LoadHTMLGlob("templates/*.html")
+
+	data := "Hello Go/Gin!!"
+	r.GET("/", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index.html", gin.H{"data": data})
+	})
+	return r
 }
 
 func main() {
-
-    db, err := sqlConnect()
-    if err != nil {
-        panic(err.Error())
-    }
-	
-    defer db.Close()
-    result := []*Users{}
-    db.Find(&result)
-    bytes, err := json.Marshal(result)
-
-    r := gin.Default()
-    r.GET("/hello", func(c *gin.Context) {
-        c.String(http.StatusOK, string(bytes))
-    })
-    r.Run(":8080")
-}
-
-func sqlConnect() (database *gorm.DB, err error) {
-    DBMS := "mysql"
-    USER := "user"
-    PASS := "password"
-    PROTOCOL := "tcp(mysql_host:3306)"
-    DBNAME := "sample_db"
-	
-    CONNECT := USER + ":" + PASS + "@" + PROTOCOL + "/" + DBNAME + "?charset=utf8&parseTime=true&loc=Asia%2FTokyo"
-    return gorm.Open(DBMS, CONNECT)
+	r := setupRouter()
+	r.Run(":8080")
 }
 ```
 <br/>
 
-**main.go** を実行してデータベースに接続出来るか確認。
+templatesフォルダを作成後、index.htmlを作成。
 
-```bash
-docker-compose exec app bash
-go run main.go
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample App</title>
+</head>
+<body>
+    <h1>{{.data}}</h1>
+</body>
+</html>
 ```
 <br/>
 
-**http://localhost:8080/hello** でアクセスすると、画面上に以下が表示される。
+r.LoadHTMLGlobでHTMLを読み込むディレクトリを指定し、GETメソッドでレンダリング。
+
+## 管理CRUDアプリの構築
+
+データベースは sqlite3 を利用。
 
 ```shell
-[{"ID":1,"name":"TOM","email":"xxxx@mail.co.jp"}]
+go get github.com/jinzhu/gorm
+go get github.com/mattn/go-sqlite3
+```
+<br/>
+
+main.goにgorm.Modelの標準モデルを定義。
+
+```go
+type Todo struct {
+	gorm.Model
+	// id
+	// created_at
+	// updated_at
+	// deleted_at
+	Text   string
+	Status string
+}
+```
+<br/>
+
+マイグレーション処理（第一引数：使用するDB　第二引数：ファイル名）
+
+```go 
+func dbInit() {
+	db, err := gorm.Open("sqlite3", "test.sqlite3")
+	if err != nil {
+		panic("データベース接続不可(dbInit)")
+	}
+
+	// ファイルが無ければ生成、存在すれば処理スキップ
+	db.AutoMigrate(&Todo{})
+	defer db.Close()
+}
+```
+<br/>
+
+データベースへのINSERT処理を実装。
+
+```go
+func dbInsert(text string, status string) {
+	db, err := gorm.Open("sqlite3", "test.sqlite3")
+	if err != nil {
+		panic("データベース接続不可(dbInsert)")
+	}
+	db.Create(&Todo{Text: text, Status: status})
+	defer db.Close()
+}
+```
+<br/>
+
+データベースの全件取得処理を実装（created_atの昇順ソート）
+
+```go
+func dbGetAll() []Todo {
+	db, err := gorm.Open("sqlite3", "test.sqlite3")
+	if err != nil {
+		panic("データベース接続不可(dbGetAll)")
+	}
+	var todos []Todo
+	db.Order("created_at desc").Find(&todos)
+	db.Close()
+	return todos
+}
+```
+<br/>
+
+データベースから指定レコード取得を実装。
+
+```go
+func dbGetOne(id int) Todo {
+	db, err := gorm.Open("sqlite3", "test.sqlite3")
+	if err != nil {
+		panic("データベース接続不可(dbGetOne)")
+	}
+	var todo Todo
+	db.First(&todo, id)
+	db.Close()
+	return todo
+}
+```
+<br/>
+
+データベースへの更新処理を実装。
+
+```go
+func dbUpdate(id int, text string, status string) {
+	db, err := gorm.Open("sqlite3", "test.sqlite3")
+	if err != nil {
+		panic("データベース接続不可(dbUpdate")
+	}
+	var todo Todo
+	db.First(&todo, id)
+	todo.Text = text
+	todo.Status = status
+	db.Save(&todo)
+	db.Close()
+}
+```
+<br/>
+
+データベースへの削除処理を実装。
+
+```go
+func dbDelete(id int) {
+	db, err := gorm.Open("sqlite3", "test.sqlite3")
+	if err != nil {
+		panic("データベース接続不可(dbDelete)")
+	}
+	var todo Todo
+	db.First(&todo, id)
+	db.Delete(&todo)
+	db.Close()
+}
+```
+
+## メソッド呼び出し
+
+文字列のデータ変換に必要な [strconv](https://golang.org/pkg/strconv/) をインポート。
+
+```go
+import (
+	"strconv"
+	"net/http"
+	"github.com/gin-gonic/gin"
+	"github.com/jinzhu/gorm"
+	_ "github.com/mattn/go-sqlite3"
+)
+```
+<br/>
+
+main.goに各URL毎のデータベース接続処理を実装。
+
+```go
+func setupRouter() *gin.Engine {
+
+	r := gin.Default()
+	r.LoadHTMLGlob("templates/*.html")
+
+	// マイグレーション
+	dbInit()
+
+	// ルーティング毎の処理
+
+	// Index
+	r.GET("/", func(c *gin.Context) {
+		todos := dbGetAll()
+		c.HTML(http.StatusOK, "index.html", gin.H{"todos": todos})
+	})
+
+	// Create
+	r.POST("/new", func(c *gin.Context) {
+		text   := c.PostForm("text")
+		status := c.PostForm("status")
+		dbInsert(text, status)
+		c.Redirect(http.StatusFound, "/")
+	})
+
+	// Detail
+	r.GET("/detail/:id", func(c *gin.Context) {
+		n := c.Param("id")
+
+		// string型 → int型に型変換
+		id, err := strconv.Atoi(n)
+		if err != nil {
+			panic(err)
+		}
+		todo := dbGetOne(id)
+		c.HTML(http.StatusOK, "detail.html", gin.H{"todo": todo})
+	})
+
+	// Update
+	r.POST("/update/:id", func(c *gin.Context) {
+		n := c.Param("id")
+		id, err := strconv.Atoi(n)
+		if err != nil {
+			panic("ERROR")
+		}
+		text   := c.PostForm("text")
+		status := c.PostForm("status")
+		dbUpdate(id, text, status)
+		c.Redirect(http.StatusFound, "/")
+	})
+
+	// 削除確認
+	r.GET("/delete_check/:id", func(c *gin.Context) {
+		n := c.Param("id")
+		id, err := strconv.Atoi(n)
+		if err != nil {
+			panic("ERROR")
+		}
+		todo := dbGetOne(id)
+		c.HTML(http.StatusOK, "delete.html", gin.H{"todo": todo})
+	})
+
+	// Delete
+	r.POST("/delete/:id", func(c *gin.Context) {
+		n := c.Param("id")
+		id, err := strconv.Atoi(n)
+		if err != nil {
+			panic("ERROR")
+		}
+		dbDelete(id)
+		c.Redirect(http.StatusFound, "/")
+	})
+
+	return r
+}
+
+func main() {
+	r := setupRouter()
+	r.Run(":8080")
+}
+```
+
+## テンプレート
+
+templates/index.html
+
+```html
+<body>
+    <h2>追加</h2>
+    <form method="post" action="/new">
+        <p>内容<input type="text" name="text" size="30" placeholder="入力してください" ></p>
+        <p>状態
+            <select name="status">
+                <option value="未実行">未実行</option>
+                <option value="実行中">実行中</option>
+                <option value="終了">終了</option>
+            </select>
+        </p>
+        <p><input type="submit" value="Send"></p>
+    </form>
+    
+    <ul>
+        {{ range .todos }}
+            <li>内容：{{ .Text }}、状態：{{ .Status }}
+                <label><a href="/detail/{{.ID}}">編集</a></label>
+                <label><a href="/delete_check/{{.ID}}">削除</a></label>
+            </li>
+        {{end}}
+    </ul>
+    </body>
+```
+<br/>
+
+templates/detail.html
+
+```html
+<body>
+    <h2>aaa</h2>
+    
+    <p>{{.user.ID}}</p>
+    <p>{{.user.Name}}</p>
+    <p>{{.user.Age}}</p>
+    
+    <form method="post" action="/update/{{.todo.ID}}">
+        <p>内容<input type="text" name="text" size="30" value="{{.todo.Text}}" ></p>
+        <p>状態
+            <select name="status">
+                {{if eq .todo.Status "未実行"}}
+                    <option value="未実行" selected>未実行</option>
+                    <option value="実行中">実行中</option>
+                    <option value="終了">終了</option>
+                {{else if eq .todo.Status "実行中"}}
+                    <option value="未実行">未実行</option>
+                    <option value="実行中" selected>実行中</option>
+                    <option value="終了">終了</option>
+                {{else}}
+                    <option value="未実行">未実行</option>
+                    <option value="実行中">実行中</option>
+                    <option value="終了" selected>終了</option>
+                {{end}}
+            </select>
+        </p>
+        <p><input type="submit" value="Send"></p>
+    </form>
+    </body>
+```
+<br/>
+
+templates/delete.html
+
+```html
+<body>
+    <h1>削除確認</h1>
+    <p>本当に削除しますか？</p>
+    <ul>
+        <li>内容： {{.todo.Text}}</li>
+        <li>状態： {{.todo.Status}}</li>
+        <li>作成時間： {{.todo.CreatedAt}}</li>
+    </ul>
+    
+    <form method="post" action="/delete/{{.todo.ID}}">
+        <p><input type="submit" value="削除"></p>
+        <p><a href="/">戻る</a></p>
+    </form>
+</body>
+```
+<br/>
+
+ここまで書けたら実行。
+
+```shell
+go run main.go
 ```
 
 ## 参考文献
-■ [docker-composeでMySQL5.7を起動して接続してみた](https://qiita.com/LazyHippos/items/58d0f98a15656ed65136)  
-■ [Docker MySQLコンテナ起動時に初期データを投入する](https://qiita.com/NagaokaKenichi/items/ae037963b33a85df33f5)  
-■ [Go言語入門 - MySQL接続編](https://rightcode.co.jp/blog/information-technology/golang-introduction-mysql-connection)  
-■ [Go+MySQL+Docker環境構築](https://qiita.com/__init__/items/f795ff5ba847898a05ae)  
-■ [Golangで構造体を使ったJSON操作で出来ることを調べてみた](https://dev.classmethod.jp/articles/struct-json/)  
-■ [Goでmapをjson文字列に変換する](https://qiita.com/konchanxxx/items/dce130f79c49e04e9931)  
+■ [GoDoc](https://godoc.org/github.com/gin-gonic/gin)  
+■ [GORM@公式HP](https://jinzhu.me/gorm/)  
+■ [Go言語でORM触ってみた](https://qiita.com/chan-p/items/cf3e007b82cc7fce2d81)  
+■ [Go / Gin で超簡単なWebアプリを作る](https://qiita.com/hyo_07/items/59c093dda143325b1859)  
