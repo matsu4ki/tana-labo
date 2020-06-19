@@ -1,17 +1,19 @@
 
 #category {
-  background-color: darkgray;
-  margin-bottom: 10px;
+  background-color: #dcdcdc;
+  margin-bottom: 0px;
   padding: 15px; 
   text-align: center;
 }
 
 #category span {
-  background-color: gold;
   margin: 0 15px;
   padding: 7px 13px;
-  width: 120px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
-  box-shadow: 0 0 8px gray; 
+}
+
+#category span:hover {
+  background-color: #000000;
+  color: #ffffff;
 }

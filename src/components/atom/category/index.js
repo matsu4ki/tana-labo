@@ -7,6 +7,9 @@ class Category extends Component {
   render() {
     return (
       <div id="category">
+          <Link to={`/`} style={{ boxShadow: `none`, color: `black` }}>
+            <span>ALL</span>
+          </Link>
           <Link to={`/category/エンジニアリング/`} style={{ boxShadow: `none`, color: `black` }}>
             <span>エンジニアリング</span>
           </Link>
