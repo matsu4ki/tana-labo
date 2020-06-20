@@ -31,6 +31,7 @@ thumbnail: post-31.png
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
+<br/>
 
 本書は日本のマーケティングにおける歴史的な背景、BtoBマーケティングの基礎知識、ABMやMAツール等、BtoBマーケティングに関わる包括的な知識が得られる一冊であることは間違いないと思う。
 
@@ -82,6 +83,7 @@ thumbnail: post-31.png
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
+<br/>
 
 これに対して、**インバウンドマーケティング**では、<span style="color: crimson; font-weight: bold;">ハウスリストをナーチャリングせず、インターネットにアクセス出来る人を全てリードとし、顕在化した課題を持つ人に見つけてもらう視点</span>で設計。
 
@@ -130,6 +132,7 @@ ABMは一つの企業に複数のコンタクトポイントがあり、そこ�
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
+<br/>
 
 字面にすると何てことない様に見えるけど、①〜③は特にコストがかかる。
 

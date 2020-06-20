@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "revision-of-personal-information-protection-law"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["個人情報", "Cookie"]
+tags: ["BtoBマーケティング", "個人情報", "Cookie"]
 thumbnail: post-28.png
 ---
 
@@ -14,7 +14,7 @@ thumbnail: post-28.png
 
 以前にリクルートキャリア提供のサービスで、個人を特定出来る情報を収集していたことが問題になっていた。それもプライバシーポリシーが不備な状態で、利用者から同意を得ることなく。
 
-正直関係ないでしょと考えていたが、Webシステム開発の現場では、Cookieを利用したセッション管理を行うことが多く、知らんぷりを決め込む事が難しくなってきた!? と思っていた矢先、ChromeでのサードパーティCookie廃止が決まり、携わっていたシステムにも影響が出てしまった。
+「正直関係ないでしょ」と考えていたが、Web開発の現場では、Cookieを利用したセッション管理を行うことも多い。知らんぷりを決め込む事が難しくなってきた!? と思っていた矢先、ChromeでのサードパーティCookie廃止が決まり、携わっていたシステムにも影響が出てしまった。
 
 Google Developerでも本内容が紹介されている。
 
@@ -24,11 +24,9 @@ Google Developerでも本内容が紹介されている。
 
 昨今では個人情報の在り方が議論される事も多く、日本でも個人情報保護法が制定されているが、厳格なルールを定めているGDPRに比べれば、不明確な部分やグレーゾーンも多い。そのため個人情報を扱う企業の中には、世界レベル（GDPR）に合わせようとする動きがチラホラ見られる。
 
-今後知っておくべき個人情報の扱いやCookie規制、トラッキングの在り方のメモ書き。
-
 ## 個人情報保護法改正で示されたCookie規制
 
-まず個人情報保護法では**「個人データ」**を以下のように定義している。
+まず個人情報保護法では**「個人データ」**を以下のように定義されている。
 
 > 個人情報とは、生存する個人に関する情報であって、氏名や生年月日等により特定の個人を識別することができるものをいいます。
 >
@@ -79,6 +77,7 @@ Cookie自体は個人情報に当たらないが、SNS上にはユーザーア�
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
+<br/>
 
 トラッキングへの影響度は限定的と述べられているが、携わっているシステムでサードパーティCookieを活用したトラッキング処理が行われており、Chrome80対応ではもろに影響を受けてしまった（涙）
 
@@ -94,9 +93,10 @@ Chrome80以降では、SameSite=None; Secureの設定があるCookieのみが、
 
 SafariへのITP導入など、サードパーティCookieの問題は以前から話題となっているが、一例としてGoogleは独自に_gac Cookieを使うことで一早く対処していたことを知った。
 
-AdWordsとGoogleアナリティクスをリンクさせ、自動タグ設定を有効にしておけば、広告のURLにURLにGLINKが付与される。このGLINKを含む値情報を_gac Cookieに書き込むことで、広告のクリックをファーストパーティCookieとして保存するすることでITPを回避(イタチごっこだなw)
-
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3205/9784295003205.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >ネット広告運用“打ち手”大全</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">寳洋平/辻井良太 インプレス 2018年04月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295003204/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%8D%E3%83%83%E3%83%88%E5%BA%83%E5%91%8A%E9%81%8B%E7%94%A8%E2%80%9C%E6%89%93%E3%81%A1%E6%89%8B%E2%80%9D%E5%A4%A7%E5%85%A8&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
+<br/>
+
+AdWordsとGoogleアナリティクスをリンクさせ、自動タグ設定を有効にしておけば、広告のURLにURLにGLINKが付与される。このGLINKを含む値情報を_gac Cookieに書き込むことで、広告のクリックをファーストパーティCookieとして保存しITPを回避。
 
 ## GDPRとCCPAの存在
 
