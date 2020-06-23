@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { rhythm　} from "../../utils/typography"
 import Header from "../header"
 import Intro from "../intro"
@@ -21,6 +22,16 @@ const Layout = ({ location, title, children }) => {
   return (
     <div style={{ backgroundColor: `whitesmoke`, fontFamily: `Kosugi Maru`, }}>
       <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" />
+      <Helmet>
+      <script id="_bownow_ts">
+{`
+var _bownow_ts = document.createElement('script');
+_bownow_ts.charset = 'utf-8';
+_bownow_ts.src = 'https://dev3-contents.bownow.jp/js/UTC_02d3e2aee9708e95103e/trace.js';
+document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
+`}
+      </script>
+      </Helmet>
       <Header title={title} />
       {intro}
       <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
