@@ -64,7 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
 		paginate({
 			createPage,
 			items: posts,
-			itemsPerPage: 16,
+			itemsPerPage: 12,
 			// 2ページ目以降はURLに"/page"が付与されるよう設定
 			pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/" : "/page"),
 			component: indexTemplate

@@ -1,7 +1,7 @@
 ---
 title: Golang+GinでのDDDアーキテクチャ設計 − API設計でのパッケージ構成
 date: "2020-06-08T00:00:00.284Z"
-description: ""
+description: "ドメイン駆動設計入門にて、概念を実装に落とし込むパターンを確認し、Goのアーキテクチャ構成を調査すると、レイヤードアーキテクチャ + DDDを解説される方が多かったので、簡単にまとめてみた。"
 pagetype: "category"
 perma: "golang-ddd"
 categoryname: "エンジニアリング"

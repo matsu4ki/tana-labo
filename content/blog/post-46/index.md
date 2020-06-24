@@ -1,7 +1,7 @@
 ---
 title: Golang+Dockerでのパッケージ管理と自作ライブラリのインポート手順
 date: "2020-06-23T00:00:00.284Z"
-description: ""
+description: "Golang + Docker環境下で、自作ライブラリを呼び出す手順の備忘録。"
 pagetype: "category"
 perma: "golang-module"
 categoryname: "エンジニアリング"

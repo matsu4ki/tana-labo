@@ -1,7 +1,7 @@
 ---
 title: Ruby on Rails開発経験0の自分が最低限の基礎理解のためにやったこと
 date: "2020-05-03T00:00:00.284Z"
-description: ""
+description: "急遽PLとしてRailsアプリの開発案件に参画することになり、知識0では苦労しそうなので、簡易的なWebアプリを作ったり、自分が過去経験した言語（Java/PHP/C#）での開発と比べてどう違うのか、こちらの書籍を一読して確認してみた。"
 pagetype: "category"
 perma: "ruby-on-rails"
 categoryname: "エンジニアリング"
