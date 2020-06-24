@@ -12,7 +12,7 @@ thumbnail: post-44.png
 
 ![](./post-44.png)
 
-Docker環境で **Golang+Gin+MySQL** を構築し、データベースへ接続出来るか確認。
+Docker上で **Golang+Gin+MySQL** を環境構築し、データベース接続出来るかを確認。
 
 **[前回](/post-43)** 同様、データベースへの接続にはGORMを利用。
 

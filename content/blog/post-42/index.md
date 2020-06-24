@@ -6,23 +6,23 @@ pagetype: "category"
 perma: "golang-gin"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
-tags: ["Go", "Gin", "Docker"]
+tags: ["Go", "Gin", "Docker", "初心者"]
 thumbnail: post-42.png
 ---
 
 ![](./post-42.png)
 
-Golangが利用される用途で、最も多いのがAPI開発（噂）
+Golangが利用される用途で最も多いAPI開発（あくまで噂）
 
-フレームワークも多数あり、2020年時点では **PHPにおけるLaravel的なもの** が無いようなので、まずは **学習コスト低め + 情報量の多いgo-gin** に触れてみた。
+フレームワークも多数あり、2020年時点では **PHPにおけるLaravel的なもの** が無いようなので、まずは **学習コスト低め + 情報量の多いgo-gin** に触れてみた（フレームワーク使わない勢も結構いる模様）
 
-公式ドキュメントだけで、環境構築 〜 単体試験のサンプル実装くらいはサクサク進む印象。
+公式ドキュメントのみで **環境構築 〜 単体試験** のサンプル実装まではサクサク進んだ!!
 
 ## Docker環境構築
 
 docker-composeで **go-gin** の動作環境を構築。
 
-```shell
+```yml
 # ディレクトリ構造
 .
 ├──  docker-compose.yml
@@ -57,7 +57,7 @@ $ go get github.com/gin-gonic/gin
 ## go-ginでのHello World
 
 
-ルーティング（localhost:8080/hello）で **Hello World** を表示させる。
+main.go内に以下のプログラムを追記。
 
 ```go
 package main
@@ -119,7 +119,7 @@ $ go get github.com/stretchr/testify
 ```
 <br/>
 
-ルーティング（/hello）で **Hello World** 表示する関数を定義。
+main.go内に以下のプログラムを追記。
 
 ```go
 package main

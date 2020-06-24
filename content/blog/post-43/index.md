@@ -6,13 +6,13 @@ pagetype: "category"
 perma: "golang-gin-gorm"
 categoryname: "エンジニアリング"
 categoryslug: "engineering"
-tags: ["Go", "Gin", "Gorm", "Docker"]
+tags: ["Go", "Gin", "Gorm", "Docker", "SQLite"]
 thumbnail: post-43.png
 ---
 
 ![](./post-43.png)
 
-GolangでのDB接続では、GORM利用が多いらしい？ので簡易的なCRUDを試してみた。
+GolangでのDB接続では、GORM利用が多いらしい？ので簡易CRUDを試してみた。
 
 ## Docker環境の構築
 
@@ -212,8 +212,6 @@ func setupRouter() *gin.Engine {
 	// マイグレーション
 	dbInit()
 
-	// ルーティング毎の処理
-
 	// Index
 	r.GET("/", func(c *gin.Context) {
 		todos := dbGetAll()
@@ -287,7 +285,7 @@ func main() {
 
 ## テンプレート
 
-templates/index.html
+**templates/index.html** を以下のよう定義。
 
 ```html
 <body>
@@ -316,7 +314,7 @@ templates/index.html
 ```
 <br/>
 
-templates/detail.html
+**templates/detail.html** を以下のように定義。
 
 ```html
 <body>
@@ -351,7 +349,7 @@ templates/detail.html
 ```
 <br/>
 
-templates/delete.html
+**templates/delete.html** を以下のように定義。
 
 ```html
 <body>
