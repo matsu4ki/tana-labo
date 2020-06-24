@@ -1,7 +1,7 @@
 ---
 title: Docker環境でGolang+Gin+MySQL 環境構築〜DB接続してJSONを返却
 date: "2020-06-01T00:00:00.284Z"
-description: ""
+description: "Docker上でGolang+Gin+MySQLを環境構築し、データベース接続出来るかを確認。"
 pagetype: "category"
 perma: "golang-gin-mysql"
 categoryname: "エンジニアリング"

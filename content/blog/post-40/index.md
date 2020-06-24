@@ -1,7 +1,7 @@
 ---
 title: Goプログラミング言語のチュートリアル 〜 基礎的な文法・Part1
 date: "2020-05-22T00:00:00.284Z"
-description: ""
+description: "最近のWEB開発ではGo言語の採用が増えているので、書籍で基本的な文法に触れてみた。内容としては、言語基礎、関数とメソッド、構造体など。"
 pagetype: "category"
 perma: "golang-basic"
 categoryname: "エンジニアリング"

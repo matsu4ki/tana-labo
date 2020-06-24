@@ -1,7 +1,7 @@
 ---
 title: Golang+Gin+Dockerでの環境構築とJSONレスポンスのRESTfulAPI開発
 date: "2020-05-24T00:00:00.284Z"
-description: ""
+description: "Golangが利用される用途で最も多いのがAPI開発らしく、2020年時点では PHPにおけるLaravel的なものが無いようなので、まずは学習コスト低めで、情報量の多いgo-ginに触れてみた。"
 pagetype: "category"
 perma: "golang-gin"
 categoryname: "エンジニアリング"

@@ -1,7 +1,7 @@
 ---
 title: Golang+Gin+Dockerでの開発 Gorm（ゴルム）でのデータベース接続
 date: "2020-05-27T00:00:00.284Z"
-description: ""
+description: "GolangでのDB接続では、GORM利用が多いらしい？ので簡易CRUDを試してみた。"
 pagetype: "category"
 perma: "golang-gin-gorm"
 categoryname: "エンジニアリング"

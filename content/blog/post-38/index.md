@@ -1,7 +1,7 @@
 ---
 title: docker-composeの基本操作とDocker + Railsの開発環境構築ハンズオン
 date: "2020-04-27T00:00:00.284Z"
-description: ""
+description: "一般的なWebシステムは、単一のアプリケーションやミドルウェアだけで成立することはなく、アプリケーション同士の連携が必要。そのため実際の開発ではdocker-composeの利用が一般的になる。"
 pagetype: "category"
 perma: "docker-compose"
 categoryname: "エンジニアリング"
