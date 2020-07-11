@@ -11,7 +11,7 @@ const Index = props => {
   const posts = props.data.posts.edges
   const tags = props.data.tags.group
   return (
-    <Layout location={props.location} title={siteTitle} tags={tags}>
+    <Layout location={props.location} title={siteTitle} tags={tags} >
       <SEO title="All posts" />
       <Posts posts={posts} />
       <Pagination props={props} />
