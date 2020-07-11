@@ -7,9 +7,10 @@ import Posts from "../components/atom/posts"
 const Tags = ({ location, pageContext, data }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  const tags = data.tags.group
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} tags={tags} >
       <div style={{ fontSize: `24px`, fontWeight: `bold`, textAlign: `center` }}>
         {pageContext.tag} ({data.allMarkdownRemark.totalCount}件)
       </div>
@@ -51,6 +52,12 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    tags:allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

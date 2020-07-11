@@ -4,7 +4,7 @@ import { rhythm　} from "../../utils/typography"
 import Header from "../header"
 import Intro from "../intro"
 import Category from "../atom/category"
-//import Taglist from "../atom/taglist"
+import Taglist from "../atom/taglist"
 import Footer from "../footer"
 
 const Layout = ({ location, title, tags, children }) => {
@@ -18,10 +18,11 @@ const Layout = ({ location, title, tags, children }) => {
   if (location.pathname === rootPath || location.pathname.match(/page/) || location.pathname.match(/category/) || location.pathname.match(/tags/)) {
     intro = <Intro />
     category = <Category />
+    taglist = <Taglist tags={tags} />
     width = 47.3
   }
 
-  //if (location.pathname === rootPath) {
+  //if (location.pathname === rootPath || location.pathname.match(/category/) || location.pathname.match(/tags/)) {
   //  taglist = <Taglist tags={tags} />
   //}
 
@@ -42,11 +43,9 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
       {intro}
       <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
         {category}
-        {taglist}
       </div>
       <div
         style={{
-          marginBottom: `30px`,
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(width),
@@ -55,6 +54,9 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
         }}
       >
         <main>{children}</main>
+      </div>
+      <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
+        {taglist}
       </div>
       <Footer />
     </div>
