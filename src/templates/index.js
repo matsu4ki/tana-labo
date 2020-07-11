@@ -9,8 +9,9 @@ import Pagination from "../components/pagination"
 const Index = props => {
   const siteTitle = props.data.site.siteMetadata.title
   const posts = props.data.posts.edges
+  const tags = props.data.tags.group
   return (
-    <Layout location={props.location} title={siteTitle}>
+    <Layout location={props.location} title={siteTitle} tags={tags}>
       <SEO title="All posts" />
       <Posts posts={posts} />
       <Pagination props={props} />
@@ -49,6 +50,12 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    tags:allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

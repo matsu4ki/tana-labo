@@ -4,13 +4,15 @@ import { rhythm　} from "../../utils/typography"
 import Header from "../header"
 import Intro from "../intro"
 import Category from "../atom/category"
+//import Taglist from "../atom/taglist"
 import Footer from "../footer"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, tags, children }) => {
 
   const rootPath = `${__PATH_PREFIX__}/`
   let intro
   let category
+  let taglist
   let width = 28
 
   if (location.pathname === rootPath || location.pathname.match(/page/) || location.pathname.match(/category/) || location.pathname.match(/tags/)) {
@@ -18,6 +20,10 @@ const Layout = ({ location, title, children }) => {
     category = <Category />
     width = 47.3
   }
+
+  //if (location.pathname === rootPath) {
+  //  taglist = <Taglist tags={tags} />
+  //}
 
   return (
     <div style={{ backgroundColor: `whitesmoke`, fontFamily: `Kosugi Maru`, }}>
@@ -36,6 +42,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
       {intro}
       <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
         {category}
+        {taglist}
       </div>
       <div
         style={{
