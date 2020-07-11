@@ -22,10 +22,6 @@ const Layout = ({ location, title, tags, children }) => {
     width = 47.3
   }
 
-  //if (location.pathname === rootPath || location.pathname.match(/category/) || location.pathname.match(/tags/)) {
-  //  taglist = <Taglist tags={tags} />
-  //}
-
   return (
     <div style={{ backgroundColor: `whitesmoke`, fontFamily: `Kosugi Maru`, }}>
       <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" />
@@ -54,6 +50,9 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
         }}
       >
         <main>{children}</main>
+      </div>
+      <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
+        {category}
       </div>
       <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
         {taglist}
