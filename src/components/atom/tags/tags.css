@@ -1,0 +1,15 @@
+
+.tags-tag {
+  display: inline;
+  flex-wrap: wrap;
+  margin-right: 10px; 
+  padding: 5px 7px; 
+  text-decoration: none; 
+  font-size: 12px;
+  color: white;
+  background-color: lightpink;
+}
+.tags-tag:hover {
+  background-color: black;
+  color: white;
+}

@@ -8,19 +8,19 @@ class Category extends Component {
     return (
       <div id="category">
           <Link to={`/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>All</span>
+            <div>All</div>
           </Link>
           <Link to={`/category/エンジニアリング/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>エンジニアリング</span>
+            <div>エンジニアリング</div>
           </Link>
           <Link to={`/category/テクノロジー/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>テクノロジー</span>
+            <div>テクノロジー</div>
           </Link>
           <Link to={`/category/ビジネス/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>ビジネス</span>
+            <div>ビジネス</div>
           </Link>
           <Link to={`/category/リベラルアーツ/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>リベラルアーツ</span>
+            <div>リベラルアーツ</div>
           </Link>
       </div>
     )
