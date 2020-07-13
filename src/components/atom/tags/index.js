@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 
 const Tag = ({ tag }) => (
-  <Link to={`/tags/${kebabCase(tag)}/`} style={{ boxShadow: `none`, color: `black` }}>
+  <Link to={`/tags/${kebabCase(tag)}/`} style={{ boxShadow: `none`, color: `black` }} >
     <div style={{
       display: `inline`,
       flexWrap: `wrap`, 
@@ -13,7 +13,7 @@ const Tag = ({ tag }) => (
       fontSize: `12px`,
       color: `white`,
       backgroundColor: `lightpink`,
-    }}>{tag}</div>
+    }} className="tags-tag">{tag}</div>
   </Link>
 );
 

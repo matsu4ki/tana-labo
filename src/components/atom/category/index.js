@@ -11,16 +11,16 @@ class Category extends Component {
             <span>All</span>
           </Link>
           <Link to={`/category/エンジニアリング/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>Engineering</span>
+            <span>エンジニアリング</span>
           </Link>
           <Link to={`/category/テクノロジー/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>Technology</span>
+            <span>テクノロジー</span>
           </Link>
           <Link to={`/category/ビジネス/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>Business</span>
+            <span>ビジネス</span>
           </Link>
           <Link to={`/category/リベラルアーツ/`} style={{ boxShadow: `none`, color: `black` }}>
-            <span>LiberalArts</span>
+            <span>リベラルアーツ</span>
           </Link>
       </div>
     )

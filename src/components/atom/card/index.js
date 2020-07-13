@@ -24,7 +24,7 @@ class Card extends Component {
             <section>
               <Image filename={node.frontmatter.thumbnail.base} />
               <div style={{ padding: `0 10px 0 10px` }}>
-                <Link to={`/category/${kebabCase(node.frontmatter.categoryname)}/`} style={{ boxShadow: `none`, color: `black` }} className="card_category">
+                <Link to={`/category/${kebabCase(node.frontmatter.categoryname)}/`} className="card_category">
                   {node.frontmatter.categoryname}
                 </Link>
                 <p className="title">{title}</p>
