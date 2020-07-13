@@ -6,14 +6,22 @@
   text-align: center;
 }
 
-#category span {
+#category div {
+  display: inline-block;
   margin: 0 15px;
-  padding: 7px 13px;
+  padding: 5px 13px;
   font-size: 15px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
-#category span:hover {
+#category div:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+@media screen and (max-width: 480px){
+  #category div {
+    display: block;
+  }
 }

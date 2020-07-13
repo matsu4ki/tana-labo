@@ -1,0 +1,9 @@
+
+#header {
+  width: 100%;
+  text-align: center;
+  background-color: steelblue;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100;
+}

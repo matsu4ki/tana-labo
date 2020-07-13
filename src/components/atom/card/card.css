@@ -41,26 +41,3 @@
   margin: 0;
   font-size: 12px;
 }
-
-@media screen and (max-width: 696px){
-  .card {
-    width: 150px;
-    height: 205px;
-  }
-  .card_category {
-    width: 75px;
-    font-size: 5px;
-  }
-  .title {
-    font-size: 10px;
-  }
-  .calender {
-    font-size: 8px;
-  }
-  .tag {
-    display: none;
-  }
-  .description {
-    display: none;
-  }
-}
