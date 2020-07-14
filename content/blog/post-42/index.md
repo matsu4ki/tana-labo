@@ -4,8 +4,8 @@ date: "2020-05-24T00:00:00.284Z"
 description: "Golangが利用される用途で最も多いのがAPI開発らしく、2020年時点では PHPにおけるLaravel的なものが無いようなので、まずは学習コスト低めで、情報量の多いgo-ginに触れてみた。"
 pagetype: "category"
 perma: "golang-gin"
-categoryname: "エンジニアリング"
-categoryslug: "engineering"
+categoryname: "WEB"
+categoryslug: "WEB"
 tags: ["Go", "Gin", "Docker", "初心者"]
 thumbnail: post-42.png
 ---

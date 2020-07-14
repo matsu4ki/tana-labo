@@ -4,8 +4,8 @@ date: "2020-02-06T00:00:00.284Z"
 description: "昨今ではサーバレス技術の進化が目覚しく、従来のサーバーを持つという当たり前が変わり始めている。そうは言われつつも、2020年までは結構癖のある技術だと言われていたが、クラウド事業者の努力で様々な問題が解決され出し、2020年以降はサーバレス開発が当たり前になるかも。"
 pagetype: "category"
 perma: "serverless-architecture"
-categoryname: "エンジニアリング"
-categoryslug: "engineering"
+categoryname: "WEB"
+categoryslug: "WEB"
 tags: ["AWS", "GAFA"]
 thumbnail: post-24.png
 ---

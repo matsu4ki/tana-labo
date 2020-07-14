@@ -4,8 +4,8 @@ date: "2020-04-17T00:00:00.284Z"
 description: "先輩エンジニアからエリック・エヴァンスのDDD本を薦められた新人時代だが、当時は今よりも技術力が未熟な上、内容も難解だったので、数ページ見開いただけで挫折してしまった。それから長い間DDDに触れる機会は無く現在に。しかも読んだ人に話を聞いても、よく分からなかったと言う人ばかりだった。"
 pagetype: "category"
 perma: "ddd"
-categoryname: "エンジニアリング"
-categoryslug: "engineering"
+categoryname: "WEB"
+categoryslug: "WEB"
 tags: ["DDD", "アーキテクチャ"]
 thumbnail: post-35.png
 ---

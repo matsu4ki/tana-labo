@@ -2,26 +2,38 @@
 #category {
   background-color: #dcdcdc;
   margin-bottom: 0px;
-  padding: 15px; 
+  padding: 15px 15px 10px; 
   text-align: center;
 }
 
 #category div {
   display: inline-block;
   margin: 0 15px;
-  padding: 5px 13px;
-  font-size: 15px;
+  padding: 5px 11px;
+  font-size: 14px;
   font-weight: bold;
   white-space: nowrap;
 }
 
-#category div:hover {
-  background-color: #000000;
-  color: #ffffff;
+#category p {
+  margin-bottom: 0;
 }
 
-@media screen and (max-width: 480px){
+#category .gatsby-image-wrapper {
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px){ 
+  #category { 
+    padding: 15px 5px 10px; 
+  }
   #category div {
-    display: block;
+    margin: 0;
+    padding: 5px 11px;
+    font-size: 10px;
+  }
+  #category p {
+    white-space: pre-wrap;
   }
 }
