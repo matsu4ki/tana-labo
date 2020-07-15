@@ -10,31 +10,31 @@ class Category extends Component {
       <div id="category">
         <div class="category-col">
           <Link to={`/`} style={{ boxShadow: `none`, color: `black` }}>
-            <Image filename={`github.jpg`} />
+            <Image filename={`home.png`} />
           </Link>
           <p>All</p>
         </div>
         <div class="category-col">
           <Link to={`/category/web/`} style={{ boxShadow: `none`, color: `black` }}>
-          <Image filename={`github.jpg`} />
+          <Image filename={`web.png`} />
           </Link>
           <p>WEB</p>
         </div>
         <div class="category-col">
           <Link to={`/category/テクノロジー/`} style={{ boxShadow: `none`, color: `black` }}>
-          <Image filename={`github.jpg`} />
+          <Image filename={`technology.png`} />
           </Link>
           <p>テクノロジー</p>
         </div>
         <div class="category-col">
           <Link to={`/category/ビジネス/`} style={{ boxShadow: `none`, color: `black` }}>
-          <Image filename={`github.jpg`} />
+          <Image filename={`business.png`} />
           </Link>
           <p>ビジネス</p>
         </div>
         <div class="category-col">
           <Link to={`/category/リベラルアーツ/`} style={{ boxShadow: `none`, color: `black` }}>
-          <Image filename={`github.jpg`} />
+          <Image filename={`liberalarts.png`} />
           </Link>
           <p>リベラルアーツ</p>
         </div>
