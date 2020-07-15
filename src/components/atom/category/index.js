@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Image from "../image"
 import { Link } from "gatsby"
 
 import "./category.css"
@@ -7,21 +8,36 @@ class Category extends Component {
   render() {
     return (
       <div id="category">
+        <div class="category-col">
           <Link to={`/`} style={{ boxShadow: `none`, color: `black` }}>
-            <div>All</div>
+            <Image filename={`home.png`} />
           </Link>
-          <Link to={`/category/エンジニアリング/`} style={{ boxShadow: `none`, color: `black` }}>
-            <div>エンジニアリング</div>
+          <p>All</p>
+        </div>
+        <div class="category-col">
+          <Link to={`/category/web/`} style={{ boxShadow: `none`, color: `black` }}>
+          <Image filename={`web.png`} />
           </Link>
+          <p>WEB</p>
+        </div>
+        <div class="category-col">
           <Link to={`/category/テクノロジー/`} style={{ boxShadow: `none`, color: `black` }}>
-            <div>テクノロジー</div>
+          <Image filename={`technology.png`} />
           </Link>
+          <p>テクノロジー</p>
+        </div>
+        <div class="category-col">
           <Link to={`/category/ビジネス/`} style={{ boxShadow: `none`, color: `black` }}>
-            <div>ビジネス</div>
+          <Image filename={`business.png`} />
           </Link>
+          <p>ビジネス</p>
+        </div>
+        <div class="category-col">
           <Link to={`/category/リベラルアーツ/`} style={{ boxShadow: `none`, color: `black` }}>
-            <div>リベラルアーツ</div>
+          <Image filename={`liberalarts.png`} />
           </Link>
+          <p>リベラルアーツ</p>
+        </div>
       </div>
     )
   }

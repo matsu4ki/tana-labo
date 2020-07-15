@@ -4,8 +4,8 @@ date: "2020-05-23T00:00:00.284Z"
 description: "最近のWEB開発ではGo言語の採用が増えているので、書籍で基本的な文法に触れてみた。内容としては、インタフェース、配列、エラーハンドリングなど。"
 pagetype: "category"
 perma: "golang-basic"
-categoryname: "エンジニアリング"
-categoryslug: "engineering"
+categoryname: "WEB"
+categoryslug: "WEB"
 tags: ["Go", "初心者"]
 thumbnail: post-41.png
 ---
