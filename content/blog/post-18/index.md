@@ -58,6 +58,7 @@ IT業界に身を置く者として、AI・ディープラーニング系の話�
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
+<br/>
 
 では今のAIには何が足りて、何が足りないのか!?
 
@@ -76,5 +77,6 @@ IT業界に身を置く者として、AI・ディープラーニング系の話�
 本書を読んでいる限り、現行のAIであれば、様々な要因（内的・外的）を加味しつつ、目標とゴール設定をし、それに向かって突き進める、または周りを巻き込む力、経営者やコンサルなど抽象度の高い業務が出来る人には仕事が殺到し、代替可能な人はAIに仕事を奪われて益々二極化するのかな。
 
 <div class="kaerebalink-box" style="text-align:left;padding-bottom:20px;font-size:small;zoom: 1;overflow: hidden;"><div class="kaerebalink-image" style="float:left;margin:0 15px 10px 0;"><a href="https://hb.afl.rakuten.co.jp/hgc/g0000015.o51y41f2.g0000015.o51y5a32/kaereba_main_202002061112327463?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2Fa4c2e40d8509b94d23a64fa69a33d9b8%2F&m=http%3A%2F%2Fm.product.rakuten.co.jp%2Fproduct%2Fa4c2e40d8509b94d23a64fa69a33d9b8%2F" target="_blank" rel="noopener noreferrer"><img style="width:80px" src="https://thumbnail.image.rakuten.co.jp/ran/img/2001/0009/784/309/227/887/20010009784309227887_1.jpg?_ex=64x64" style="border: none;" /></a></div><div class="kaerebalink-info" style="line-height:120%;zoom: 1;overflow: hidden;"><div class="kaerebalink-name" style="margin-bottom:10px;line-height:120%"><a href="https://hb.afl.rakuten.co.jp/hgc/g0000015.o51y41f2.g0000015.o51y5a32/kaereba_main_202002061112327463?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2Fa4c2e40d8509b94d23a64fa69a33d9b8%2F&m=http%3A%2F%2Fm.product.rakuten.co.jp%2Fproduct%2Fa4c2e40d8509b94d23a64fa69a33d9b8%2F" target="_blank" rel="noopener noreferrer">２１Ｌｅｓｓｏｎｓ ２１世紀の人類のための２１の思考  /河出書房新社/ユヴァル・ノア・ハラリ</a><div class="kaerebalink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="https://kaereba.com" rel="nofollow noopener noreferrer" target="_blank">カエレバ</a></div></div><div class="kaerebalink-detail" style="margin-bottom:5px;"></div><div class="kaerebalink-link1" style="margin-top:10px;"><div class="shoplinkrakuten" style="display:inline;margin-right:5px"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/kaereba_main_202002061112327463?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FLesson21%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2F" target="_blank" rel="noopener noreferrer">楽天市場</a></div><div class="shoplinkamazon" style="display:inline;margin-right:5px"><a href="https://www.amazon.co.jp/gp/search?keywords=Lesson21&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&tag=kanon123-22" target="_blank" rel="noopener noreferrer">Amazon</a></div></div></div><div class="booklink-footer" style="clear: left"></div></div>
+<br/>
 
 ユヴァルの本でも同内容が考察されているが、産業革命時では仕事(物作り)が無くなっても、あまり訓練を求められないサービス業(スーパー等)に従事出来た。しかしAIとの協業では、より高度なスキルが求められるので、これが出来る人はかなり限られる気もする。
