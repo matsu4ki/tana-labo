@@ -4,8 +4,8 @@ date: "2018-04-17T00:00:00.284Z"
 description: "やりたいことをやり、自我の領域を鍛え、社会のニーズに適った機能を提供できる人間になること、どんなにビジネススキルを磨いても、誰かの代わりに過ぎない仕事を続ければ、金融資本家の奴隷。人工知能と同等の扱いを受けても文句は言えない。"
 pagetype: "category"
 perma: "future-forecast-for-2050"
-categoryname: "リベラルアーツ"
-categoryslug: "liberalarts"
+categoryname: "テクノロジー"
+categoryslug: "technology"
 tags: ["仮想通貨", "国家", "苫米地英人"]
 thumbnail: post-1.png
 ---
@@ -17,6 +17,7 @@ IT業界は技術の流行り廃れが激しく、やれAIだ、機械学習が�
 いつの世もテクノロジーの発展が、私たちの生活を大きく変えてきたけど、これから先の未来がどうなるのか。未来予想を述べられている書籍はいくつかあり、その中でも特に面白かったのがコレ↓
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_201902282241087071?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14705853%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank"  rel="noopener noreferrer"><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1116/9784813271116.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_201902282241087071?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14705853%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank"  rel="noopener noreferrer">2050年衝撃の未来予想</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow noopener noreferrer" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">苫米地英人 TAC 2017年02月17日    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_201902282241087071?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14705853%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank"  rel="noopener noreferrer">楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4813271111/kanon123-22/" target="_blank"  rel="noopener noreferrer">Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=2050%94N%8F%D5%8C%82%82%CC%96%A2%97%88%97%5C%91z&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank"  rel="noopener noreferrer">Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
+<br/>
 
 終盤の話は映画の世界では？と半信半疑だったけど...
 
@@ -63,6 +64,7 @@ IT業界は技術の流行り廃れが激しく、やれAIだ、機械学習が�
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
+<br/>
 
 3点目は具体的に**「人間にしか出来ない新しい物の創造と表現」**と言われており、これ系の話を聞くと、どーしても現状の延長線上の話(スキルアップ等)を考えがちだが、そうではないと。
 

@@ -30,7 +30,7 @@ export const pageQuery = graphql`
     }
     posts:allMarkdownRemark( 
       sort: { fields: [frontmatter___date], order: DESC } 
-      skip: $skip ,
+      skip: $skip
       limit: 12 
     ) {
       edges {
