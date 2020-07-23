@@ -44,6 +44,7 @@ export const pageQuery = graphql`
             title
             description
             categoryname
+            perma
             tags
             thumbnail {
               base

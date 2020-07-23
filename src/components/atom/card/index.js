@@ -15,37 +15,36 @@ class Card extends Component {
     const title = node.frontmatter.title || node.fields.slug
     library.add(fas)
     return (
-      <Link to={node.fields.slug} style={{ 
-        boxShadow: `none`, 
-        color: `black`
-      }}>
-        <div className="card">
-          <article key={node.fields.slug}>
-            <section>
-              <Image filename={node.frontmatter.thumbnail.base} />
-              <div style={{ padding: `0 10px 0 10px` }}>
-                <Link to={`/category/${kebabCase(node.frontmatter.categoryname)}/`} className="card_category">
-                  {node.frontmatter.categoryname}
-                </Link>
-                <p className="title">{title}</p>
-                <div className="tag">
-                  <Tags tags={node.frontmatter.tags} />
+      <div>
+        <Link to={node.fields.slug} style={{ boxShadow: `none`, color: `black` }}>
+          <div className="card">
+            <article key={node.fields.slug}>
+              <section>
+                <Image filename={node.frontmatter.thumbnail.base} />
+                <div style={{ padding: `0 10px 0 10px` }}>
+                  <Link to={`/category/${kebabCase(node.frontmatter.categoryname)}/`} className="card_category">
+                    {node.frontmatter.categoryname}
+                  </Link>
+                  <p className="title">{title}</p>
+                  <div className="tag">
+                    <Tags tags={node.frontmatter.tags} />
+                  </div>
+                  <div className="calender" style={{ marginBottom: `5px` }}>
+                    <FontAwesomeIcon icon='calendar' />
+                    <small style={{ marginLeft: `5px` }}>{node.frontmatter.date}</small>
+                  </div>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                    className={"description"} 
+                  />
                 </div>
-                <div className="calender" style={{ marginBottom: `5px` }}>
-                  <FontAwesomeIcon icon='calendar' />
-                  <small style={{ marginLeft: `5px` }}>{node.frontmatter.date}</small>
-                </div>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                  className={"description"} 
-                />
-              </div>
-            </section>
-          </article>
-        </div>
-      </Link>
+              </section>
+            </article>
+          </div>
+        </Link>
+      </div>
     )
   }
 }
