@@ -7,14 +7,13 @@ import "./taglist.css"
 class Taglist extends Component {
   render() {
     const tags = this.props.tags
-    console.log(tags)
     return (
       <div id="taslist">
         {tags.map((tag) => {
           const slug = tag.fieldValue
           return (
             <Link to={`/tags/${kebabCase(slug)}/`}>
-              <span class="taglist-tag">{tag.fieldValue}（{tag.totalCount}）</span>
+              <span className="taglist-tag">{tag.fieldValue}（{tag.totalCount}）</span>
             </Link>
           )
         })}        

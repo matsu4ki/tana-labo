@@ -5,17 +5,14 @@ import SEO from "../components/seo"
 import Posts from "../components/atom/posts"
 
 const Tags = ({ location, pageContext, data }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-  const tags = data.tags.group
 
   return (
-    <Layout location={location} title={siteTitle} tags={tags} >
+    <Layout location={location} title={data.site.siteMetadata.title} tags={data.tags.group} >
       <div style={{ fontSize: `24px`, fontWeight: `bold`, textAlign: `center` }}>
         {pageContext.tag} ({data.allMarkdownRemark.totalCount}件)
       </div>
       <SEO title="Tags posts" />
-      <Posts posts={posts} />
+      <Posts posts={data.allMarkdownRemark.edges} />
     </Layout>
   )
 };

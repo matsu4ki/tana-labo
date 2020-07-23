@@ -5,7 +5,6 @@
   padding: 10px 15px 5px; 
   text-align: center;
 }
-
 #category div {
   display: inline-block;
   margin: 0 15px;
@@ -14,17 +13,19 @@
   font-weight: bold;
   white-space: nowrap;
 }
-
 #category p {
   margin-bottom: 0;
 }
-
 #category .gatsby-image-wrapper {
   width: 30%;
-  /*border-radius: 50%;*/
 }
 #category .gatsby-image-wrapper:hover {
   opacity: 0.6;
+}
+
+.category-col a {
+  box-shadow: none;
+  color: black; 
 }
 
 @media screen and (max-width: 480px){ 
