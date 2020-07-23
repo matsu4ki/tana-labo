@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Posts from "../components/atom/posts"
-import Pagination from "../components/pagination"
+import Pagination from "../components/atom/pagination"
 
 const Index = props => {
 

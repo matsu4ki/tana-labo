@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import Image from "../image"
-import Tags from "../tags"
 import kebabCase from 'lodash/kebabCase';
 
 import "./card.css"
 
 class Card extends Component {
+
   render() {
     const node = this.props.node
     const title = node.frontmatter.title || node.fields.slug
@@ -27,7 +27,13 @@ class Card extends Component {
                   </Link>
                   <p className="title">{title}</p>
                   <div className="tag">
-                    <Tags tags={node.frontmatter.tags} />
+                    <div style={{ marginBottom: `10px` }}>
+                      {(node.frontmatter.tags || []).map(tag => (
+                        <Link to={`/tags/${kebabCase(tag)}/`} style={{ boxShadow: `none`, color: `black` }} >
+                          <div className="tags-tag">{tag}</div>
+                        </Link>
+                      ))}
+                    </div>                    
                   </div>
                   <div className="calender" style={{ marginBottom: `5px` }}>
                     <FontAwesomeIcon icon='calendar' />
