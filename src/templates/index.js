@@ -1,19 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Posts from "../components/atom/posts"
 import Pagination from "../components/pagination"
 
 const Index = props => {
-  const siteTitle = props.data.site.siteMetadata.title
-  const posts = props.data.posts.edges
-  const tags = props.data.tags.group
+
   return (
-    <Layout location={props.location} title={siteTitle} tags={tags} >
+    <Layout location={props.location} title={props.data.site.siteMetadata.title} tags={props.data.tags.group} >
       <SEO title="All posts" />
-      <Posts posts={posts} />
+      <Posts posts={props.data.posts.edges} />
       <Pagination props={props} />
     </Layout>
   )
@@ -31,7 +28,7 @@ export const pageQuery = graphql`
     posts:allMarkdownRemark( 
       sort: { fields: [frontmatter___date], order: DESC } 
       skip: $skip
-      limit: 12 
+      limit: 12
     ) {
       edges {
         node {
