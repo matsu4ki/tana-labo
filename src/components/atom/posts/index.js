@@ -9,7 +9,7 @@ class Posts extends Component {
       <div id="post">
         {posts.map(({ node }) => {
           return (
-            <Card node={node} />
+            <Card node={node} key={node.fields.slug} />
           )
         })}
       </div>
