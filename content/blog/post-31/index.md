@@ -4,28 +4,28 @@ date: "2020-03-29T00:00:00.284Z"
 description: "以前にBtoBマーケティングを教えてくれた方から、シンフォニーマーケティングの庭山一郎さんを薦められたので、同氏が執筆されたABM(アカウントベースドマーケティング)の書籍を読んでみた。様々な要因が複雑に絡み合う現代で、日本は世界で稀な「資本主義でありながらマーケティング抜きで大成功出来た国」だったが、それも2008年のリーマンショックで完全に終わり、今やマーケティングというナレッジや機能抜きでは、成長どころか存続すら危ういと言われている。"
 pagetype: "category"
 perma: "btob-marketing-abm"
-categoryname: "ビジネス"
-categoryslug: "business"
+categoryname: "マーケティング"
+categoryslug: "marketing"
 tags: ["BtoBマーケティング", "ABM", "MA"]
 thumbnail: post-31.png
 ---
 
 ![](./post-31.png)
 
-以前私にBtoBマーケティングを教えてくれた方から、シンフォニーマーケティングの **庭山一郎さん** を薦められたので、同氏が執筆されたABM(アカウントベースドマーケティング)の書籍を読んでみた。
+以前私にBtoBマーケティングを教えてくれた方に、シンフォニーマーケティングの **庭山一郎さん** を薦められたので、同氏が執筆されたABM(アカウントベースドマーケティング)の書籍を読んでみた。
 
 <div class="cstmreba"><div class="kaerebalink-box"><div class="kaerebalink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/g0000015.o51y41f2.g0000015.o51y5a32/kaereba_main_202003301719104955?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F&m=http%3A%2F%2Fm.product.rakuten.co.jp%2Fproduct%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F" target="_blank" rel="noopener noreferrer"><img src="https://thumbnail.image.rakuten.co.jp/ran/img/2001/0009/784/822/239/046/20010009784822239046_1.jpg?_ex=140x140" style="border: none;" /></a></div><div class="kaerebalink-info"><div class="kaerebalink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/g0000015.o51y41f2.g0000015.o51y5a32/kaereba_main_202003301719104955?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F&m=http%3A%2F%2Fm.product.rakuten.co.jp%2Fproduct%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F" target="_blank" rel="noopener noreferrer">究極のＢｔｏＢマ-ケティングＡＢＭ アカウントベ-スドマ-ケティング  /日経ＢＰ/庭山一郎</a><div class="kaerebalink-powered-date">posted with <a href="https://kaereba.com" rel="nofollow noopener noreferrer" target="_blank">カエレバ</a></div></div><div class="kaerebalink-detail"></div><div class="kaerebalink-link1"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/kaereba_main_202003301719104955?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E7%25A9%25B6%25E6%25A5%25B5%25E3%2581%25AEBtoB%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25B1%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2F" target="_blank" rel="noopener noreferrer">楽天市場</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/gp/search?keywords=%E7%A9%B6%E6%A5%B5%E3%81%AEBtoB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&tag=kanon123-22" target="_blank" rel="noopener noreferrer">Amazon</a></div></div></div><div class="booklink-footer"></div></div></div>
 <br/>
 
-日本はマーケティングを無くても、経済大国に上り詰めたので、米国に比べ、15年程度遅れているのが実情。しかしグローバル時代において、マーケティング無しで生き残ることは困難であるため、BtoBマーケティングの世界では今、ABMの活用が求められている。
+日本はマーケティングが無くとも、経済大国に上り詰めたので、米国に比べて15年程度遅れているのが実情。しかしグローバル時代では、マーケティング無しで生き残ることが無理なので、BtoBマーケティング業界では今、ABMの活用が求められている。
 
-本書では日本のマーケティングにおける歴史的背景、BtoBマーケティングの基礎知識、ABMやMAツール、BtoBマーケティングの包括的な知識が得られる一冊であることは間違いないと思う。
+日本のマーケティングにおける歴史的背景、BtoBマーケティングの基礎知識、ABMやMAツール、BtoBマーケティングの包括的な知識が得られる一冊であることは間違いないと思う。
 
 ## 日本のマーケティングが遅れている理由
 
 なぜ日本はマーケティング無しに、世界第2位の経済大国に上り詰めることが出来たのか!?
 
-本書では要因として <span style="color: crimson; font-weight: bold;">戦後の急成長する内需と、為替の恩恵を受けたことにある</span> であると説明。
+主な要因に <span style="color: crimson; font-weight: bold;">戦後の急成長する内需と、為替の恩恵を受けたことにある</span> が挙げられる。
 
 > 日本は第二次世界大戦での敗戦による復興需要と朝鮮戦争の特需が重なり、一気に上昇気流に乗ることが出来ました。さらに高度経済成長の中で家電をそろえ、3〜4年おきに車を買い替え、子供に高等教育を受けさせるなど、巨大で旺盛な国内内需が企業の成長を支えたのです。マーケティングはそれほど重要ではありません。
 >
@@ -37,11 +37,11 @@ thumbnail: post-31.png
 
 ## ABMはマーケティングと営業を繋ぐもの
 
-本書ではABMを、以下のように定義されている。
+本書ではABMを以下のように定義している。
 
 > 全社の顧客情報を統合し、マーケティングと営業の連携によって、定義されたターゲットアカウントからの売り上げ最大化を目指す戦略的マーケティング。
 
-マーケティング素人の自分には、この文章だけではほぼ理解不能だが、まずABMの重要性が叫ばれる背景には、マーケティングと営業の間にあった深い溝が大きく関係している。
+マーケティング素人の自分には、この文章だけでは理解不能だが、まずABMの重要性が叫ばれる背景に、マーケティングと営業の間にあった深い溝が大きく関係している。
 
 | マーケターが重要視する指標 | 営業が重要視する指標 |
 | ---- | ---- |
@@ -54,11 +54,9 @@ thumbnail: post-31.png
 
 しかしABMでは営業がフォローしたい企業を、最優先でリストアップするため、SALとして受け入れられる率は一気に上がり、両者の関係を密に連携出来ることが期待できる。
 
-ABMの利点は、マーケティングの基本設計を営業部門の視点で設計し、連携出来なかったマーケティングとセールスを上手く連携させ、ターゲットアカウントからの売り上げを最大化することにある。
-
 ## デマンドジェネレーションの考え方
 
-本書ではBtoBマーケティングの基礎理論である **Demand Waterfall** が紹介されている。
+またBtoBマーケティングの基礎理論である **Demand Waterfall** が紹介されていた。
 
 <div class="blackboard-box">
 <p>①. 見込み客データの収集</p>
@@ -77,11 +75,11 @@ ABMの利点は、マーケティングの基本設計を営業部門の視点�
 
 ## デマンドジェネレーションの進化系がABM
 
-本書では、デマンドジェネレーションの進化系がABMだとし、その例えとして <span style="color: crimson; font-weight: bold;">デマンドジェネレーションを定置網、ABMを銛</span> であるとだと喩えている。
+本書では、デマンドジェネレーションの進化系がABMであると捉え、<span style="color: crimson; font-weight: bold;">デマンドジェネレーションを定置網、ABMを銛</span> であると喩えている。
 
 > 一つの湾のような巨大な養殖イケスの中に船を入れ、養殖している魚の中から獲りたい魚だけを銛で打つようなもの。こうすれば外洋を走り回るような効率の悪さも無く、必要とする量と質の魚だけを収穫できる。
 
-昔は果てしない大海原でも、大物に出会える時代だったが、現代は1週間海の上を走り回っても、魚影すら見かけない時代。そのためMAをプラットフォームにしたデマンドセンターを確立させ、ABMの銛でターゲットを獲得することが大切だとしている。
+昔は果てしない大海原でも大物に出会える時代だったが、現代は1週間海の上を走り回っても、魚影すら見かけない時代。そのためMAをプラットフォームにしたデマンドセンターを確立させ、ABMの銛でターゲットを獲得することが大切だとしている。
 
 ## 8つのデータマネージメントプロセス
 
@@ -103,7 +101,7 @@ ABMの利点は、マーケティングの基本設計を営業部門の視点�
 
 字面にすると何てことない様に見えるけど、①〜③は特にコストがかかり、ファイル形式も多種多様で、マーケターがリード情報を都度登録するのは大変な手間となる。
 
-リードや企業の名寄せはある程度システム化も可能だが、精度を保った名寄せは結構難しく、どうしても手作業が発生してしまう。企業データに関しても自身の会社名を正式名称で登録しない人はかなり多く、表記揺れで名寄せも難しい（かと言って、やらないと精度が下がるので大変）
+リードや企業の名寄せはある程度システム化も可能だが、精度を保った名寄せは結構難しく、どうしても手作業が発生してしまう。企業データも自身の会社名を正式名称で登録しない人が多く、表記揺れで名寄せも難しい（かと言って対処しないと精度が下がり、使い物にならない）
 
 
 ## ABMで成果を出せる企業とは!?

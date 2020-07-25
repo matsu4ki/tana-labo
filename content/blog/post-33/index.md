@@ -4,8 +4,8 @@ date: "2020-04-06T00:00:00.284Z"
 description: "マイクロサービスアーキテクチャはとにかく技術領域は広い。その中でも難しいのがドメイン分割だが、モノリスなアプリケーションを複数のサブドメインに分割した後、分割されたサブドメイン同士をAPIで相互接続させなければならない。"
 pagetype: "category"
 perma: "microservice-interprocess-communication"
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "クラウド"
+categoryslug: "cloud"
 tags: ["AWS", "GAFA", "DX", "マイクロサービス"]
 thumbnail: post-33.png
 ---
