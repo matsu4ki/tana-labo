@@ -4,8 +4,8 @@ date: "2020-07-17T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: "mail-multipart"
-categoryname: "ビジネス"
-categoryslug: "business"
+categoryname: "マーケティング"
+categoryslug: "marketing"
 tags: ["BtoBマーケティング", "メールビジネス"]
 thumbnail: post-50.png
 ---

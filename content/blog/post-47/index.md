@@ -4,8 +4,8 @@ date: "2020-07-02T00:00:00.284Z"
 description: "2010年頃から大手IT企業の多くがMAベンダーを買収して以降、国内のMA市場規模も拡大トレンドらしいが、私が業界著名人の書籍を読んだり、また現場の方（MAベンダー）にお話を伺ってみると、MAを導入しても上手く活用している企業は、極少数に限られると感じた。"
 pagetype: "category"
 perma: "ma-case-study"
-categoryname: "ビジネス"
-categoryslug: "business"
+categoryname: "マーケティング"
+categoryslug: "marketing"
 tags: ["BtoBマーケティング", "MA", "UX"]
 thumbnail: post-47.png
 ---

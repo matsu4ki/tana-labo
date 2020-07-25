@@ -4,25 +4,25 @@ date: "2020-03-24T00:00:00.284Z"
 description: "Cookie自体は個人情報に当たらないが、SNS上にはユーザーアカウントが存在しているので、閲覧履歴がサードパーティCookieでSNS経由されると、得られた閲覧情報から個人に紐付け出来る事がある。"
 pagetype: "category"
 perma: "revision-of-personal-information-protection-law"
-categoryname: "ビジネス"
-categoryslug: "business"
+categoryname: "マーケティング"
+categoryslug: "marketing"
 tags: ["BtoBマーケティング", "個人情報", "Cookie"]
 thumbnail: post-28.png
 ---
 
 ![](./post-28.png)
 
-以前にリクルートキャリア提供のサービスで、個人を特定出来る情報を収集していたことが問題になっていた。それもプライバシーポリシーが不備な状態で、利用者から同意を得ることなく。
+以前にリクルートキャリア提供のサービスで、個人を特定出来る情報を収集していたことが問題となっていた。プライバシーポリシーに不備があり、利用者から同意を得ていないかったのも大きな問題。
 
-「正直関係ないかな」と考えていたが、Web開発の現場では、Cookieを利用したセッション管理を行うケースも多く、知らんぷりを決め込む事が難しくなってきた!? と思っていた矢先、ChromeでのサードパーティCookie廃止が決まり、携わっていたシステムにも影響が出てしまった。
+Web開発ではCookieによるセッション管理を行うケースが多いが、ChromeでサードパーティCookie廃止が決まり、携わっていたシステムにも影響が出てしまった。
 
-本内容について、Google Developerでも紹介されている。
+本内容についてはGoogle Developerでも紹介されている。
 
-■ [Google Chromium blog（英語）](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)  
+■ **[Google Chromium blog（英語）](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)**  
 
 > Privacy Sandboxの取り組みでは、サードパーティCookie抜きで個人情報保護を前提に、広告に支えられた無料のインターネットが維持出来るとし、今後2年をかけてサードパーティCookieのサポート廃止を目指し、また透明性、選択肢、コントロールを実現出来るトラッキング手段を考えるとしている。
 
-日本でも個人情報保護法が制定されているが、厳格なルールを定めているGDPRに比べれば、不明確な部分やグレーゾーンも多い。そのため個人情報を扱う企業の中には、世界レベル（GDPR）に合わせようとする動きがチラホラ見られる。
+日本でも個人情報保護法が制定されているが、GDPRに比べれると不明確な部分やグレーゾーンも多い。そのため個人情報を扱う企業では、世界標準（GDPR）に合わる動きがチラホラ見られる。
 
 ## 個人情報保護法改正で示されたCookie規制
 
@@ -36,33 +36,33 @@ thumbnail: post-28.png
 
 Cookie自体は個人情報に当たらないが、SNS上にはユーザーアカウントが存在しているので、閲覧履歴が**サードパーティCookie**でSNS経由されると、得られた閲覧情報から個人に紐付け出来る事がある。
 
-「個人情報保護法 いわゆる3年ごとの見直し 制度改正大綱（骨子）」では、今後このような情報の第三者提供を制限することが述べられており、<span style="color: crimson; font-weight: bold;">利用者に対して、利用目的などを情報提供すること、SNS等への情報提供を拒否する権利の保証、個人情報保護委員会に届け出等が義務付けられるそうだ。</span>
+「個人情報保護法 いわゆる3年ごとの見直し 制度改正大綱（骨子）」では、今後このような情報の第三者提供を制限することが述べられており、<span style="color: crimson; font-weight: bold;">利用者に対して、利用目的を情報提供すること、SNS等への情報提供を拒否する権利の保証、個人情報保護委員会に届け出等が義務付けられるそうだ。</span>
 
-■ [個人情報保護法の改正で示されたCookie規制の方向性とは？ IIJが解説](https://internet.watch.impress.co.jp/docs/news/1225265.html)
+■ **[個人情報保護法の改正で示されたCookie規制の方向性とは？ IIJが解説](https://internet.watch.impress.co.jp/docs/news/1225265.html)**
 
 冒頭でも示したように、Google ChromeもサードパーティCookieが廃止予定で、サードパーティCookieを活用したシステム（アドテク / トラッキング）は大きな影響を受けることになる模様。
 
 ## サードパーティCookie廃止の背景
 
-[こちらの記事](https://blog.jxck.io/entries/2020-02-25/end-of-idyllic-cookie.html) では、現状におけるCookieのユースケースや、サードパーティCookieが制限される背景、Privacy Sandboxの概念などが説明されている。
+**[こちらの記事](https://blog.jxck.io/entries/2020-02-25/end-of-idyllic-cookie.html)** では、現状におけるCookieのユースケースや、サードパーティCookieが制限される背景、Privacy Sandboxの概念などが説明されている。
 
-本記事によれば、現状のCookieには様々なユースケース（セッション維持 / Credential / SSO / 広告 / Analytics）があり、問題の本質はCookieの仕様ではなく、ユースケース側にあることに言及。
+本記事によれば、現状のCookieには様々なユースケース（セッション維持 / Credential / SSO / 広告 / Analytics）があり、問題の本質はCookieの仕様ではなく、ユースケース側であることに言及。
 
 <span style="color: crimson; font-weight: bold;">サービス提供側はDNT等を利用し、ユーザーからトラッキング拒否のヘッダを受け取った場合、トラッキングを外せば解決するが、仕様すらほぼ知られておらず、全く遵守もされなければ、普及もしない。これだけ広がったCookieという挙動は維持したいので、ユースケース側の問題を解決する手段として、使い方の如何に限らず、サードパーティCookieの全てをブロックする流れになってしまった。</span>
 
-あらゆるユースケースを担っていたCookieも、今後はファーストパーティCookieの役割に限定され、第一に考えられるのは、企業がユーザーデータにアクセスする際に、ユーザーの同意を得るための施策が標準化されること、もう一つには **Privacy Sandbox** のアイディアを推奨。
+あらゆるユースケースを担っていたCookieも、今後はファーストパーティCookieの役割に限定されると思われる。第一に考えられるのは、企業がユーザーデータにアクセスする際に、ユーザーの同意を得るための施策が標準化されること、もう一つは **Privacy Sandbox** のアイディアを推奨。
 
-どんな仕様になるのか不明だけど、APIはプライバシーに配慮し、利用者の許諾を取るような権限モデル、利用者がOpt-In/Outを選択出来るなど、新たなエコシステムを考える必要あり。
+どんな仕様になるのか不明だけど、APIはプライバシーに配慮し、利用者の許諾を取るような権限モデル、利用者がOpt-In/Outを選択出来るなど、新たなエコシステムを考える必要ある。
 
 ## Cookie用途別の影響度
 
-ちなみに [こちらの記事](https://www.principle-c.com/column/marketing/google-chrome-third-party-cookie/#__1690877137.1585022027) ではCookieの用途別に影響度を説明されている。
+ちなみに **[こちらの記事](https://www.principle-c.com/column/marketing/google-chrome-third-party-cookie/#__1690877137.1585022027)** ではCookieの用途別に影響度を説明されている。
 
 トラッキングへの影響度は限定的と述べられているが、携わっているシステムでサードパーティCookieを活用したトラッキング処理が行われており、Chrome80対応ではもろに影響を受けてしまった（涙）
 
 内容は発行されたトラッキングコードで、複数サイトを管理するケースがあり、今までは同一ユーザーとしてCookie情報が維持されていたが、Chrome80対応でSameSite=NoneとSecure属性を指定し、Cookieをクロスサイトアクセスの対象であることを明示する必要に迫られた。
 
-■ [新しいCookie設定 SameSite=None; Secure の準備を始めましょう](https://developers-jp.googleblog.com/2019/11/cookie-samesitenone-secure.html)  
+■ **[新しいCookie設定 SameSite=None; Secure の準備を始めましょう](https://developers-jp.googleblog.com/2019/11/cookie-samesitenone-secure.html)**  
 
 Chrome80以降では、SameSite=None; Secureの設定があるCookieのみが、外部アクセス可能。
 
@@ -77,7 +77,7 @@ SafariへのITP導入など、サードパーティCookieの問題は以前か�
 
 AdWordsとGoogleアナリティクスをリンクさせ、自動タグ設定を有効にしておけば、広告のURLにURLにGLINKが付与される。このGLINKを含む値情報を_gac Cookieに書き込むことで、広告のクリックをファーストパーティCookieとして保存しITPを回避。
 
-将来どうなるか分からないけど、一技術者も個人情報取扱には一層注意が求められるかも。
+将来どうなるか分からないけど、一技術者も個人情報取扱には一層注意が求められそうだ。
 
 ## 参考文献
 ■ [個人情報保護委員会](https://www.ppc.go.jp/)  
