@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "golang-gin-gorm"
 categoryname: "WEB"
 categoryslug: "WEB"
-tags: ["Go", "Gin", "Gorm", "Docker", "SQLite"]
+tags: ["Go", "Gin", "Gorm", "Docker"]
 thumbnail: post-43.png
 ---
 

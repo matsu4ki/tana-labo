@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "golang-gin-mysql"
 categoryname: "WEB"
 categoryslug: "WEB"
-tags: ["Go", "Gin", "Gorm", "Docker", "MySQL"]
+tags: ["Go", "Gin", "Gorm", "Docker"]
 thumbnail: post-44.png
 ---
 

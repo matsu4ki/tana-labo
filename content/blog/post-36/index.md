@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "microservice-aggregate"
 categoryname: "クラウド"
 categoryslug: "cloud"
-tags: ["AWS", "GAFA", "DX", "マイクロサービス"]
+tags: ["AWS", "DX", "マイクロサービス"]
 thumbnail: post-36.png
 ---
 
