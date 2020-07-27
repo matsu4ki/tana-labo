@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "serverless-architecture"
 categoryname: "クラウド"
 categoryslug: "cloud"
-tags: ["AWS", "GAFA"]
+tags: ["AWS", "サーバレス"]
 thumbnail: post-24.png
 ---
 

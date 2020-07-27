@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "microservice-interprocess-communication"
 categoryname: "クラウド"
 categoryslug: "cloud"
-tags: ["AWS", "GAFA", "DX", "マイクロサービス"]
+tags: ["AWS", "DX", "マイクロサービス"]
 thumbnail: post-33.png
 ---
 

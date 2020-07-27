@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "aws-basics"
 categoryname: "クラウド"
 categoryslug: "cloud"
-tags: ["AWS", "GAFA"]
+tags: ["AWS"]
 thumbnail: post-23.png
 ---
 
