@@ -29,3 +29,10 @@ MAツールでは <span style="color: crimson; font-weight: bold;">商談創出<
 多分一般の方は、こんな事実を殆ど知らないと思うけど、きっと自分の知らないところで、色んな行動履歴が収集されてるんだろうなぁ（少なくとも自分は知らなかった）
 
 個人特定が可能なものは個人情報になるので、メールアドレスも個人情報だが、一応各事業者はメールアドレスに紐づく行動履歴（開封率）を取得する際、本人許可をとっていればセーフとなるらしい。
+
+## 参考文献
+■ [SPF・DKIMの特徴と違い](https://sendgrid.kke.co.jp/blog/?p=10121)  
+■ [迷惑メール対策に必要な「SPF」と「DKIM」とは？](https://baremail.jp/blog/2019/06/07/138/)  
+■ [バウンスメールとは？その仕組みと原因、対策について](https://www.onemarketing.jp/lab/lead-nurturing/bounce-mail_171)  
+■ [エンベロープ（envelope）From/To とヘッダーのFrom/To](https://www.cuenote.jp/documents/smtp/000204.html)  
+■ [メール設定で最初につまずくSMTP・POP・IMAP その意味＆設定方法は？](https://time-space.kddi.com/ict-keywords/kaisetsu/20170824/2081)  
