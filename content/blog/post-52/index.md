@@ -12,18 +12,16 @@ thumbnail: post-52.png
 
 ![](./post-52.png)
 
-MAツール開発に携わると、メール絡みの法律やメール配信の仕組みにも気を配らなければならない。
+MAツール開発に関わってると、メール絡みの法律やメール配信の仕組みにも気を配る必要がある。
 
-知っておくべき法律の一つが **迷惑メール防止法（特定電子メール法）**で、この法律では営利目的の企業や個人事業主が、広告・宣伝のために送信するメールを **<span style="color: crimson;">特定電子メール</span>** と定めている。
+その知っておくべき法律の一つに **迷惑メール防止法（特定電子メール法）**があり、この法律では営利目的の企業や個人事業主が、広告・宣伝のために送信するメールを **<span style="color: crimson;">特定電子メール</span>** と規程している。
 
-特定電子メールでは、オプトイン・オプトアウト・送信者の氏名または名称の明記が義務付けられる。
+2019年時点での国内における迷惑メール件数は **1日に7億5千通** と言われ、全電子メールの約44%を占めらている。本法律は、この迷惑メールから一般消費者を守るために制定されたが、特定電子メールでは、オプトイン・オプトアウト・送信者の氏名または名称の明記が必要となる。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008022254551036?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0501/9784295000501.jpg?_ex=150x150" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008022254551036?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >実践マーケティングオートメーション</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">永井俊輔/できるシリーズ編集部 インプレス 2017年02月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008022254551036?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295000507/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E5%AE%9F%E8%B7%B5%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%AA%E3%83%BC%E3%83%88%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 <br/>
 
-2019年時点で国内の迷惑メール件数は **1日に7億5千通** と言われ、全電子メールの約44%を占められており、迷惑メールから一般消費者を守るために制定されたらしい。
-
-迷惑メールの詳細は、参考文献の迷惑メール白書を読んでみると、実態を窺い知れると思う。
+迷惑メールの詳細について、参考文献の迷惑メール白書を読んでみたが、実態を窺い知れる。
 
 ## オプトインとオプトアウト
 
@@ -35,7 +33,7 @@ MAツール開発に携わると、メール絡みの法律やメール配信の
 
 **オプトアウト** は**「受信拒否の通知」**を意味し、相手から申し出があった場合にメール配信を中止する仕組みだが、一般的には受信メールの下部に **配信停止フォーム** へのURLを記載し、オプトアウト出来る仕組みが提供されている（たまに配信停止リンクが無いメルマガも見受けられるけど）
 
-ちなみに2017年に **<span style="color: crimson;">改正個人情報保護法</span>** が施行される迄は、ユーザーの受信承諾が不要で、ユーザーが受信拒否（オプトアウト）を行わない限り、メールを送り続けることが可能だった...が、まだまだ迷惑メール問題は解決してないっぽい。
+ちなみに2017年に **<span style="color: crimson;">改正個人情報保護法</span>** が施行される迄は、ユーザーの受信承諾が不要で、ユーザーが受信拒否（オプトアウト）を行わない限り、メールを送り続けることが可能だった...が、まだまだ迷惑メール問題は解決してないっぽいようです。
 
 ## 送信ドメイン認証
 
