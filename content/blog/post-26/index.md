@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "mizuho-bank-system-integration"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["金融", "DX"]
+tags: ["金融"]
 thumbnail: post-26.png
 ---
 

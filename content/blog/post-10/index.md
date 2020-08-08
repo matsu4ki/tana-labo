@@ -4,8 +4,8 @@ date: "2019-04-21T00:00:00.284Z"
 description: "国境を超えて活動する巨大グローバル企業は世界に多々あるが、テクノロジー業界で四強といわれる四騎士・GAFAの生み出した富は2兆3000億ドルとも言われ、多くの喜びや人間同士の繋がり、更には経済的な繁栄や発明をもたらし、世界をより豊かな場所に変えてくれた。ただ一方でグローバル企業のイギリス・ケイマン諸島やアメリカ・デラウェア州への租税回避で本来納税される税金の減少、不透明なお金がテロリストに流れている疑惑もある。また商品製造に関わるコスト抑制により、発展途上国における労働問題の深刻化を声高に叫ぶ人もいる。"
 pagetype: "category"
 perma: "the-world-created-by-gafa"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["GAFA", "社会"]
 thumbnail: ./post-10.png
 ---

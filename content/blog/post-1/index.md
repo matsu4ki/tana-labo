@@ -4,8 +4,8 @@ date: "2018-04-17T00:00:00.284Z"
 description: "やりたいことをやり、自我の領域を鍛え、社会のニーズに適った機能を提供できる人間になること、どんなにビジネススキルを磨いても、誰かの代わりに過ぎない仕事を続ければ、金融資本家の奴隷。人工知能と同等の扱いを受けても文句は言えない。"
 pagetype: "category"
 perma: "future-forecast-for-2050"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["仮想通貨", "国家", "苫米地英人"]
 thumbnail: post-1.png
 ---

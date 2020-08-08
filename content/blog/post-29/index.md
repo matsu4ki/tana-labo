@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "microservices-architecture"
 categoryname: "クラウド"
 categoryslug: "cloud"
-tags: ["AWS", "DX", "マイクロサービス"]
+tags: ["AWS", "マイクロサービス"]
 thumbnail: post-29.png
 ---
 
