@@ -4,8 +4,8 @@ date: "2019-07-28T00:00:00.284Z"
 description: "吉成真由美氏が錚々たる著名人(チョムスキー、カーツワイル、ウルフ、インゲルス、ダイソン)と政治、AIテクノロジー、経済、ライフスタイル、気候変動など人類の未来を対談形式でまとめた一冊。Amazonレビューの評価は上々なのだが、幅広く難解なテーマばかりを扱っており、本当に予想通りの未来になるのか疑問…ただ各分野における権威の考えを知れる良い本だとは思う。"
 pagetype: "category"
 perma: "the-future-of-humankind-ai-economy-democracy"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["シンギュラリティ"]
 thumbnail: post-11.png
 ---

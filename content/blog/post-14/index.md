@@ -4,8 +4,8 @@ date: "2019-09-21T00:00:00.284Z"
 description: "AI・IoT・ブロックチェーン・仮想現実など、様々な次世代テクノロジーがあるが、中でも2018年ファーウェイ事件をキッカケによく耳にする 5G って、そんなに凄いテクノロジーなの?"
 pagetype: "category"
 perma: "future-of-next-generation-technology-5G"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["5G", "深田萌絵"]
 thumbnail: post-14.png
 ---

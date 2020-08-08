@@ -21,10 +21,6 @@ class Category extends Component {
           <p>クラウド</p>
         </div>
         <div className="category-col">
-          <Link to={`/category/テクノロジー/`}><Img filename={`technology.png`} /></Link>
-          <p>テクノロジー</p>
-        </div>
-        <div className="category-col">
           <Link to={`/category/ビジネス/`}><Img filename={`business.png`} /></Link>
           <p>ビジネス</p>
         </div>

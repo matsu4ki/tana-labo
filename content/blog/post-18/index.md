@@ -4,8 +4,8 @@ date: "2019-10-24T00:00:00.284Z"
 description: "AIの意味も時代によって変わるので、冒頭部でAIの歴史に触れながらAIとは何か、そして人間が持つ知性と比べて何が足りていないのか AIに出来ること＋AIに出来ないことを説明。更にAIの本質を踏まえつつ、今後AIが生活やビジネス面でどう関わってくるのか言及。"
 pagetype: "category"
 perma: "does-ai-have-intelligence"
-categoryname: "テクノロジー"
-categoryslug: "technology"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["AI"]
 thumbnail: post-18.png
 ---
