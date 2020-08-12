@@ -12,27 +12,27 @@ thumbnail: post-27.png
 
 ![](./post-27.png)
 
-ビジネスではニーズのあるところにモノやサービスを提供する必要があるが、変化の激しい現代はニーズの発見が困難で、専門家も**「何が当たるのか、やってみないと分からない」**との話をよく聞く。
+**マーケティング** と一括りにしても幅広いが、業務で **BtoBマーケティング** に携わる機会に恵まれた。
 
-非常に難しい時代だが、Wikipediaではマーケティングを次のように説明している。
+ちなみにWikipediaでは、マーケティングを次のように説明している。
 
 > 企業などの組織が行うあらゆる活動のうち「顧客が真に求める商品やサービスを作り、その情報を届け、顧客がその価値を効果的に得られるようにする」ための概念である。また顧客のニーズを解明し、顧客価値を生み出すための経営哲学、戦略、仕組み、プロセスを指す。
 
-**マーケティング** と一括りにしても幅広いが、最近 **BtoBマーケティング** に携わる機会に恵まれた。クライアントから業界の歴史的背景、日本とアメリカの違い、MAツールなど色んな話を聞く中で、本業界においても **インターネットの登場** が大きく影響していることを感じた。
+クライアントから業界の歴史的背景、日本とアメリカの違い、MAツールの使い方など話を聞く中で、本業界についても **<span style="color: crimson;">インターネットの登場</span>** が大きく影響していることを感じとれた。
 
 ## BtoBマーケティングの歴史
 
 **インターネットの登場** による **BtoBマーケティングの変遷** は大体こんな感じ↓
 
-**<span style="color: crimson;">インターネットが存在しない時代</span>** ー 主なマーケティング活動は、人的リソースに依存したプッシュ活動（紹介/飛び込み/テレアポ等）や、4大マズ媒体（テレビ/ラジオ/新聞/雑誌）に広告を載せるくらいしかなく、膨大なリードを商談管理しても、ほとんど検討段階に至らなかった。
+**<span style="color: crimson;">インターネットが存在しない時代</span>** ー 主なマーケティング活動は、人的リソースに依存したプッシュ活動（紹介/飛び込み/テレアポ等）と、4大マズ媒体（テレビ/ラジオ/新聞/雑誌）に広告を載せるしかなく、膨大なリードに対して商談管理しても、ほとんどが検討段階に至らなかった。
 
-**<span style="color: crimson;">インターネット黎明期</span>** ー 当時はサイト数も少なく、企業はHPを作るだけで、問い合わせが来る時代。しかしHP数の増加により、いかに検索順位で上位に食い込めるか**「SEOが求められる時代」**へと変化していった（＝営業部門による人海戦術でのアプローチが減少）
+**<span style="color: crimson;">インターネット黎明期</span>** ー 当時はサイト数も少なく、企業はHPを作るだけで、問い合わせが来る時代。しかしHP数の増加により、いかに検索順位で上位に食い込めるか**「SEOが求められる時代」**へと変化していく（＝営業部門による人海戦術でのアプローチが減少）
 
-**<span style="color: crimson;">SEOの概念</span>** ー 更に選ばれるHPとなるため、コンテンツの拡充（専門性/強み等）と導線（分かりやすく説明）を考える施策により、顕在層を拾えるようになった（＝直接CV獲得が可能）
+**<span style="color: crimson;">SEOの概念</span>** ー 更に選ばれるHPとなるため、コンテンツの拡充（専門性/強み等）と導線（分かりやすく説明）を考える施策によって、幅広い層まで拾えるようになった（＝直接CV獲得が可能）
 
 **<span style="color: crimson;">潜在層の育成</span>** ー SEOだけでなくリスティング広告も進化。ただし市場ニーズは一定なので、顕在層の奪い合いが激化し、広告単価が高騰してしまった。そのため一段階下の層（準顕在層/潜在層）の獲得が急務となる（ホワイトペーパー戦略による資料ダウンロードなど）
 
-インターネットの登場によって、人力に頼っていた運用の一部でシステム化（MAツール導入）が進み、今までアプローチ出来なかった潜在層を取り込めるようになった（はずだった）
+人力に頼っていた運用の一部では、MAツールの導入でシステム化が進み、今までアプローチ出来なかった潜在層を取り込めるようになった（はずだった）
 
 ## MAツールの機能
 
@@ -50,12 +50,12 @@ thumbnail: post-27.png
 </div>
 <br/>
 
-これら機能を利用し、どのリードがメールを開封し、自社サイトの「どのページ」にアクセスしたか、それらデータを総合的に分析し、適切な対応が自動的に実施される仕組みを作っていくことになる。
+これらの機能を利用し、どのリードがメールを開封し、サイトの「どのページ」にアクセスしたか、それらデータを総合的に分析し、適切な対応が自動的に実施される仕組みを作るのがマーケターの仕事。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008011752128282?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0501/9784295000501.jpg?_ex=140x140" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008011752128282?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >実践マーケティングオートメーション</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">永井俊輔/できるシリーズ編集部 インプレス 2017年02月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008011752128282?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295000507/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E5%AE%9F%E8%B7%B5%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%AA%E3%83%BC%E3%83%88%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 <br/>
 
-ちなみにベンダー製のMAツールは、年間数百万のコストがかかるため、上の書籍では、無料で使える **Mautic** で運用をはじめ、慣れてきたら **Marketo** を利用することを推奨されていた。
+ちなみにベンダー製のMAツールは、年間数百万のコストがかかるため、上の書籍では、無料で使える **Mautic** で運用をはじめ、慣れてきたら **Marketo** の利用を推奨されている。
 
 ## MAツールの役割と突然の発芽
 
@@ -97,6 +97,6 @@ thumbnail: post-27.png
 </div>
 <br/>
 
-説明をしてくれたマーケ専門の会社ですら、それほど多くの人材を抱えていないのに、一般企業に出来るはずもなく。なので導入しても途中で辞めて、結局流行らないのが現状となる。
+説明をしてくれたマーケ専門の会社ですら、それほど多くの人材を抱えていないのに、一般企業に出来るはずもなく。なので導入しても途中で辞めて、結局流行らないのが現状らしい。
 
 クライアントはマーケティング知識の無い方でも、ある程度使いこなせるMAツールを開発・運用し、日本にMAを段階的に根付かせていくと力強く語ってくれた。
