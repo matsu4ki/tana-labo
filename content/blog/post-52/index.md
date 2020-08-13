@@ -12,16 +12,16 @@ thumbnail: post-52.png
 
 ![](./post-52.png)
 
-MAツール開発に関わってると、メール絡みの法律やメール配信の仕組みにも気を配る必要がある。
+MAツール開発に関わっていると、メール絡みの法律や配信の仕組みにも気を配る必要がある。
 
 その知っておくべき法律の一つに **迷惑メール防止法（特定電子メール法）**があり、この法律では営利目的の企業や個人事業主が、広告・宣伝のために送信するメールを **<span style="color: crimson;">特定電子メール</span>** と規程している。
 
-2019年時点での国内における迷惑メール件数は **1日に7億5千通** と言われ、全電子メールの約44%を占めらている。本法律は、この迷惑メールから一般消費者を守るために制定されたが、特定電子メールでは、オプトイン・オプトアウト・送信者の氏名または名称の明記が必要となる。
+2019年時点での国内における迷惑メール件数は **1日に7億5千通** と言われ、全電子メールの約44%を占める。本法律は迷惑メールから一般消費者を守るため制定され、特定電子メールでは **オプトイン・オプトアウト・送信者の氏名または名称の明記** が課される。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008022254551036?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0501/9784295000501.jpg?_ex=150x150" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008022254551036?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >実践マーケティングオートメーション</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">永井俊輔/できるシリーズ編集部 インプレス 2017年02月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008022254551036?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14665971%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295000507/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E5%AE%9F%E8%B7%B5%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%AA%E3%83%BC%E3%83%88%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 <br/>
 
-迷惑メールの詳細について、参考文献の迷惑メール白書を参照すれば、理解が深まると思う。
+迷惑メールの詳細について、参考文献の **迷惑メール白書** で理解が深まると思う。
 
 ## オプトインとオプトアウト
 
@@ -29,7 +29,7 @@ MAツール開発に関わってると、メール絡みの法律やメール配
 
 **オプトイン** は**「事前の同意」**のことで、事前に相手から同意を得なければ、メール送信出来ないが、メールアドレスを名刺など書面で通知した場合は、オプトインを取得したとみなされる。
 
-私の関わっているMAツールでは、リード登録時にメール配信の希望有無を選択できる。名刺等で事前に対象者のメールアドレスを知っていれば「希望する」を選択し、その他のリード（Unknown等）は、フォームでの問い合わせ時にオプトインを取得する仕組みになっていた。
+私の関わるMAツールでは、リード登録時にメール配信の希望有無を選択できる。名刺等で事前に対象者のメールアドレスを知っていれば「希望する」を選択し、その他のリード（Unknown等）は、フォームでの問い合わせ時にオプトインを取得する仕組みになっていた。
 
 **オプトアウト** は**「受信拒否の通知」**を意味し、相手から申し出があった場合にメール配信を中止する仕組みだが、一般的には受信メールの下部に **配信停止フォーム** へのURLを記載し、オプトアウト出来る仕組みが提供されている（たまに配信停止リンクが無いメルマガも見受けられるけど）
 
@@ -45,7 +45,9 @@ MAツール開発に関わってると、メール絡みの法律やメール配
 
 **<span style="color: crimson;">DKIM</span>** は電子署名で認証を実施する。送信側メールサーバの公開鍵をDNSに登録し、送信側メールサーバは自身の秘密鍵で電子署名を付けて送信する。受信側ではDNSより公開鍵を取得し、電子署名を検証することで、なりすましや改ざんの有無をチェックできる。
 
-迷惑メール白書ではSPFとDKIMで検証したドメイン名と、メールソフトで表示される送信元アドレスのドメイン名が一致しているかチェックするDMARKが紹介されている。日本国内での普及率は低いが、米国や英国では高い水準で採用されているので、そのうち日本でも必須になるかも。
+勿論私が関わるMAツールでも対応されているが、これらに馴染みの無い一般消費者にはハードルが高く、サポートチームの負荷は結構大きいものになっていた（UIの問題かもしれないが）
+
+ちなみに迷惑メール白書では、SPFとDKIMで検証したドメイン名と、メールソフトで表示される送信元アドレスのドメイン名が一致しているかチェックするDMARKが紹介されている。日本国内での普及率は低いが、米国や英国では高い水準で採用されているため、将来日本で必須になるかも。
 
 ## 参考文献
 ■ [迷惑メール白書](https://www.dekyo.or.jp/soudan/aspc/wp.html)  
