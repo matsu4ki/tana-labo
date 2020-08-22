@@ -22,6 +22,10 @@ const Layout = ({ location, title, tags, children }) => {
     width = 47.3
   }
 
+  if (location.pathname.match(/profile/)) {
+    width = 40
+  }
+
   return (
     <div style={{ backgroundColor: `whitesmoke`, fontFamily: `Kosugi Maru`, }}>
       <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" />
