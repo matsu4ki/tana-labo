@@ -6,40 +6,46 @@ pagetype: "category"
 perma: "btob-marketing-abm"
 categoryname: "マーケティング"
 categoryslug: "marketing"
-tags: ["BtoBマーケティング", "MA"]
+tags: ["BtoBマーケティング", "MAツール"]
 thumbnail: post-31.png
 ---
 
 ![](./post-31.png)
 
-以前私にBtoBマーケティングを教えてくれた方から、シンフォニーマーケティングの **庭山一郎さん** を薦められ、同氏が執筆されたABM（アカウントベースドマーケティング）の書籍を読んでみた。
+マーケティング業界のクライアントから、シンフォニーマーケティングの庭山氏の話を聞いた。
 
-<div class="cstmreba"><div class="kaerebalink-box"><div class="kaerebalink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/g0000015.o51y41f2.g0000015.o51y5a32/kaereba_main_202003301719104955?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F&m=http%3A%2F%2Fm.product.rakuten.co.jp%2Fproduct%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F" target="_blank" rel="noopener noreferrer"><img src="https://thumbnail.image.rakuten.co.jp/ran/img/2001/0009/784/822/239/046/20010009784822239046_1.jpg?_ex=150x150" style="border: none;" /></a></div><div class="kaerebalink-info"><div class="kaerebalink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/g0000015.o51y41f2.g0000015.o51y5a32/kaereba_main_202003301719104955?pc=https%3A%2F%2Fproduct.rakuten.co.jp%2Fproduct%2F-%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F&m=http%3A%2F%2Fm.product.rakuten.co.jp%2Fproduct%2F9b0ab3cf0022fd40891fd61b16cb9a3c%2F" target="_blank" rel="noopener noreferrer">究極のＢｔｏＢマ-ケティングＡＢＭ アカウントベ-スドマ-ケティング  /日経ＢＰ/庭山一郎</a><div class="kaerebalink-powered-date">posted with <a href="https://kaereba.com" rel="nofollow noopener noreferrer" target="_blank">カエレバ</a></div></div><div class="kaerebalink-detail"></div><div class="kaerebalink-link1"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/kaereba_main_202003301719104955?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E7%25A9%25B6%25E6%25A5%25B5%25E3%2581%25AEBtoB%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25B1%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2F" target="_blank" rel="noopener noreferrer">楽天市場</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/gp/search?keywords=%E7%A9%B6%E6%A5%B5%E3%81%AEBtoB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&tag=kanon123-22" target="_blank" rel="noopener noreferrer">Amazon</a></div></div></div><div class="booklink-footer"></div></div></div>
+日本はマーケティング無しで経済大国に上り詰めたので、米国に比べて15年程度遅れている。
+
+しかし昨今のグローバル時代では、マーケティング無しに生き残ることは非常に困難であり、そのためBtoBマーケティング業界では今、ABMの活用が求められているそうだ。
+
+<div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008261543297683?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14584662%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9046/9784822239046.jpg?_ex=150x150" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008261543297683?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14584662%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >究極のBtoBマーケティング　ABM（アカウントベースドマーケティング）</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">庭山　一郎 日経BP 2016年12月08日頃    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202008261543297683?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14584662%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4822239047/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E7%A9%B6%E6%A5%B5%E3%81%AEBtoB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%80%80ABM%EF%BC%88%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%99%E3%83%BC%E3%82%B9%E3%83%89%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%EF%BC%89&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 <br/>
-
-日本はマーケティング無しで経済大国に上り詰めたので、米国に比べて15年程度遅れているのが実情。
-
-しかし昨今のグローバル時代では、マーケティング無しに生き残ることが非常に困難であり、そのためBtoBマーケティング業界では今、ABMの活用が求められているそうだ。
 
 日本がマーケティング無しに経済大国に上り詰めた歴史的背景、マーケティングの基礎知識、ABMやMAツール、BtoBマーケティングの包括的な知識が得られる一冊であることは間違いない。
 
 ## 日本のマーケティングが遅れている理由
 
-なぜ日本はマーケティング無しに、世界第2位の経済大国に上り詰めることが出来たのか!?
+なぜ日本はマーケティング無しに、世界第2位の経済大国に上り詰めることができたのか!?
 
-主な要因として <span style="color: crimson; font-weight: bold;">戦後の急成長する内需と、為替の恩恵を受けたことにある</span> が挙げられる。
+大きな要因としては、戦後急成長する内需と、為替の恩恵を受けたことが挙げられる。
 
 > 日本は第二次世界大戦での敗戦による復興需要と朝鮮戦争の特需が重なり、一気に上昇気流に乗ることが出来ました。さらに高度経済成長の中で家電をそろえ、3〜4年おきに車を買い替え、子供に高等教育を受けさせるなど、巨大で旺盛な国内内需が企業の成長を支えたのです。マーケティングはそれほど重要ではありません。
 
-日本は世界有数の工業国で、世界最高レベルの工業製品を、また為替で非常に安い価格で輸出できたので、マーケティングの助けが無くても飛ぶように売れたが、それも2008年のリーマンショックを期に完全に終了し、今やマーケティング無しでは、成長どころか存続すら危ういと言われている。
+日本は世界有数の工業国で、世界最高レベルの工業製品を、非常に安い価格で輸出できた。
+
+だから昔はマーケティングの助けが無くても飛ぶように売れた。
+
+しかしその状況も、2008年のリーマンショックを期に完全におわり、今やマーケティング無しでは、成長どころか存続すら危うい時代だと言われている。
 
 ## ABMはマーケティングと営業を繋ぐもの
 
-本書では **ABM** を次のように定義している。
+そんな時代だからこそ、今求められる **<span style="color: #ff8c00;">ABM</span>** を、本書では次のように定義している。
 
 <span class="mark">POINT</span>**（全社の顧客情報を統合してマーケティングと営業の連携により）定義されたターゲットアカウントからの売り上げ最大化を目指す戦略的マーケティングのこと。**
 
-ABMの重要性が叫ばれる背景に、マーケティングと営業の間にある深い溝が関係しており、次のように各々で重要視する指標が異なるので、MAツールを導入しても使いこなせていないケースが多かった。
+まずABMの重要性が叫ばれる背景に、マーケティングと営業の間にある深い溝があった。
+
+具体的には次のとおりで、マーケと営業では重要視する指標が異なるため、お互いの間で連携がとれず、MAツールを導入しても使いこなせないケースが多かった。
 
 <div class="blackboard-box">
 <p>■ マーケターが重要視する指標</p>
@@ -52,13 +58,15 @@ ABMの重要性が叫ばれる背景に、マーケティングと営業の間�
 </div>
 <br/>
 
-そのためマーケターがコストを掛けて案件創出しても、営業はフォローしないので不信に感じ、営業側も **「なぜもっと良質な案件を創れないのか?」** とお互いの溝は深まるばかり。
+マーケターがコストを掛けて案件創出しても、営業はフォローしないので不信に感じ、営業側も「なぜもっと良質な案件を創れないのか?」と互いの溝は深まるばかり。
 
-しかしABMでは、営業がフォローしたい企業を最優先でリストアップするため、SALとして受け入れられる率は一気に上がり、両者の関係を密に連携出来ることが期待される。
+しかしABMでは **<span style="color: #ff8c00;">営業がフォローしたい企業を最優先でリストアップ</span>** する。
+
+そのためSALとして受入れる率は上がり、両者は密に連携できることが期待できる。
 
 ## デマンドジェネレーションとABM
 
-またBtoBマーケティングの基礎理論である **Demand Waterfall** が紹介されていた。
+ABMを知るため、BtoBマーケティングの基礎理論である **<span style="color: #ff8c00;">Demand Waterfall</span>** が紹介されていた。
 
 <div class="blackboard-box">
 <p>■ リードジェネレーション</p>
@@ -74,15 +82,21 @@ ABMの重要性が叫ばれる背景に、マーケティングと営業の間�
 </div>
 <br/>
 
-これがMAでリードを収集して温め、営業へ連携する迄の大まかな流れとなるが、本書ではABMをデマンドジェネレーションの進化系であると捉えている（<span style="color: crimson; font-weight: bold;">デマンドジェネレーションを定置網、ABMを銛</span>）
+MAツールでリードを収集し温め、営業への連携迄が大まかな流れだが、本書はABMをデマンドジェネレーションの進化系であると捉えている（**<span style="color: #ff8c00;">デマンドジェネレーションを「定置網」でABMは「銛」</span>**）
 
-> 巨大な養殖イケスの中に船を入れ、養殖している魚から獲りたい魚だけを銛で打つようなもの。外洋を走り回る効率の悪さも無く、必要な量と質の魚だけを収穫可能
+昔は果てしない大海原でも大物に出会える時代だった。
 
-昔は果てしない大海原でも大物に出会える時代だったが、現代は1週間海の上を走り回っても、魚影すら見かけない時代。MAをプラットフォームにしたデマンドセンターを確立させ、ABMの銛でターゲットの獲得が大切だとしている。
+しかし現代では、1週間海の上を走り回っても、魚影すら見かけない時代。
+
+MAツールでデマンドセンターを確立させ、ABMの銛でターゲットの獲得が大切だとしている。
 
 ## ABMで成果を出せる企業とは!?
 
-ABMは一企業に複数のコンタクトポイントがあり、コンタクト履歴や属性情報を統合的に管理、新規を戦略的に攻略 + 既存を戦略的に守る手法なので、以下のケースには適していないと言われている。
+どんな企業でもABMが成功するわけではなく、成果を出せる企業の特徴も説明している。
+
+まずABMは、一企業に複数のコンタクトポイントがあり、コンタクト履歴や属性情報を統合的に管理、新規を戦略的に攻略 + 既存を戦略的に守る手法となる。
+
+そのため以下のようなケースには、そもそも適していない。
 
 <div class="blackboard-box">
 <p>・購買に関わる人が1〜3人の経営幹部で決まる中小・零細企業の市場</p>
@@ -93,7 +107,9 @@ ABMは一企業に複数のコンタクトポイントがあり、コンタク�
 </div>
 <br/>
 
-ちなみに本書では、成果が出せる企業として、日本では <span style="color: crimson; font-weight: bold;">中堅以上の規模感で従業員数は数百人以上で売上100億円以上の企業</span>  と紹介されているが、そもそもマーケ人材が乏しいので、ABM以前にMAを使いこなせる企業も少ない気がする。
+また日本で成果が出せる企業は **<span style="color: #ff8c00;">従業員数が数百人以上の中堅以上で売上は100億円以上</span>**  としている。
+
+大前提として、日本はマーケ人材が乏しいため、ABM以前にまずMAツールを使いこなす必要があるが、いずれ日本のマーケティング業界でも、ABMの考え方が主流となるかもしれない。
 
 ## 参考文献
 ■ [今一番使われているMAは1位：Pardot、2位：BowNow、3位：Marketoという結果に](https://mtame.jp/martec/MA_introduction/)  
