@@ -12,72 +12,57 @@ thumbnail: post-28.png
 
 ![](./post-28.png)
 
-以前にリクルートキャリアが提供するサービスで、個人を特定出来る情報の収集が問題になった。プライバシーポリシーに不備があり、利用者から同意を得ていないかったことも大きな問題。
+少し前にリクルートキャリアのサービスが、個人を特定できる情報を収集していると話題になった。
 
-ますます厳格化される個人情報だが、Web開発ではCookieを利用して、個人情報を取り扱うケースが多く、そんな中でChromeでのサードパーティCookieの廃止が決まったことは結構な衝撃だった。
+プライバシーポリシーに不備があり、利用者から同意を得ていなかったことが問題の発端になる。
+
+厳格化される個人情報の扱いについて、Web開発では個人情報をCookieで扱うケースが多い。
+
+そんな昨今、ChromeでサードパーティCookieの廃止が決まったのは衝撃だった。
 
 ■ **[Google Chromium blog（英語）](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)**  
 
-> Privacy Sandboxの取り組みでは、サードパーティCookie抜きで個人情報保護を前提に、広告に支えられた無料のインターネットが維持出来るとし、今後2年をかけてサードパーティCookieのサポート廃止を目指し、また透明性、選択肢、コントロールを実現出来るトラッキング手段を考えるとしている。
+日本でも **<span style="color: #ff8c00;">個人情報保護法</span>** が制定されているが、GDPRと比較すればグレーゾーンが多い。
 
-日本では個人情報保護法が制定されているが、GDPRに比べればグレーゾーンも多く、GDPRに合わる企業は多い。最近システム開発の現場でも、この界隈の話をよく聞くので、個人的に調べてみた。
+最近システム開発の現場でも、この界隈の話を聞くので、個人的に調べてみた。
 
 ## 個人情報保護法改正で示されたCookie規制
 
-まず **個人情報保護法** では **「個人データ」** を次のように定義している。
+まず個人情報保護法では **<span style="color: #ff8c00;">個人情報</span>** を次のように定義している。
 
 > 個人情報とは、生存する個人に関する情報であって、氏名や生年月日等により特定の個人を識別することができるものをいいます。
 >
-> 個人情報には、他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものも含みます。
->
-> また「生年月日と氏名の組合せ」「顔写真」なども個人情報です。
+> 個人情報は、他情報と容易に照合でき、それにより特定の個人を識別することができることとなるものも含みます。「生年月日と氏名の組合せ」「顔写真」も含む。
 
-Cookie自体は個人情報に当たらないが、SNS上にユーザーアカウントが存在している。閲覧履歴が**サードパーティCookie**でSNSを経由されると、閲覧情報から個人に紐付け出来ることがあるらしい。
+Cookieは個人情報に当たらないが、SNSにはユーザーアカウントが存在しており、SNSをサードパーティCookieで経由すると、閲覧情報から個人に紐付けできるケースがあるらしい。
 
-また **個人情報保護法 いわゆる3年ごとの見直し 制度改正大綱（骨子）** では、今後このような情報の第三者提供を制限することが述べられており、<span style="color: crimson; font-weight: bold;">利用者に対して、利用目的を情報提供すること、SNS等への情報提供を拒否する権利の保証、個人情報保護委員会に届け出等が義務付けられる。</span>
+また **<span style="color: #ff8c00;">個人情報保護法 いわゆる3年ごとの見直し 制度改正大綱（骨子）</span>** では、今後このような情報の第三者提供を制限することが述べられており、利用者に対して、利用目的を情報提供すること、SNS等への情報提供を拒否する権利の保証、個人情報保護委員会に届け出等が義務付けられる。
 
 ■ **[個人情報保護法の改正で示されたCookie規制の方向性とは？ IIJが解説](https://internet.watch.impress.co.jp/docs/news/1225265.html)**
 
-ChromeのサードパーティCookie廃止しかり、知らなかったでは済まなくなりそう。
-
-## サードパーティCookie廃止の背景
-
-また **[こちらの記事](https://blog.jxck.io/entries/2020-02-25/end-of-idyllic-cookie.html)** では、Cookieのユースケースや、サードパーティCookieが制限される背景、Privacy Sandboxの概念など詳細に説明されており、理解が深まった気がする。
-
-本記事によれば、現状のCookieには様々なユースケース（セッション維持 / Credential / SSO / 広告 / Analytics）があり、問題の本質はCookieの仕様ではなく、ユースケース側であると言われている。
-
-<span style="color: crimson; font-weight: bold;">サービス提供側はDNT等を利用し、ユーザーからトラッキング拒否のヘッダを受け取った場合、トラッキングを外せば解決するが、仕様すらほぼ知られておらず、全く遵守もされなければ、普及もしない。これだけ広がったCookieという挙動は維持したいので、ユースケース側の問題を解決する手段として、使い方の如何に限らず、サードパーティCookieの全てをブロックする流れになってしまった。</span>
-
-あらゆるユースケースを担っていたCookieも、今後はファーストパーティCookieの役割に限定。
-
-代替案の第一に考えられるのが、企業がユーザーデータにアクセスする際に、ユーザーの同意を得るための施策が標準化されること、もう一つは **Privacy Sandbox** のアイディアを推奨されていた。
-
-仕様は不明だけど、APIはプライバシーに配慮し、利用者の許諾を取るような権限モデル、利用者がOpt-In/Outを選択出来るなど、事業者も新たなエコシステム構築を迫られると思われる。
+利用者には透明性が担保されることになる。
 
 ## Cookie用途別の影響度
 
-次に **[こちらの記事](https://www.principle-c.com/column/marketing/google-chrome-third-party-cookie/#__1690877137.1585022027)** ではCookieの用途別に、それぞれの影響度が説明されていた。
+次に **[こちらの記事](https://www.principle-c.com/column/marketing/google-chrome-third-party-cookie/#__1690877137.1585022027)** でCookieの用途別に影響度が説明されていた。
 
-トラッキングへの影響は限定的と述べられているが、携わっているシステムでもサードパーティCookieを活用したトラッキング処理が行われており、Chrome80対応でもろに影響を受けてしまった。
+トラッキングへの影響は限定的と述べられているが、携わっているシステムでサードパーティCookieを活用したトラッキング処理が行われており、Chrome80対応に影響を受けてしまった。
 
-内容は発行されたトラッキングコードを複数サイトで管理するケースで、今までは同一ユーザーとしてCookie情報が維持されていたが、今回の対応で、SameSite=NoneとSecure属性を指定し、Cookieをクロスサイトアクセスの対象だと示す改修を行った（いずれ完全に出来なくるなると思う）
+発行されたトラッキングコードを複数サイトで管理するケースで、今までは同一ユーザーとしてCookie情報を維持できたが、今回の対応で、SameSite=NoneとSecure属性を指定し、Cookieをクロスサイトアクセスの対象だと示す改修を行った（いずれ一切できなくなる）
 
 ■ **[新しいCookie設定 SameSite=None; Secure の準備を始めましょう](https://developers-jp.googleblog.com/2019/11/cookie-samesitenone-secure.html)**  
 
-Chrome80以降では **SameSite=None; Secure** の設定済みのCookieのみ外部アクセスが可能。
+Chrome80以降では「SameSite=None; Secure」の設定で外部アクセスが可能となる。
 
-## _gac Cookieの仕組み
+## サードパーティCookie廃止の背景
 
-ちなみに今後サードパーティCookieをどう対処すれば良いのか？
+また **[こちらの記事](https://blog.jxck.io/entries/2020-02-25/end-of-idyllic-cookie.html)** では、Cookieのユースケースや、サードパーティCookieが制限される背景、Privacy Sandboxの概念など詳細に説明されており、理解が深まった。
 
-SafariへのITP導入など、サードパーティCookieの問題は以前から話題となっているが、一例としてGoogleは独自に_gac Cookieを使うことで一早く対処していたことを知った。
+本記事によれば、現状のCookieには様々なユースケース（セッション維持 / Credential / SSO / 広告 / Analytics）があり、問題の本質はCookieの仕様ではなく、ユースケース側であると言われている。
 
-<div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3205/9784295003205.jpg?_ex=160x160" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >ネット広告運用“打ち手”大全</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">寳洋平/辻井良太 インプレス 2018年04月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_20200410143756454?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15405689%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4295003204/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%8D%E3%83%83%E3%83%88%E5%BA%83%E5%91%8A%E9%81%8B%E7%94%A8%E2%80%9C%E6%89%93%E3%81%A1%E6%89%8B%E2%80%9D%E5%A4%A7%E5%85%A8&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
-<br/>
+今後の施策で考えられるのは、企業がユーザーデータにアクセスする際に、ユーザーの同意を得るための施策が標準化されるもの。もう一つは **<span style="color: #ff8c00;">Privacy Sandbox</span>** のアイディアが考えられる。
 
-AdWordsとGoogleアナリティクスをリンクさせ、自動タグ設定を有効にしておけば、広告のURLにURLにGLINKが付与される。このGLINKを含む値情報を_gac Cookieに書き込むことで、広告のクリックをファーストパーティCookieとして保存しITPを回避しているらしい。
-
-将来どうなるか分からないけど、一技術者も個人情報の取扱いには一層注意が求められそうだ。
+今後はAPIはプライバシーに配慮し、利用者の許諾を得る権限モデル、利用者がOpt-In/Outを選択できるなど、事業者も新たなエコシステム構築を迫られることになる。
 
 ## 参考文献
 ■ [個人情報保護委員会](https://www.ppc.go.jp/)  
@@ -86,3 +71,5 @@ AdWordsとGoogleアナリティクスをリンクさせ、自動タグ設定を�
 ■ [サードパーティクッキーって何だっけ？ 今さら聞けないHTTP Cookieのキホン](https://webtan.impress.co.jp/e/2017/10/03/27016)  
 ■ [Googleの「 プライバシーサンドボックス 」とは？：Cookieの代わりとされる5つのAPI](https://digiday.jp/platforms/wtf-googles-privacy-sandbox/)  
 ■ [3rd-party cookieのない2年後のアドテックに向けた動きまとめ　各陣営紹介編](https://note.com/martech/n/n0943251e38f4)  
+■ [GoogleがサードパーティーCookie廃止に向けて開発者向けツールのテストを開始](https://gigazine.net/news/20200803-google-third-party-cookies/)  
+■ [オラクルとセールスフォースのCookie追跡がGDPR違反の集団訴訟に発展](https://jp.techcrunch.com/2020/08/17/2020-08-14-oracle-and-salesforce-hit-with-gdpr-class-action-lawsuits-over-cookie-tracking-consent/)  
