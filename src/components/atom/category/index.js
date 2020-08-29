@@ -13,12 +13,8 @@ class Category extends Component {
           <p>All</p>
         </div>
         <div className="category-col">
-          <Link to={`/category/web/`}><Img filename={`web.png`} /></Link>
-          <p>WEB</p>
-        </div>
-        <div className="category-col">
-          <Link to={`/category/クラウド/`}><Img filename={`cloud.png`} /></Link>
-          <p>クラウド</p>
+          <Link to={`/category/システム開発/`}><Img filename={`system.png`} /></Link>
+          <p>システム開発</p>
         </div>
         <div className="category-col">
           <Link to={`/category/ビジネス/`}><Img filename={`business.png`} /></Link>

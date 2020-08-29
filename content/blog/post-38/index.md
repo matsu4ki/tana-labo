@@ -4,8 +4,8 @@ date: "2020-04-27T00:00:00.284Z"
 description: "一般的なWebシステムは、単一のアプリケーションやミドルウェアだけで成立することはなく、アプリケーション同士の連携が必要。そのため実際の開発ではdocker-composeの利用が一般的になる。"
 pagetype: "category"
 perma: "docker-compose"
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["コンテナ", "Docker"]
 thumbnail: post-38.png
 ---

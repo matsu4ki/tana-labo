@@ -4,8 +4,8 @@ date: "2020-07-23T00:00:00.284Z"
 description: ""
 pagetype: "category"
 perma: gatsby-images
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["JavaScript", "Gatsby.js"]
 thumbnail: post-51.png
 ---

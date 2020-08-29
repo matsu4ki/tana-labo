@@ -4,8 +4,8 @@ date: "2020-06-01T00:00:00.284Z"
 description: "Docker上でGolang+Gin+MySQLを環境構築し、データベース接続出来るかを確認。"
 pagetype: "category"
 perma: "golang-gin-mysql"
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["Go", "Gin", "Gorm", "Docker"]
 thumbnail: post-44.png
 ---
