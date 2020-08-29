@@ -4,8 +4,8 @@ date: "2020-03-27T00:00:00.284Z"
 description: "テクノロジーの力で新しい価値創造のため、デジタルトランスフォーメーションの推進が叫ばれている。その取り組みの一つしてマイクロサービスアーキテクチャの推進が挙げられるが、多くの組織ではオーバーエンジニアリング。ただマイクロサービスで語られている考え方は、システムアーキテクトやサービスを考える上で有用なので、実際にマイクロサービスに取り組まれている事例含め、自分なりに考えてみた。"
 pagetype: "category"
 perma: "microservices-architecture"
-categoryname: "クラウド"
-categoryslug: "cloud"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["AWS", "マイクロサービス"]
 thumbnail: post-29.png
 ---

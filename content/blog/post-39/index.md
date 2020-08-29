@@ -4,8 +4,8 @@ date: "2020-05-03T00:00:00.284Z"
 description: "急遽PLとしてRailsアプリの開発案件に参画することになり、知識0では苦労しそうなので、簡易的なWebアプリを作ったり、自分が過去経験した言語（Java/PHP/C#）での開発と比べてどう違うのか、こちらの書籍を一読して確認してみた。"
 pagetype: "category"
 perma: "ruby-on-rails"
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["Ruby", "Rails"]
 thumbnail: post-39.png
 ---

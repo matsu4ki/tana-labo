@@ -4,8 +4,8 @@ date: "2020-05-22T00:00:00.284Z"
 description: "最近のWEB開発ではGo言語の採用が増えているので、書籍で基本的な文法に触れてみた。内容としては、言語基礎、関数とメソッド、構造体など。"
 pagetype: "category"
 perma: "golang-basic"
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["Go", "初心者"]
 thumbnail: post-40.png
 ---

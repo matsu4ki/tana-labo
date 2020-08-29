@@ -4,8 +4,8 @@ date: "2020-04-26T00:00:00.284Z"
 description: "昨今のシステム開発では欠かせないコンテナ技術だが、今まで人が作ったDockerfileを流用したりで、正確に理解出来ていなかった。このままでも良いかなと思っていた矢先、バージョアップで急に動かなくなり、結構ムダな時間を要してしまうこともしばしば。"
 pagetype: "category"
 perma: "docker"
-categoryname: "WEB"
-categoryslug: "WEB"
+categoryname: "システム開発"
+categoryslug: "systemdevelop"
 tags: ["コンテナ", "Docker"]
 thumbnail: post-37.png
 ---
