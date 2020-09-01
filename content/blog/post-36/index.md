@@ -4,8 +4,8 @@ date: "2020-04-24T00:00:00.284Z"
 description: "モノリスコードの分割では、DDDのAggregateパターンを利用したドメインモデルの設計が説明されているが、正直なところ説明内容が難しくて（自分には）あまり理解出来ず ... DDDの知見が無い状態で本書を読んでも、結構な数の人が困惑するのでは？と思う。"
 pagetype: "category"
 perma: "microservice-aggregate"
-categoryname: "システム開発"
-categoryslug: "systemdevelop"
+categoryname: "クラウド"
+categoryslug: "cloud"
 tags: ["AWS", "マイクロサービス"]
 thumbnail: post-36.png
 ---
