@@ -4,8 +4,8 @@ date: "2020-04-09T00:00:00.284Z"
 description: "マイクロサービスを実現する上で頭を悩ませる要素の一つがトランザクション管理。一般的に分散トランザクション管理では、2相コミットでのトランザクション管理が思い浮かぶ。ただNoSQL系のテクノロジーや、一部のメッセージブローカー(RabbitMQ/Apache Kafka)ではサポートされておらず、またスケーラビリティを大きく損なうので、本書ではSagaパターンが紹介されていた。"
 pagetype: "category"
 perma: "microservice-transaction"
-categoryname: "システム開発"
-categoryslug: "systemdevelop"
+categoryname: "クラウド"
+categoryslug: "cloud"
 tags: ["AWS", "マイクロサービス"]
 thumbnail: post-34.png
 ---
