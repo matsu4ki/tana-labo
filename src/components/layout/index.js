@@ -2,7 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import { rhythm　} from "../../utils/typography"
 import Header from "../header"
-import Intro from "../intro"
 import Category from "../atom/category"
 import Taglist from "../atom/taglist"
 import Footer from "../footer"
@@ -10,13 +9,11 @@ import Footer from "../footer"
 const Layout = ({ location, title, tags, children }) => {
 
   const rootPath = `${__PATH_PREFIX__}/`
-  let intro
   let category
   let taglist
   let width = 28
 
   if (location.pathname === rootPath || location.pathname.match(/page/) || location.pathname.match(/category/) || location.pathname.match(/tags/)) {
-    intro = <Intro />
     category = <Category />
     taglist = <Taglist tags={tags} />
     width = 47.3
@@ -36,8 +33,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
       </script>
       </Helmet>
       <Header title={title} />
-      {intro}
-      <div style={{ margin: `0 auto`, maxWidth: rhythm(width) }}>
+      <div style={{ margin: `40px auto 0`, maxWidth: rhythm(width) }}>
         {category}
       </div>
       <div

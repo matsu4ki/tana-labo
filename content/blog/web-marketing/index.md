@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "web-marketing"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["BtoBマーケティング", "Webライティング"]
+tags: ["Webライティング"]
 thumbnail: web-marketing-1.png
 ---
 
