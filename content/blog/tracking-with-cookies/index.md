@@ -3,14 +3,13 @@ title: MAツールにおけるトラッキングの仕組みと個人とCookie�
 date: "2020-04-05T00:00:00.284Z"
 description: "BtoBマーケティングの目的である商談の創出では、まず展示会等で集めた名刺情報をMAツールでデジタル化。その後にお礼メールやフォーム登録で個人とCookieを紐づけてトラッキング、ナーチャリング活動後に営業に引き渡し、SFAやCRMで案件管理するのが一般的な流れとなる。"
 pagetype: "category"
-perma: "ma"
-categoryname: "マーケティング"
-categoryslug: "marketing"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["BtoBマーケティング", "MAツール"]
-thumbnail: post-32.png
+thumbnail: tracking-with-cookies-1.png
 ---
 
-![](./post-32.png)
+![](./tracking-with-cookies-1.png)
 
 Nexalの上島千鶴氏は、ナーチャリングの概念を広めた第一人者として紹介される方。
 
@@ -31,13 +30,13 @@ BtoBマーケティングで商談を創出するためには、まず展示会�
 
 <span style="color: darkgray; font-weight: bold;">（[実態](/post-31/)としては、マーケターと営業には大きな溝が生まれがちで、マーケターが案件を創出しても、営業が追わないことが多い。また営業はSFAに案件を登録するだけでも、責任者から結果を追求されるので、導入してもSFAが活用されないという話は、結構あるあるらしい）</span>
 
-![](./post-32-1.png)
+![](./tracking-with-cookies-2.png)
 
 まず疑問に思ったことは、どのようにリードを管理しているのか。
 
 一般的にWebサイトのヘッダー内に、JavaScriptの解析タグを貼り付け、Cookieを活用したトラッキングが行われている（昨今は個人情報の観点から問題視されているけど）
 
-![](./post-32-2.png)
+![](./tracking-with-cookies-3.png)
 
 ちなみに解析タグを貼り付けるだけでも、次のような情報が取得できる。
 
