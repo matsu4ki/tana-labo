@@ -4,13 +4,13 @@ date: "2020-08-16T00:00:00.284Z"
 description: "一般的な中小企業には、MAツールを使いこなせる人材が少なく、マーケティングを自動化するシナリオの設計ノウハウが無い。そのためツールを導入しても成果を挙げられず、辞めてしまう企業が多い。"
 pagetype: "category"
 perma: "web-marketing"
-categoryname: "マーケティング"
-categoryslug: "marketing"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["BtoBマーケティング", "Webライティング"]
-thumbnail: post-53.png
+thumbnail: web-marketing-1.png
 ---
 
-![](./post-53.png)
+![](./web-marketing-1.png)
 
 一般的な中小企業には、MAツールを使いこなせる人材が少ない。そのためMAツールを導入しても、マーケティングを自動化させるシナリオを設計できず、成果を挙げられない企業が多いらしい。
 

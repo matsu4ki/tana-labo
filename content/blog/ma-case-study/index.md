@@ -3,14 +3,13 @@ title: One to One マーケティング を実現する MAツールの活用事�
 date: "2020-07-02T00:00:00.284Z"
 description: "2010年頃から大手IT企業の多くがMAベンダーを買収して以降、国内のMA市場規模も拡大トレンドらしいが、私が業界著名人の書籍を読んだり、また現場の方（MAベンダー）にお話を伺ってみると、MAを導入しても上手く活用している企業は、極少数に限られると感じた。"
 pagetype: "category"
-perma: "ma-case-study"
-categoryname: "マーケティング"
-categoryslug: "marketing"
+categoryname: "ビジネス"
+categoryslug: "business"
 tags: ["BtoBマーケティング", "MAツール"]
-thumbnail: post-47.png
+thumbnail: ma-case-study-1.png
 ---
 
-![](./post-47.png)
+![](./ma-case-study-1.png)
 
 2010年以降、多くのIT企業がMAベンダーを買収し、国内のMA市場規模は拡大トレンドらしい。
 
@@ -32,7 +31,7 @@ thumbnail: post-47.png
 
 しかし **<span style="color: #ff8c00;;">One to One マーケティング</span>** を実現できるMAツールの活用事例を聞くと**「なるほど！」**と思わされる点も多くあるので、これからの時代には必須かなと思えた。
 
-![](./post-47-1.png)
+![](./ma-case-study-2.png)
 
 まず活用事例で最初に感心したのが、Adobe製のMAを導入したANAの話だった。
 
@@ -46,7 +45,7 @@ MA活用の一例として、何かしらのアクション（ページ閲覧や
 
 ANAでは空席照会時の「区間と期間」も考慮に入れ、メールの文面を見込み客に応じて柔軟に制御し、空席照会のCVが 300%UP した事例が紹介されていた（**「今なら羽田 - 福岡は、旅割運賃を使って◯◯◯円」と、不要な他の区間情報は非表示にすることが可能**）
 
-![](./post-47-2.png)
+![](./ma-case-study-3.png)
 
 区間が決定しているので、よりマッチしたページへの誘導も可能になり、これは利用者に寄り添った良い施策だと思った（字にすると簡単そうに感じてしまうけど）
 
