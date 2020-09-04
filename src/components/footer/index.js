@@ -4,6 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div style={{
+        marginTop: `35px`,
         textAlign: `center`,
         backgroundColor: `dimgray`
       }}>

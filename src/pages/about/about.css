@@ -1,0 +1,57 @@
+
+#about {
+  margin-top: 20px;
+  text-align:center;
+}
+#title {
+  position: relative;
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+#title:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+#profile {
+  margin: 20px 0;
+  padding: 10px;
+}
+#profile p {
+  margin-bottom: 10px;
+}
+#prof-icon .gatsby-image-wrapper {
+  margin: 0 auto 20px;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
+}
+#name {
+  font-size: 24px;
+  font-weight: bold;
+}
+#job {
+  margin-bottom: 30px !important;
+  color: #808080;
+}
+#sns {
+  display: flex;
+  justify-content: center;
+}
+#sns .gatsby-image-wrapper {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
+}

@@ -33,7 +33,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
       </script>
       </Helmet>
       <Header title={title} />
-      <div style={{ margin: `40px auto 0`, maxWidth: rhythm(width) }}>
+      <div style={{ margin: `35px auto 0`, maxWidth: rhythm(width) }}>
         {category}
       </div>
       <div
