@@ -9,7 +9,7 @@ const Category = ({ location, pageContext, data }) => {
   return (
     <Layout location={location} title={data.site.siteMetadata.title} tags={data.tags.group} >
       <div style={{ fontSize: `24px`, fontWeight: `bold`, textAlign: `center` }}>
-        {pageContext.category} ({data.allMarkdownRemark.totalCount}件)
+        {pageContext.category}（{data.allMarkdownRemark.totalCount}件）
       </div>
       <SEO title="Category posts" />
       <Posts posts={data.allMarkdownRemark.edges} />

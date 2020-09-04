@@ -1,0 +1,70 @@
+
+#contact {
+  margin-top: 20px;
+  text-align:center;
+}
+#contact div {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+#title {
+  position: relative;
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+#title:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+#contact span {
+  margin-right: 5px;
+  margin-left: 3px;
+}
+#contact input, textarea {
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  background-color: #edf2f7;
+  border: solid 1px;
+  border-color: #d3d3d3;
+  border-radius: 3px;
+}
+#contact input:focus {
+  background-color: #ffffff;
+}
+#contact textarea:focus {
+  background-color: #ffffff;
+}
+#contact button {
+  text-align: center;
+  width: 160px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  border: solid 1px;
+  border-radius: 5px;
+}
+#contact button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.require {
+  padding: 5px;
+  background-color: #ff69b4;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+}
