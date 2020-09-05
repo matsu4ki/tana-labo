@@ -11,14 +11,15 @@
 #title {
   position: relative;
   margin-bottom: 45px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 #title:before {
   content: '';
   position: absolute;
   bottom: -15px;
   display: inline-block;
-  width: 60px;
+  width: 70px;
   height: 5px;
   left: 50%;
   -webkit-transform: translateX(-50%);

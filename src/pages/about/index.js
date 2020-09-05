@@ -13,7 +13,7 @@ const About = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="About" />
       <div id="about">
-        <p id="title">このブログについて</p>
+        <p id="title">管理人について</p>
         <p>ブログをご覧いただき、ありがとうございます！</p>
         <p>本ブログは日常を通じて、管理人が学んだことをアウトプットする場です。</p>
         <div>
@@ -22,7 +22,6 @@ const About = ({ data, location }) => {
               <Image filename={`prof-icon.png`} />
             </div>
             <p id="name">Shintarou Tanaka</p>
-            <p>Age：34</p>
             <p id="job">Software engineer / Project manager</p>
             <div id="sns">
               <a href="https://github.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`github_logo-light.png`} /></a>
@@ -31,6 +30,33 @@ const About = ({ data, location }) => {
               <a href="https://qiita.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`qiita-icon.png`} /></a>
               <a href="https://scrapbox.io/gogo71889-37308989/" target="_blank" rel="noopener noreferrer"><Image filename={`scrapbox_logo.png`} /></a>
               <a href="https://booklog.jp/users/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`booklog.jpeg`} /></a>
+            </div>
+          </div>
+          <p class="sub-title">運営しているサイト</p>
+          <div id="manage-site">
+            <div class="manage-site-sub">
+              <a href="/" rel="noopener noreferrer">
+                <Image filename={`fukuoka.jpg`} />
+                <div class="manage-site-sub-title">リンクを準備中</div>
+              </a>
+            </div>
+            <div class="manage-site-sub">
+              <a href="/" rel="noopener noreferrer">
+                <Image filename={`fukuoka.jpg`} />
+                <div class="manage-site-sub-title">リンクを準備中</div>
+              </a>
+            </div>
+            <div class="manage-site-sub">
+              <a href="/" rel="noopener noreferrer">
+                <Image filename={`fukuoka.jpg`} />
+                <div class="manage-site-sub-title">リンクを準備中</div>
+              </a>
+            </div>
+            <div class="manage-site-sub">
+              <a href="/" rel="noopener noreferrer">
+                <Image filename={`fukuoka.jpg`} />
+                <div class="manage-site-sub-title">リンクを準備中</div>
+              </a>
             </div>
           </div>
         </div>
