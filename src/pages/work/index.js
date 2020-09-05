@@ -1,7 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import Image from "../../components//atom/image"
 
 import "./work.css"
 
@@ -12,16 +13,35 @@ const Work = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Work" />
       <div id="work">
-        <p id="title">これまでの経歴について</p>
-        <p>XXXX</p>
-        <p>開発事例</p>
+        <p id="title">経歴について</p>
+        <p>USPの記載</p>
+        <p class="sub-title">開発事例</p>
+        <p>過去に携わった開発事例の一例を紹介します！</p>
         <div id="case">
-          <div>MAツール</div>
-          <div>建築現場管理システム</div>
-          <div>医学論文特許システム</div>
-          <div>ポイント管理システム</div>
-          <div>販売管理システム</div>
-          <div>メガバンクの基盤構築</div>
+          <div class="case-sub">
+            <Link to={`/case1`}>
+              <Image filename={`marketing-automation.jpg`} />
+              <div class="case-sub-title">BtoB向けの<br/>MAツール開発</div>
+            </Link>
+          </div>
+          <div class="case-sub">
+            <Link to={`/case2`}>
+              <Image filename={`construction-site.jpg`} />
+              <div class="case-sub-title">建設現場での<br/>現場勤怠管理システム</div>
+            </Link>
+          </div>
+          <div class="case-sub">
+            <Link to={`/case3`}>
+              <Image filename={`medical.jpg`} />
+              <div class="case-sub-title">医療文献の<br/>特許管理システム</div>
+            </Link>
+          </div>
+          <div class="case-sub">
+            <Link to={`/case4`}>
+              <Image filename={`point-manage.jpg`} />
+              <div class="case-sub-title">ポイント管理システムの<br/>リプレイス対応</div>
+            </Link>
+          </div>
         </div>
       </div>
     </Layout>
