@@ -42,6 +42,14 @@
   background-color: black;
   border-radius: 2px;
 }
+#usp {
+  width: 600px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+#usp p {
+  margin-bottom: 5px;
+}
 #case {
   display: flex;
   justify-content: center;

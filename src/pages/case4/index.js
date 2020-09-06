@@ -14,10 +14,6 @@ const Case4 = ({ data, location }) => {
       <div class="case">
         <p id="title">ポイント管理システムのリプレイス対応</p>
         <p>XXXXX.</p>
-        <p class="sub-title">プロジェクトの課題</p>
-        <div id="pj-task">
-          <p>XXXXX</p>
-        </div>
         <p class="sub-title">技術領域</p>
         <div id="skills">
           <span class="server">Java7</span>
@@ -30,12 +26,12 @@ const Case4 = ({ data, location }) => {
           <span class="infra">Vagrant</span>
           <span class="infra">Virtulbox</span>
           <span class="infra">Apache</span>
-          <span class="tool">Maven</span>
-          <span class="tool">A5SQL</span>
-          <span class="tool">Sequel</span>
-          <span class="tool">Git</span>
-          <span class="tool">InteliJ</span>
-          <span class="tool">Backlog</span>
+          <span class="infra">Tomcat</span>
+          <span class="infra">Maven</span>
+        </div>
+        <p class="sub-title">プロジェクトの課題</p>
+        <div id="pj-task">
+          <p>XXXXX</p>
         </div>
         <p class="sub-title">現場での職務内容</p>
         <div class="role">

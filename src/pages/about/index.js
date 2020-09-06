@@ -27,9 +27,9 @@ const About = ({ data, location }) => {
               <a href="https://github.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`github_logo-light.png`} /></a>
               <a href="https://twitter.com/tanashin77777" target="_blank" rel="noopener noreferrer"><Image filename={`twitter_logo.png`} /></a>
               <a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer"><Image filename={`instagram-logo.png`} /></a>
+              <a href="https://booklog.jp/users/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`booklog.jpeg`} /></a>
               <a href="https://qiita.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`qiita-icon.png`} /></a>
               <a href="https://scrapbox.io/gogo71889-37308989/" target="_blank" rel="noopener noreferrer"><Image filename={`scrapbox_logo.png`} /></a>
-              <a href="https://booklog.jp/users/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`booklog.jpeg`} /></a>
             </div>
           </div>
           <p class="sub-title">運営しているサイト</p>
