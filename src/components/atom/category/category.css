@@ -22,7 +22,6 @@
 #category .gatsby-image-wrapper:hover {
   opacity: 0.6;
 }
-
 .category-col a {
   box-shadow: none;
   color: black; 
@@ -39,5 +38,8 @@
   }
   #category p {
     white-space: pre-wrap;
+  }
+  #category .gatsby-image-wrapper {
+    width: 50%;
   }
 }

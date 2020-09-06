@@ -6,6 +6,8 @@ import Category from "../atom/category"
 import Taglist from "../atom/taglist"
 import Footer from "../footer"
 
+import "./layout.css"
+
 const Layout = ({ location, title, tags, children }) => {
 
   const rootPath = `${__PATH_PREFIX__}/`
@@ -33,7 +35,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
       </script>
       </Helmet>
       <Header title={title} />
-      <div style={{ margin: `35px auto 0`, maxWidth: rhythm(width) }}>
+      <div id="category-layout" style={{ maxWidth: rhythm(width) }}>
         {category}
       </div>
       <div

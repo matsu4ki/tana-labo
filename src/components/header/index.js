@@ -19,7 +19,7 @@ class Header extends Component {
               maxWidth: rhythm(width),
             }}
           >
-            <div>
+            <div id="blog-top">
               <Link to={`/`} style={{ fontSize: `30px`, marginRight: `auto` }}>{title}</Link>
             </div>
             <div class="header-sub">
@@ -31,12 +31,17 @@ class Header extends Component {
             <div class="header-sub">
               <Link to={`/work`}>Work</Link>
             </div>
-            <div class="header-sub">
-              <Link to={`/contact`}>Contact</Link>
-            </div>
           </div>
         </div>
         <div style={{ height:`52px`}}></div>
+        <div id="mobile-header">
+          <div class="header-sub-mobile">
+            <Link to={`/about`}>About</Link>
+          </div>
+          <div class="header-sub-mobile">
+            <Link to={`/work`}>Work</Link>
+          </div>
+        </div>
       </div>
     )
   }
