@@ -30,7 +30,7 @@ const Contact = ({ data, location }) => {
             <span>お問合わせ内容</span>
             <p><textarea rows="7" name="message" placeholder="お問合わせ内容" /></p>
           </div>
-          <button type="submit" value="Send">送信する</button>
+          <button type="reset" value="Send">送信する</button>
         </form>
       </div>
     </Layout>
