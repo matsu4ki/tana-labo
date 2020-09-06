@@ -14,10 +14,6 @@ const Case1 = ({ data, location }) => {
       <div class="case">
         <p id="title">BtoB向けのMAツール開発</p>
         <p>BtoB向けのMAツール開発PJにて、プロジェクト管理やチームビルディングに従事.</p>
-        <p class="sub-title">プロジェクトの課題</p>
-        <div id="pj-task">
-          <p>XXXXX</p>
-        </div>
         <p class="sub-title">技術領域</p>
         <div id="skills">
           <span class="server">Ruby2.4</span>
@@ -27,19 +23,16 @@ const Case1 = ({ data, location }) => {
           <span class="infra">MySQL5.7</span>
           <span class="infra">Aurora</span>
           <span class="infra">CloudFront</span>
-          <span class="infra">Firehose</span>
-          <span class="infra">CloudFront</span>
-          <span class="infra">CloudWatch</span>
           <span class="infra">API Gateway</span>
           <span class="infra">Redshift</span>
           <span class="infra">S3</span>
           <span class="infra">SQS</span>
           <span class="infra">Elastic Beanstalk</span>
-          <span class="tool">Github</span>
-          <span class="tool">Docker Compose</span>
-          <span class="tool">Slack</span>
-          <span class="tool">Chatwork</span>
-          <span class="tool">Redmine</span>
+          <span class="infra">Docker</span>
+        </div>
+        <p class="sub-title">プロジェクトの課題</p>
+        <div id="pj-task">
+          <p>XXXXX</p>
         </div>
         <p class="sub-title">現場での職務内容</p>
         <div class="role">
