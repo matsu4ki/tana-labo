@@ -42,7 +42,7 @@
   border-radius: 2px;
 }
 #profile {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 10px;
 }
 #profile p {
@@ -75,6 +75,18 @@
   border-radius: 50%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
 }
+#blog {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+#blog .gatsby-image-wrapper {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .5);
+}
 #manage-site {
   display: flex;
   justify-content: center;
@@ -98,4 +110,18 @@
   width: 230px;
   border: solid 1px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 480px){
+  #sns .gatsby-image-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  #blog .gatsby-image-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  #manage-site {
+    margin-bottom: 0px;
+  }
 }
