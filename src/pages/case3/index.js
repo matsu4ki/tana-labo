@@ -17,7 +17,14 @@ const Case3 = ({ data, location }) => {
         <div class="capture">
           <Image filename={`medical.jpg`} />
         </div>
-        <p>医療企業向けの医学論文の著作権を管理するシステム構築に従事.</p>
+        <p>医学論文の著作権を管理するシステム構築に従事.</p>
+        <p class="sub-title">プロジェクトの基本情報</p>
+        <div class="pj-info">
+          <p><b>[ フェーズ ]</b> 要件定義 〜 保守運用</p>
+          <p><b>[ 開発規模 ]</b> 10人</p>
+          <p><b>[ 期間 ]</b> 2016.08 - 2017.10</p>
+        </div>
+        <p class="sub-title">プロジェクトの利用技術</p>
         <div class="skills">
             <span class="server">PHP7.0</span>
             <span class="server">CakePHP3.0</span>

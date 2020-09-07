@@ -15,7 +15,7 @@ const About = ({ data, location }) => {
       <div id="about">
         <p id="title">管理人について</p>
         <p>ブログをご覧いただき、ありがとうございます！</p>
-        <p>本ブログは日常を通じて、管理人が学んだことをアウトプットする場です。</p>
+        <p>当ブログは私が学んだことをアウトプットする場です。</p>
         <div>
           <div id="profile">
             <div id="prof-icon">
@@ -43,18 +43,6 @@ const About = ({ data, location }) => {
           </div>
             <p class="sub-title">運営しているサイト</p>
           <div id="manage-site">
-            <div class="manage-site-sub">
-              <a href="/" rel="noopener noreferrer">
-                <Image filename={`fukuoka.jpg`} />
-                <div class="manage-site-sub-title">リンクを準備中</div>
-              </a>
-            </div>
-            <div class="manage-site-sub">
-              <a href="/" rel="noopener noreferrer">
-                <Image filename={`fukuoka.jpg`} />
-                <div class="manage-site-sub-title">リンクを準備中</div>
-              </a>
-            </div>
             <div class="manage-site-sub">
               <a href="/" rel="noopener noreferrer">
                 <Image filename={`fukuoka.jpg`} />

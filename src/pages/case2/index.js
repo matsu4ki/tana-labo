@@ -17,7 +17,14 @@ const Case2 = ({ data, location }) => {
         <div class="capture">
           <Image filename={`construction-site.jpg`} />
         </div>
-        <p>土木建設における現場管理と作業員の勤怠管理のシステム開発に従事.</p>
+        <p>土木建設における現場・勤怠管理のシステム開発に従事.</p>
+        <p class="sub-title">プロジェクトの基本情報</p>
+        <div class="pj-info">
+          <p><b>[ フェーズ ]</b> 基本設計 〜 結合試験</p>
+          <p><b>[ 開発規模 ]</b> 10人</p>
+          <p><b>[ 期間 ]</b> 2018.07 - 2019.05</p>
+        </div>
+        <p class="sub-title">プロジェクトの利用技術</p>
         <div class="skills">
           <span class="server">PHP7.2</span>
           <span class="server">CakePHP3.69</span>
@@ -56,7 +63,7 @@ const Case2 = ({ data, location }) => {
           <p>PHP経験者が乏しかったので、環境構築〜試験手順迄を主体的にリード。</p>
           <br/>
           <p><b>■ 単体試験の導入とルール策定</b></p>
-          <p>単体試験の文化が無かったのでPHPUnitを導入。また運用ルールを策定することで、結合試験時に頻発していた単体レベルのバグ減少に寄与した。</p>
+          <p>単体試験の文化が無かったのでPHPUnitを導入。また運用ルールを策定することで、結合試験時に頻発していた単体レベルのバグ減少に貢献した。</p>
         </div>
         <div class="previous">
           <Link to={`/work`}>戻る</Link>
