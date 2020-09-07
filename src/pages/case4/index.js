@@ -17,7 +17,14 @@ const Case4 = ({ data, location }) => {
         <div class="capture">
           <Image filename={`point-manage.jpg`} />
         </div>
-        <p>複数事業者のポイント管理を行うWEBシステムのリプレイス対応に従事.</p>
+        <p>ポイント事業管理システムのリプレイス対応に従事.</p>
+        <p class="sub-title">プロジェクトの基本情報</p>
+        <div class="pj-info">
+          <p><b>[ フェーズ ]</b> 基本設計 〜 結合試験</p>
+          <p><b>[ 開発規模 ]</b> 10人</p>
+          <p><b>[ 期間 ]</b> 2016.04 - 2016.07</p>
+        </div>
+        <p class="sub-title">プロジェクトの利用技術</p>
         <div class="skills">
           <span class="server">Java7</span>
           <span class="server">Struts2</span>

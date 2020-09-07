@@ -113,6 +113,15 @@
 }
 
 @media screen and (max-width: 480px){
+  #about p {
+    font-size: 14px;
+  }
+  #about #title {
+    font-size: 16px;
+  }
+  #about .sub-title {
+    font-size: 15px;
+  }
   #sns .gatsby-image-wrapper {
     width: 40px;
     height: 40px;
