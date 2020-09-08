@@ -56,6 +56,10 @@ const About = ({ data, location }) => {
               </a>
             </div>
           </div>
+          <p class="sub-title">お問い合わせ先</p>
+          <div>
+            <p style={{ color: `#808080`, marginBottom: `40px` }}>gogo71889@gmail.com</p>
+          </div>
         </div>
       </div>
     </Layout>
