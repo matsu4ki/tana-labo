@@ -76,7 +76,7 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
 }
 #blog {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
 }
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .manage-site-sub {
   position: relative;
