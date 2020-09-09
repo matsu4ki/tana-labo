@@ -4,8 +4,8 @@ date: "2020-01-14T00:00:00.284Z"
 description: "人はなぜ自殺をするのか？の動機特定の困難さも去ることながら、自殺予防対策の有効性を明らかにする事は更に困難で、そもそも因果関係を実証するための実証実験が難しい。そんな現状で、一体一人の人間に何が出来るのか？"
 pagetype: "category"
 perma: "basic-knowledge-of-suicide-prevention"
-categoryname: "ビジネス"
-categoryslug: "business"
+categoryname: "リベラルアーツ"
+categoryslug: "liberalarts"
 tags: ["格差・貧困", "自殺", "社会"]
 thumbnail: suicide-prevention-1.png
 ---
