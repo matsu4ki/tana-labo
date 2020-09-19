@@ -3,7 +3,6 @@ title: レミパンプラスの事例で考える顧客志向UXを実現させ�
 date: "2020-07-10T00:00:00.284Z"
 description: ""
 pagetype: "category"
-perma: "ux-example"
 categoryname: "ビジネス"
 categoryslug: "business"
 tags: ["UX", "デザインリサーチ"]
