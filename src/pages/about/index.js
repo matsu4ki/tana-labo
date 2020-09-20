@@ -25,7 +25,7 @@ const About = ({ data, location }) => {
             <p id="job">Project manager / Software engineer</p>
             <div id="sns">
               <a href="https://github.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`github_logo-light.png`} /></a>
-              <a href="https://twitter.com/tanashin77777" target="_blank" rel="noopener noreferrer"><Image filename={`twitter_logo.png`} /></a>
+              <a href="https://twitter.com/SHINTAROUTANAK1" target="_blank" rel="noopener noreferrer"><Image filename={`twitter_logo.png`} /></a>
               <a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer"><Image filename={`instagram-logo.png`} /></a>
               <a href="https://booklog.jp/users/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`booklog.jpeg`} /></a>
               <a href="https://qiita.com/machio77777" target="_blank" rel="noopener noreferrer"><Image filename={`qiita-icon.png`} /></a>
