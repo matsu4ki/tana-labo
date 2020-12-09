@@ -3,8 +3,7 @@
   display: flex; 
   flex-wrap: wrap;
 }
-
-@media screen and (max-width: 696px){
+@media screen and (max-width: 480px){
   #post {
     display: flex;
     justify-content: center;

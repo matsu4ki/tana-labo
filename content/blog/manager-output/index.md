@@ -5,7 +5,7 @@ description: "30代を境に私のポジションは大きく変わった。シ�
 pagetype: "category"
 categoryname: "マネジメント"
 categoryslug: "management"
-tags: ["アウトプット", "品質"]
+tags: ["組織作り", "品質"]
 thumbnail: manager-output-1.png
 ---
 
@@ -13,7 +13,7 @@ thumbnail: manager-output-1.png
 
 30代を境に仕事における自分のポジションは大きく変わった。
 
-システム開発の現場では（良い意味で）コードを書く機会が減り、顧客折衝やチームマネジメントの割合が増えたのだが、マネジメント業務について、深く考える時間はほとんど無かった気がする。
+システム開発の現場では（良い意味で）コードを書く機会が減り、顧客折衝やチームマネジメントの割合が増えたが、マネジメント業務を深く考える時間はあまり無かった。
 
 **そもそもマネージャーのアウトプットって何だろうか!?**
 
@@ -22,7 +22,7 @@ thumbnail: manager-output-1.png
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202011092231158029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14598584%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5015/9784822255015.jpg?_ex=150x150" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202011092231158029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14598584%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >HIGH OUTPUT MANAGEMENT 人を育て、成果を最大にするマネジメント</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">アンドリュー・S・グローブ/小林 薫 日経BP 2017年01月12日頃    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202011092231158029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14598584%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4822255018/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=HIGH%20OUTPUT%20MANAGEMENT%20%E4%BA%BA%E3%82%92%E8%82%B2%E3%81%A6%E3%80%81%E6%88%90%E6%9E%9C%E3%82%92%E6%9C%80%E5%A4%A7%E3%81%AB%E3%81%99%E3%82%8B%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 <br/>
 
-まず本書冒頭では **<span style="color: #ff8c00;">マネージャーのアウトプット</span>** が次のように示されている。
+まず本書の冒頭で **<span style="color: #ff8c00;">マネージャーのアウトプット</span>** を次のように示している。
 
 <span class="mark">POINT</span>**自分の組織のアウトプット ＋ 自分の影響力が及ぶ隣接諸組織のアウトプット.**
 
@@ -31,6 +31,8 @@ thumbnail: manager-output-1.png
 ## チームのアウトプット最大化に向けた施策
 
 本書に倣えば、マネジメントでやるべきは **<span style="color: #ff8c00;">チームのアウトプットを最大化</span>** させること!!
+
+組織のアウトプットに良い影響を与えるため、何をすれば良いのか常に考える必要がある。
 
 直近PJの課題やチーム状況を鑑みて、次の指標でアウトプットを判断することにしてみた。
 
@@ -43,7 +45,7 @@ thumbnail: manager-output-1.png
 </div>
 <br/>
 
-まず(1)と(2)を実現するため、案件終了時に振返りの場を設け、チーム成熟化に尽力。
+まず(1)と(2)を実現するため、案件終了時に振返りの場を設け、チームの成熟化に注力。
 
 担当PJではタスク管理をRedmineで行っていたので、クライアントの検収時に起票されるバグや問い合わせの内容を、開発者と共に振り返り、次のような課題と対応策を洗い出せた。
 
@@ -53,11 +55,12 @@ thumbnail: manager-output-1.png
 <p>2. 開発担当者の試験項目書の作成が雑でチェック漏れが多い（操作手順の記載のみ）</p>
 <p style="color: #ff8c00;">＝ 試験観点を列挙したシートを作成し、RV担当者に配慮する.</p>
 <p>3. 役割分担問題（出来るエンジニアに負荷が集中している）</p>
-<p style="color: #ff8c00;">＝ 出来るエンジニアの負担軽減のため、初級要員が軽微改修や問合せを対応する仕組み作り.</p>
+<p style="color: #ff8c00;">＝ 出来るエンジニアの負担軽減のため、初級要員が軽微改修や問合せを対応する体制構築.</p>
 <p>4. 実装漏れ ＋ 確認観点漏れ</p>
-<p style="color: #ff8c00;">＝ 実装前後でディレクターと認識合わせを行うことで、無駄な問合せを減らす.</p>
+<p style="color: #ff8c00;">＝ 実装前後でディレクターと認識合わせを行い、検収時の無駄な問合せを減らす.</p>
 <p>5. 工数算出の甘さ（納期間際に間に合わないことが多発）</p>
-<p style="color: #ff8c00;">＝ 開始当初にタスクを細かく分割 ＋ 定期的な進捗報告を実施.</p>
+<p style="color: #ff8c00;">＝ 作業着手前にタスクを細かく分割し、ボトルネックを理解して計画を立てる.</p>
+<p style="color: #ff8c00;">＝ 定期的な進捗報告で、致命的な問題を早期に対処できる体制づくり.</p>
 <p>6. 受入時の問合せ数を削減</p>
 <p style="color: #ff8c00;">＝ 基本的なホウレンソウで防げる問合せが多いので、密に連携が取れる体制構築.</p>
 <div class="chalk1"></div>
@@ -67,20 +70,20 @@ thumbnail: manager-output-1.png
 
 マネジメント側の改善点も見えてくるので、定期的な振り返りの場は大切だと痛感させられる。
 
-ちなみに本書の第2章でもインディケーターが大事だと述べており、今回は検収時のRedmineチケットを参考にしたが、他に良い指標がないかは引き続き追求していきたい。
+ちなみに本書の第2章でもインディケーターが大事だと述べており、今回は検収時のRedmineチケットを参考にしたが、良い指標（タスク消化率? コミット数?）がないかは引き続き追求していきたい。
 
 ## マネージャーにとって大事な手段であるミーティング
 
 本書はミーティングに1章を割いており、ミーティングが重要な手段であるかを述べている。
 
-その理由について、マネージャーの仕事の大半は情報・ノウハウの提供で、これがチームのアウトプット最大化に欠かせないから。またその時間を最大限、有効活用させるのも使命の一つ。
+その理由について、マネージャーの仕事の大半が情報・ノウハウの提供であり、チームのアウトプット最大化には欠かせない。またその時間を最大限に有効活用するのも使命の一つ**<span style="color: #ff8c00;">（事前準備が全て）</span>**
 
-ミーティングの目的や役割には、**<span style="color: #ff8c00;">プロセス中心（知識の共有化や情報交換）</span>**を主にするものと、**<span style="color: #ff8c00;">使命中心（具体的な問題解決や意思決定を行う）</span>**の2種類があり、直近PJで前任者からマネジメント業務を引き継いだ際、前者のミーティングに課題感を感じたので、まず次の基本的なことから見直してみた。
+ミーティングの目的と役割には、**<span style="color: #ff8c00;">プロセス中心（知識の共有化や情報交換）</span>**を主にするものと、**<span style="color: #ff8c00;">使命中心（具体的な問題解決や意思決定を行う）</span>**の2種類があり、直近PJで前任者からマネジメント業務を引き継いだ際、前者のミーティングに課題感を感じたので、まず次の基本的なことから見直してみた。
 
 <div class="blackboard-box">
 <p>1. 各要員の作業状況を把握できる状態になっていない（WBS未更新）</p>
 <p style="color: #ff8c00;">＝ WBSで最低限のタスク管理を行い、日次の夕会で確認（その場で更新）</p>
-<p style="color: #ff8c00;">＝ かつ、進捗遅延上  のボトルネックを把握し、適切にフォロー（要員調整等）</p>
+<p style="color: #ff8c00;">＝ 進捗遅延のボトルネックを把握し、適切にフォロー（要員調整等）</p>
 <br/>
 <p>2. 何をどこまでやるかの指示が明確になっていない（進捗が不明）</p>
 <p style="color: #ff8c00;">＝ なんとなくで依頼せず、完了までの具体的なゴール設定を行う.</p>
@@ -94,7 +97,9 @@ thumbnail: manager-output-1.png
 
 プロセス中心のミーティングでは、チーム間のコミュニケーションを活発化させるため、日々の案件完了時、開発者自身がチーム全体に共有した方が良いと思うことを、定例の場で共有する運用とした。
 
-日次の夕会で挙げられた各担当者のボトルネックや相談事は、別途有識者が集まり、課題解決まで道筋を話し合うスタイル。これらを繰り返すことで、チーム間の風通しは幾分か良くなった気がする。
+ただ実際問題、共有事項をそれなりの資料に落とし込もうとすれば、タスクに追われる開発者の負担になってしまうので、いかに開発者の隙間時間を作れるかが勝負な気がしている。
+
+また日次の夕会で挙げられたボトルネックや相談事は、別途有識者が集まり、課題解決まで道筋を話し合う。これらを繰り返すことで、チーム間の風通しは幾分か良くなったことを実感。
 
 ## 経験の浅いメンバーとの向き合い方
 
@@ -107,7 +112,7 @@ thumbnail: manager-output-1.png
 
 そういえば、ある部下にタスクを振った後、日々進捗をモニタリングしていると、あるボトルネックが解決出来ず、相談されたことがある。私自身が直接的な解決策を持っていた訳では無かったが、問題解決までの道筋や今後の進め方を軽くアドバイスしたら、即解決でき、納期を守ることができた。
 
-その件以降、メンバーは早期の相談を心掛け、進捗遅延が無くなった気がする。またメンバー毎にどの程度フォローするか、タスク習熟度別に効果的なマネジメント・スタイルの特徴も解説されている。
+その件以降、メンバーは早期の相談を心掛け、進捗遅延が無くなった気がする。またメンバー毎にどの程度フォローするか、タスク習熟度別に効果的なマネジメント・スタイルの特徴も解説されていた。
 
 <div class="blackboard-box">
 <p>タスク習熟度：低（明確な仕組み ＋ タスク志向）</p>
