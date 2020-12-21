@@ -11,22 +11,22 @@ thumbnail: manager-output-1.png
 
 ![](./manager-output-1.png)
 
-30代を境に仕事における自分のポジションは大きく変わった。
+30代を境に業務でコードを書く機会が減り、顧客折衝やチームマネジメントの割合が増えた。
 
-システム開発の現場では（良い意味で）コードを書く機会が減り、顧客折衝やチームマネジメントの割合が増えたが、マネジメント業務を深く考える時間はあまり無かった。
+ただマネジメント業務を深く考える時間はあまり無かったかもしれない。
 
-**そもそもマネージャーのアウトプットって何だろうか!?**
+**そもそもマネージャーのアウトプットって何だろうか。**
 
-次の本には上の疑問を解消してくれる数々のヒントが紹介されていた。
+次の本にはその疑問を解消してくれるヒントが紹介されていた。
 
 <div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202011092231158029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14598584%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5015/9784822255015.jpg?_ex=150x150" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202011092231158029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14598584%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >HIGH OUTPUT MANAGEMENT 人を育て、成果を最大にするマネジメント</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">アンドリュー・S・グローブ/小林 薫 日経BP 2017年01月12日頃    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202011092231158029?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14598584%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4822255018/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=HIGH%20OUTPUT%20MANAGEMENT%20%E4%BA%BA%E3%82%92%E8%82%B2%E3%81%A6%E3%80%81%E6%88%90%E6%9E%9C%E3%82%92%E6%9C%80%E5%A4%A7%E3%81%AB%E3%81%99%E3%82%8B%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
 <br/>
 
-まず本書の冒頭で **<span style="color: #ff8c00;">マネージャーのアウトプット</span>** を次のように示している。
+まず本書の冒頭では **<span style="color: #ff8c00;">マネージャーのアウトプット</span>** を次のように定義している。
 
 <span class="mark">POINT</span>**自分の組織のアウトプット ＋ 自分の影響力が及ぶ隣接諸組織のアウトプット.**
 
-マネージャーはチームのパフォーマンス ＋ アウトプットで評価されるべきとあり、この考え方は自身がチームマネジメントを行う上で一つの指標となったので、直近PJでも取り入れてみた。
+マネージャーはチームのパフォーマンス ＋ アウトプットで評価されるべきで、この考え方は自身がチームマネジメントを行う上で一つの指標となったので、直近PJでも取り入れてみた。
 
 ## チームのアウトプット最大化に向けた施策
 
@@ -37,17 +37,17 @@ thumbnail: manager-output-1.png
 直近PJの課題やチーム状況を鑑みて、次の指標でアウトプットを判断することにしてみた。
 
 <div class="blackboard-box">
-<p>(1) 開発スピードが向上したか（リリース頻度・回数 / 売上に直結する機能追加の有無）</p>
-<p>(2) 品質の担保（本番障害や受入時のバグ・問い合わせの少なさ）</p>
-<p>(3) 持続可能な開発体制構築（将来の内製化に寄与する取組み）</p>
+<p>1. 開発スピードが向上したか（リリース頻度・回数 / 売上に直結する機能追加の有無）</p>
+<p>2. 品質の担保（本番障害や受入時のバグ・問い合わせの少なさ）</p>
+<p>3. 持続可能な開発体制構築（将来の内製化に寄与する取組み）</p>
 <div class="chalk1"></div>
 <div class="chalk2"></div>
 </div>
 <br/>
 
-まず(1)と(2)を実現するため、案件終了時に振返りの場を設け、チームの成熟化に注力。
+まず1と2を実現するため、案件終了時に振返りの場を設け、チームの成熟化に注力してみた。
 
-担当PJではタスク管理をRedmineで行っていたので、クライアントの検収時に起票されるバグや問い合わせの内容を、開発者と共に振り返り、次のような課題と対応策を洗い出せた。
+幸い、担当PJではタスク管理をRedmineで行っていたので、検収時に起票されるバグや問い合わせの内容を開発者と共に振り返り、次のような課題と対応策を洗い出せた。
 
 <div class="blackboard-box">
 <p>1. ブラウザ毎の挙動が一致せず、検収時に多くの問い合わせを頂いた.</p>
@@ -70,15 +70,15 @@ thumbnail: manager-output-1.png
 
 マネジメント側の改善点も見えてくるので、定期的な振り返りの場は大切だと痛感させられる。
 
-ちなみに本書の第2章でもインディケーターが大事だと述べており、今回は検収時のRedmineチケットを参考にしたが、良い指標（タスク消化率? コミット数?）がないかは引き続き追求していきたい。
+ちなみに本書の第2章でもインディケーターが大事だと述べており、今回は検収時のRedmineチケットを参考にしたが、良い指標（タスク消化率・コミット数）がないかを引き続き追求していきたい。
 
 ## マネージャーにとって大事な手段であるミーティング
 
-本書はミーティングに1章を割いており、ミーティングが重要な手段であるかを述べている。
+本書ではミーティングに丸1章を割いており、いかに重要な手段であるかを述べている。
 
-その理由について、マネージャーの仕事の大半が情報・ノウハウの提供であり、チームのアウトプット最大化には欠かせない。またその時間を最大限に有効活用するのも使命の一つ**<span style="color: #ff8c00;">（事前準備が全て）</span>**
+その理由は1マネージャーの仕事の大半が情報・ノウハウの提供であり、チームのアウトプット最大化には欠かせない。またその時間を最大限に有効活用するのも使命の一つ。
 
-ミーティングの目的と役割には、**<span style="color: #ff8c00;">プロセス中心（知識の共有化や情報交換）</span>**を主にするものと、**<span style="color: #ff8c00;">使命中心（具体的な問題解決や意思決定を行う）</span>**の2種類があり、直近PJで前任者からマネジメント業務を引き継いだ際、前者のミーティングに課題感を感じたので、まず次の基本的なことから見直してみた。
+ミーティングの目的と役割には、**<span style="color: #ff8c00;">プロセス中心（知識の共有化や情報交換）</span>**を主にするものと、**<span style="color: #ff8c00;">使命中心（具体的な問題解決や意思決定を行う）</span>**の2種類があり、直近PJで前任者からマネジメント業務を引き継いだ際、前者に課題を感じたので、基本的な次のことを見直してみた。
 
 <div class="blackboard-box">
 <p>1. 各要員の作業状況を把握できる状態になっていない（WBS未更新）</p>
@@ -97,9 +97,9 @@ thumbnail: manager-output-1.png
 
 プロセス中心のミーティングでは、チーム間のコミュニケーションを活発化させるため、日々の案件完了時、開発者自身がチーム全体に共有した方が良いと思うことを、定例の場で共有する運用とした。
 
-ただ実際問題、共有事項をそれなりの資料に落とし込もうとすれば、タスクに追われる開発者の負担になってしまうので、いかに開発者の隙間時間を作れるかが勝負な気がしている。
+ただ実際問題、共有事項をそれなりの資料に落とし込もうとすれば、タスクに追われる開発者の負担になるため、いかに開発者の隙間時間を作れるかが勝負な気がしている。
 
-また日次の夕会で挙げられたボトルネックや相談事は、別途有識者が集まり、課題解決まで道筋を話し合う。これらを繰り返すことで、チーム間の風通しは幾分か良くなったことを実感。
+また日次の夕会で挙げられたボトルネックや相談事は、別途有識者が集まり、課題解決まで道筋を話し合う。これらを繰り返すことで、チーム間の風通しは幾分か良くなったことを実感した。
 
 ## 経験の浅いメンバーとの向き合い方
 
