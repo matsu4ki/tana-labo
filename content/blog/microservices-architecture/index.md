@@ -1,11 +1,11 @@
 ---
-title: AWSでのマイクロサービスアーキテクチャ 各社事例と取り組み方について
+title: AWSでのマイクロサービスアーキテクチャ 各社事例と取り組み＠2019年
 date: "2020-03-27T00:00:00.284Z"
 description: "テクノロジーの力で新しい価値創造のため、デジタルトランスフォーメーションの推進が叫ばれている。その取り組みの一つしてマイクロサービスアーキテクチャの推進が挙げられるが、多くの組織ではオーバーエンジニアリング。ただマイクロサービスで語られている考え方は、システムアーキテクトやサービスを考える上で有用なので、実際にマイクロサービスに取り組まれている事例含め、自分なりに考えてみた。"
 pagetype: "category"
 categoryname: "システム開発"
 categoryslug: "systemdevelop"
-tags: ["クラウド", "AWS", "マイクロサービス"]
+tags: ["アーキテクチャ", "microservice", "書籍"]
 thumbnail: microservices-architecture-1.png
 ---
 
@@ -208,3 +208,4 @@ AWSホワイトペーパーが足りない情報を補記してくれる役割�
 ■ [コンテナーとは?Kubernetesとは?導入や運用、ユースケースを解説](https://codezine.jp/article/detail/11336)  
 ■ [今さら人に聞けないKubernetesとは?](https://qiita.com/MahoTakara/items/85096f8b2632c802ab22)  
 ■ [Microservices Patterns を読んで(1)](https://kencharos.hatenablog.com/entry/2019/02/24/233148)  
+■ [マイクロサービス、ミニサービス、モジュラーモノリス、モノリシックアーキテクチャを比較](https://tech-blog.rakus.co.jp/entry/20201218/architecture)  
