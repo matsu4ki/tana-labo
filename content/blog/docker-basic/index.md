@@ -5,7 +5,7 @@ description: "昨今のシステム開発では欠かせないコンテナ技術
 pagetype: "category"
 categoryname: "システム開発"
 categoryslug: "systemdevelop"
-tags: ["Docker", "初心者"]
+tags: ["Docker", "書籍"]
 thumbnail: docker-basic-1.png
 ---
 

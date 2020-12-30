@@ -1,11 +1,11 @@
 ---
 title: UXを実現させるWebサイトの振る舞いと顧客に寄り添ったUIのサンプル例
 date: "2020-07-11T00:00:00.284Z"
-description: ""
+description: "Webデザインで語られるUI/UX。私も専門ではないが、次の書籍では色んな企業サイトを例に、Webサイトの振る舞いが説明されており、今まで思いつきでやっていたUIを見直すキッカケになった。"
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["UX", "UI"]
+tags: ["UX", "UI", "書籍"]
 thumbnail: ux-web-example-1.png
 ---
 

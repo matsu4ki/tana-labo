@@ -5,7 +5,7 @@ description: ""
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["UX", "デザインリサーチ"]
+tags: ["UX", "デザインリサーチ", "書籍"]
 thumbnail: design-research-1.png
 ---
 

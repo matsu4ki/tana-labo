@@ -5,7 +5,7 @@ description: "2010年頃から大手IT企業の多くがMAベンダーを買収�
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["マーケティング", "BtoB", "MAツール"]
+tags: ["マーケティング", "BtoB", "MA", "書籍"]
 thumbnail: ma-case-study-1.png
 ---
 

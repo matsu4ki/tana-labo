@@ -5,7 +5,7 @@ description: "30代を境に私のポジションは大きく変わった。シ�
 pagetype: "category"
 categoryname: "マネジメント"
 categoryslug: "management"
-tags: ["組織作り", "品質"]
+tags: ["組織作り", "品質", "書籍"]
 thumbnail: manager-output-1.png
 ---
 
