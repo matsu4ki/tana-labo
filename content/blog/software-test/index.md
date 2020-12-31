@@ -5,7 +5,7 @@ description: "システムの品質を担保するためには、どの観点で
 pagetype: "category"
 categoryname: "システム開発"
 categoryslug: "systemdevelop"
-tags: ["テスト", "品質", "機能要件", "書籍"]
+tags: ["テスト", "品質", "機能要件"]
 thumbnail: software-test-1.png
 ---
 

@@ -5,7 +5,7 @@ description: "Webデザインで語られるUI/UX。私も専門ではないが�
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["UX", "UI", "書籍"]
+tags: ["UX", "UI"]
 thumbnail: ux-web-example-1.png
 ---
 

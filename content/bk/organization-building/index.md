@@ -39,4 +39,6 @@ thumbnail: organization-building-1.png
 
 **[ KPT ]**  
 ■ [正しい「KPT」が仕事の成果を生み出す！進め方のコツ、現場の事例を紹介](https://seleck.cc/kpt)  
+■ [フルリモートでのチーム開発となった2020年を振り返る](https://tech.machimachi.com/entry/2020/12/21/125048)  
+■ ["ふりかえり会" の第一歩](https://speakerdeck.com/silvers/the-first-step-to-retrospective)  
 ■ [スプリントの振り返りでKPTをやめた話](https://tech.gunosy.io/entry/stop_kpt)  

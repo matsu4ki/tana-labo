@@ -6,7 +6,7 @@ pagetype: "category"
 perma: "web-marketing"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["マーケティング", "USP", "書籍"]
+tags: ["マーケティング", "USP"]
 thumbnail: web-marketing-1.png
 ---
 

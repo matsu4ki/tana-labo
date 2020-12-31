@@ -13,10 +13,6 @@ class Category extends Component {
           <p>All</p>
         </div>
         <div className="category-col">
-          <Link to={`/category/マネジメント/`}><Img filename={`management.png`} /></Link>
-          <p>マネジメント</p>
-        </div>
-        <div className="category-col">
           <Link to={`/category/ビジネス/`}><Img filename={`business.png`} /></Link>
           <p>ビジネス</p>
         </div>

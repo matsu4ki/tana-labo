@@ -3,9 +3,9 @@ title: マネージャーの成果物とは何か!? プロジェクトリーダ�
 date: "2020-11-20T00:00:00.284Z"
 description: "30代を境に私のポジションは大きく変わった。システム開発の現場では、自身でコードを書く機会が減り、顧客折衝やチームマネジメントの割合が増えたのだが、マネジメント業務を深く考える時間は殆ど無かった気がしている。マネジメントって何をやるのか!? マネージャーのアウトプットとは何だろうか!?"
 pagetype: "category"
-categoryname: "マネジメント"
-categoryslug: "management"
-tags: ["組織作り", "品質", "書籍"]
+categoryname: "ビジネス"
+categoryslug: "business"
+tags: ["マネジメント", "組織作り", "品質"]
 thumbnail: manager-output-1.png
 ---
 

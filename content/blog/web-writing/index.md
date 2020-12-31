@@ -5,7 +5,7 @@ description: "新人教育や若手フォローの一環として、ドキュメ
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["Webライティング", "書籍"]
+tags: ["Webライティング"]
 thumbnail: web-writing-1.png
 ---
 

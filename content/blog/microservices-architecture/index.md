@@ -5,7 +5,7 @@ description: "テクノロジーの力で新しい価値創造のため、デジ
 pagetype: "category"
 categoryname: "システム開発"
 categoryslug: "systemdevelop"
-tags: ["アーキテクチャ", "microservice", "書籍"]
+tags: ["アーキテクチャ", "microservice"]
 thumbnail: microservices-architecture-1.png
 ---
 
