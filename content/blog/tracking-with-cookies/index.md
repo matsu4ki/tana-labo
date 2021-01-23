@@ -5,7 +5,7 @@ description: "BtoBマーケティングの目的である商談の創出では�
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["マーケティング", "BtoB", "MA", "書籍"]
+tags: ["マーケティング", "BtoB", "MA"]
 thumbnail: tracking-with-cookies-1.png
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: AWSでのマイクロサービスアーキテクチャ 各社事例と取り組み＠2019年
+title: AWSでのマイクロサービスアーキテクチャ 各社事例にみる取り組み方
 date: "2020-03-27T00:00:00.284Z"
 description: "テクノロジーの力で新しい価値創造のため、デジタルトランスフォーメーションの推進が叫ばれている。その取り組みの一つしてマイクロサービスアーキテクチャの推進が挙げられるが、多くの組織ではオーバーエンジニアリング。ただマイクロサービスで語られている考え方は、システムアーキテクトやサービスを考える上で有用なので、実際にマイクロサービスに取り組まれている事例含め、自分なりに考えてみた。"
 pagetype: "category"
 categoryname: "システム開発"
 categoryslug: "systemdevelop"
-tags: ["アーキテクチャ", "microservice", "書籍"]
+tags: ["アーキテクチャ", "microservice"]
 thumbnail: microservices-architecture-1.png
 ---
 
@@ -184,6 +184,12 @@ AWSホワイトペーパーが足りない情報を補記してくれる役割�
 **[ ドリーム・アーツ ]**  
 ■ [マイクロサービス・コンテナに全面移行するにはどうすればいいか?](https://codezine.jp/article/detail/11415)  
 
+**[ zozotown ]**  
+■ [ZOZOTOWNマイクロサービス化 - API Gatewayを自社開発したノウハウ大公開！](https://techblog.zozo.com/entry/zozotown-api-gateway-intro)  
+
+**[ RAKUS ]**  
+■ [マイクロサービスアーキテクチャをあきらめないための、モノリスで始めるアーキテクチャテスト](https://tech-blog.rakus.co.jp/entry/20201225/jjug)  
+
 ## 参考記事 
 ■ [REST APIの設計で消耗している感じたときのgRPC入門](https://qiita.com/disc99/items/cfca50a32240284578bb)  
 ■ [マイクロサービスバックエンドAPIのためのRESTとgRPC](https://www.slideshare.net/disc99_/apirestgrpc)  
@@ -209,3 +215,4 @@ AWSホワイトペーパーが足りない情報を補記してくれる役割�
 ■ [今さら人に聞けないKubernetesとは?](https://qiita.com/MahoTakara/items/85096f8b2632c802ab22)  
 ■ [Microservices Patterns を読んで(1)](https://kencharos.hatenablog.com/entry/2019/02/24/233148)  
 ■ [マイクロサービス、ミニサービス、モジュラーモノリス、モノリシックアーキテクチャを比較](https://tech-blog.rakus.co.jp/entry/20201218/architecture)  
+■ [Microservices における認証と認可の設計パターン](https://please-sleep.cou929.nu/microservices-auth-design.html)  

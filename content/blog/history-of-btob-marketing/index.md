@@ -5,7 +5,7 @@ description: "マーケティングと言っても色んな領域があるんだ
 pagetype: "category"
 categoryname: "ビジネス"
 categoryslug: "business"
-tags: ["マーケティング", "BtoB", "MA", "書籍"]
+tags: ["マーケティング", "BtoB", "MA"]
 thumbnail: history-of-btob-marketing-1.png
 ---
 

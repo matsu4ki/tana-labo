@@ -5,7 +5,7 @@ description: "人はなぜ自殺をするのか？の動機特定の困難さも
 pagetype: "category"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
-tags: ["格差・貧困", "自殺", "書籍"]
+tags: ["格差・貧困", "自殺"]
 thumbnail: suicide-prevention-1.png
 ---
 

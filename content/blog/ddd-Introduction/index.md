@@ -5,7 +5,7 @@ description: "先輩エンジニアからエリック・エヴァンスのDDD本
 pagetype: "category"
 categoryname: "システム開発"
 categoryslug: "systemdevelop"
-tags: ["アーキテクチャ", "DDD", "書籍"]
+tags: ["アーキテクチャ", "DDD"]
 thumbnail: ddd-Introduction-1.png
 ---
 

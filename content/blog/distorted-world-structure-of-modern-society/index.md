@@ -5,7 +5,7 @@ description: "13000年に渡る人類史の謎に迫る著者ジャレド・ダ�
 pagetype: "category"
 categoryname: "リベラルアーツ"
 categoryslug: "liberalarts"
-tags: ["ジャレドダイヤモンド", "歴史", "書籍"]
+tags: ["ジャレドダイヤモンド", "歴史"]
 thumbnail: distorted-world-structure-of-modern-society-1.png
 ---
 

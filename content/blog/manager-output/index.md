@@ -3,9 +3,9 @@ title: マネージャーの成果物とは何か!? プロジェクトリーダ�
 date: "2020-11-20T00:00:00.284Z"
 description: "30代を境に私のポジションは大きく変わった。システム開発の現場では、自身でコードを書く機会が減り、顧客折衝やチームマネジメントの割合が増えたのだが、マネジメント業務を深く考える時間は殆ど無かった気がしている。マネジメントって何をやるのか!? マネージャーのアウトプットとは何だろうか!?"
 pagetype: "category"
-categoryname: "マネジメント"
-categoryslug: "management"
-tags: ["組織作り", "品質", "書籍"]
+categoryname: "ビジネス"
+categoryslug: "business"
+tags: ["マネジメント", "組織作り", "KPT"]
 thumbnail: manager-output-1.png
 ---
 
@@ -71,6 +71,25 @@ thumbnail: manager-output-1.png
 マネジメント側の改善点も見えてくるので、定期的な振り返りの場は大切だと痛感させられる。
 
 ちなみに本書の第2章でもインディケーターが大事だと述べており、今回は検収時のRedmineチケットを参考にしたが、良い指標（タスク消化率・コミット数）がないかを引き続き追求していきたい。
+
+## 自発的な改善サイクルを回すためKPT
+
+KPT導入前は、開発リーダーの自分がメンバーの進捗状況を把握し、日々感じた課題の改善策を考え、メンバーに実行してもらったが、自発的に改善サイクルが回せるチーム作りのために導入を試みた。
+
+<div class="cstmreba"><div class="booklink-box"><div class="booklink-image"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202101081348465484?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F12423470%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2756/9784799102756.jpg?_ex=150x150" style="border: none;" /></a></div><div class="booklink-info"><div class="booklink-name"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202101081348465484?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F12423470%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >これだけ！KPT</a><div class="booklink-powered-date">posted with <a href="https://yomereba.com" rel="nofollow" target="_blank">ヨメレバ</a></div></div><div class="booklink-detail">天野　勝 すばる舎 2013年08月    </div><div class="booklink-link2"><div class="shoplinkrakuten"><a href="https://hb.afl.rakuten.co.jp/hgc/146fe51c.1fd043a3.146fe51d.605dc196/yomereba_main_202101081348465484?pc=http%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F12423470%2F%3Fscid%3Daf_ich_link_urltxt%26m%3Dhttp%3A%2F%2Fm.rakuten.co.jp%2Fev%2Fbook%2F" target="_blank" >楽天ブックス</a></div><div class="shoplinkamazon"><a href="https://www.amazon.co.jp/exec/obidos/asin/4799102753/kanon123-22/" target="_blank" >Amazon</a></div><div class="shoplinkkindle"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%81%93%E3%82%8C%E3%81%A0%E3%81%91%EF%BC%81KPT&__mk_ja_JP=%83J%83%5E%83J%83i&url=node%3D2275256051&tag=kanon123-22" target="_blank" >Kindle</a></div>                              	  	  	  	  	</div></div><div class="booklink-footer"></div></div></div>
+<br/>
+
+まず最初は書籍やネット記事をベースに次のような手順で着手。
+
+![](./manager-output-2.png)
+
+またKPT運用にも色んなツールがあるが、まずスプレッドシートを使うことにした。コロナで在宅中心のため、リアルに付箋紙を書いて張り出すのは困難だし、なるべくお金もかけたくないので。
+
+![](./manager-output-3.png)
+
+振り返りMTGでは、各自メンバーが良かったこと（Keep）と問題に感じたこと（Problem）を挙げ、Problemに対するTry、Keepに対するTryを話し合う。
+
+Tryを実行したらKeepに移動。次回MTGではその成果を振り返り、効果があったものはナレッジとして別シートに移動し、メンバー主体で改善サイクルを回しながら、チームの成熟化を目指す。
 
 ## マネージャーにとって大事な手段であるミーティング
 
@@ -150,3 +169,9 @@ thumbnail: manager-output-1.png
 
 ## 参考記事
 ■ [今年組織作りに貢献するためにやったこと@エニグモ開発者ブログ](https://tech.enigmo.co.jp/entry/2020/12/22/100000)  
+■ [正しい「KPT」が仕事の成果を生み出す！進め方のコツ、現場の事例を紹介](https://seleck.cc/kpt)  
+■ [フルリモートでのチーム開発となった2020年を振り返る](https://tech.machimachi.com/entry/2020/12/21/125048)  
+■ ["ふりかえり会" の第一歩](https://speakerdeck.com/silvers/the-first-step-to-retrospective)  
+■ [スプリントの振り返りでKPTをやめた話](https://tech.gunosy.io/entry/stop_kpt)  
+■ [プロジェクトマネージャーいらなくね？と思って辞めた話](https://techblog.roxx.co.jp/entry/2020/12/28/095203)  
+■ [振り返りで積み上げた開発プラクティス（2020年総まとめ）](https://devblog.thebase.in/entry/bank-practices-2020)  
