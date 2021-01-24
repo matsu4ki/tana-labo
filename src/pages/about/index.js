@@ -26,6 +26,7 @@ const About = ({ data, location }) => {
             <div id="sns">
               <a href="https://github.com/machio77777" target="_blank" aria-label="github" rel="noopener noreferrer"><Image filename={`github_logo-light.png`} /></a>
               <a href="https://twitter.com/SHINTAROUTANAK1" target="_blank" aria-label="twitter" rel="noopener noreferrer"><Image filename={`twitter_logo.png`} /></a>
+              <a href="https://www.instagram.com/kinako20190822/" target="_blank" aria-label="instagram" rel="noopener noreferrer"><Image filename={`instagram-logo.png`} /></a>
               <a href="https://booklog.jp/users/machio77777" target="_blank" aria-label="booklog" rel="noopener noreferrer"><Image filename={`booklog.jpeg`} /></a>
               <a href="https://qiita.com/machio77777" target="_blank" aria-label="qiita" rel="noopener noreferrer"><Image filename={`qiita-icon.png`} /></a>
               <a href="https://scrapbox.io/gogo71889-37308989/" target="_blank" aria-label="scrapbox" rel="noopener noreferrer"><Image filename={`scrapbox_logo.png`} /></a>
@@ -36,6 +37,7 @@ const About = ({ data, location }) => {
           <div id="blog">
             <Image filename={`gatsby.png`} />
             <Image filename={`react.png`} />
+            <Image filename={`graphql.png`} />
             <Image filename={`firebase.png`} />
             <Image filename={`html.png`} />
             <Image filename={`css.jpg`} />
