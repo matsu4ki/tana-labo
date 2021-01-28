@@ -32,3 +32,5 @@ yarn dev
 
 ## 参考記事
 ■ [NEXT.js チュートリアル@公式ドキュメント](https://nextjs.org/docs/getting-started)  
+
+■ [Macでnodeのバージョン切り替え nodebrewの使い方](https://qiita.com/chihiro/items/13652c461519f8922f56)  
