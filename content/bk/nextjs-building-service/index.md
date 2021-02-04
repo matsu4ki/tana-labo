@@ -55,5 +55,8 @@ thumbnail: nextjs-building-service-1.png
 ■ [nextjs-with-material-ui](https://github.com/hadnazzar/nextjs-with-material-ui)  
 ■ [Next.jsプロジェクトでMaterial UIを使う方法](https://tech.playground.style/javascript/next-material-ui/)  
 ■ [React + Material-UIで管理画面を作成してみた](https://dev.classmethod.jp/articles/react-material-ui/)  
+■ [React Routerのハマリどころと解決策](https://qiita.com/stakezaki/items/2beceb3cc8b5dd696a8f)  
+■ [TypeScript](https://www.typescriptlang.org/)  
 ■ [React-DnDでドラッグ&ドロップを行う](https://qiita.com/mitubaEX328/items/7e4a279c58ef6501f8b9)  
 ■ [Macでnodeのバージョン切り替え nodebrewの使い方](https://qiita.com/chihiro/items/13652c461519f8922f56)  
+■ [Firebase公式ページ](https://firebase.google.com/docs?hl=ja)  

@@ -53,6 +53,8 @@ const Work = ({ data, location }) => {
             </Link>
           </div>
         </div>
+        <br/>
+        <p>詳しい経歴は <a href="https://machio77777.github.io/job-resume/" target="_blank" rel="noreferrer">こちら</a> へ！</p>
       </div>
     </Layout>
   )
